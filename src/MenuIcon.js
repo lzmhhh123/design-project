@@ -1,51 +1,107 @@
 import React, {Component} from 'react'
-
-const s = {
-  width: 35,
-  height: 10,
-  backgroundColor: 'black',
-  marginTop: 1
-}
+import {
+  Animate,
+  Transition,
+} from 'react-move'
 
 export default class extends Component {
   constructor() {
     super()
     this.state = {
-      status: 0,
-      styles: {
-        line1: s,
-        line2: s,
-        line3: s
-      }
+      bar: []
     }
   }
 
-  ChangeStyle() {
-    if(!this.state.status) {
+  componentWillMount() {
+    let s = this.props.Status
+    console.log('dsad' + s)
+    if(s == 0) {
       this.setState({
-          styles: {
-            line1: {
-              width: 5,
-              height: 1,
-              BackgroundColor: 'black',
-              marginTop: 1,
-              transform: 'rotate(45)'
-            }
+        bar: [
+          {
+            rotate: 0,
+            translate: 0,
+            opacity: 1
+          },
+          {
+            rotate: 0,
+            translate: 0,
+            opacity: 1
+          },
+          {
+            rotate: 0,
+            translate: 0,
+            opacity: 1
           }
+        ]
+      })
+    }
+    else if(s == 1) {
+      this.setState({
+        bar: [
+          {
+            rotate: 45,
+            translate: -8,
+            opacity: 1
+          },
+          {
+            rotate: 0,
+            translate: -35,
+            opacity: 0
+          },
+          {
+            rotate: -45,
+            translate: -8,
+            opacity: 1
+          }
+        ]
+      })
+    }
+    else {
+      this.setState({
+        bar: [
+          {
+            rotate: -45,
+            translate: 8,
+            opacity: 1
+          },
+          {
+            rotate: 0,
+            translate: 35,
+            opacity: 1
+          },
+          {
+            rotate: 45,
+            translate: 8,
+            opacity: 1
+          }
+        ]
       })
     }
   }
 
   render() {
     return (
-      // <div onClick={this.ChangeStyle}>
-      //   <h1>FUCK</h1>
-      //   <div style={this.state.styles.line1} />
-      //   <div style={this.state.styles.line2} />
-      //   <div style={this.state.styles.line3} />
-      // </div>
       <div>
-        <h1>FUCK</h1>
+      {this.state.bar.map((val, k) =>
+          <Animate data={val} key={k}>
+            {
+              data => {
+                return <div style={{
+                  width: '35px',
+                  marginTop: '3px',
+                  marginBottom: '3px',
+                  height: '5px',
+                  background: 'black',
+                  borderRadius: '1px',
+                  opacity: `${data.opacity}`,
+                  transform: `rotate(${data.rotate}deg), translate(${data.translate}px)`
+                }} />
+              }
+            }
+          </Animate>
+        )
+      }
       </div>
     )
   }
