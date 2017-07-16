@@ -2,13 +2,8 @@ import React, { Component } from 'react'
 import MenuIcon from './MenuIcon'
 import Radium from 'radium'
 import {fadeIn} from 'react-animations'
-
-const styles = {
-  fadeIn: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(fadeIn, 'fadeIn')
-  }
-}
+import { Animation } from 'styled-animation';
+import {IconMenu, MenuItem, IconButton} from 'material-ui';
 
 export default class extends Component {
   constructor() {
@@ -29,11 +24,38 @@ export default class extends Component {
 
   render() {
     return (
-      <div style={styles.fadeIn}>
-        // <div onClick={this.menuClick} style={{float: 'right'}}>
-        //   <MenuIcon Status={this.state.menuIconStatus} />
-        // </div>
-        <h1>hello word</h1>
+      <div>
+        <div style={{float: 'right'}}>
+          <Animation name="fadeInDownBig" duration="3s" timing="ease-out">
+            <div onClick={this.menuClick}>
+              <MenuIcon Status={this.state.menuIconStatus} />
+            </div>
+          </Animation>
+        </div>
+        {
+          this.state.menuIconStatus === 0 ? null :
+            <div style={{float: 'right', marginRight: '20px'}}>
+              <Animation name="fadeInRight" duration='0.5s' timing="ease-out" style={{float: 'right', marginRight: '20px'}}>
+                <p>Menu</p>
+              </Animation>
+              <Animation name="fadeInRight" duration='0.5s' timing="ease-out" style={{float: 'right', marginRight: '20px'}}>
+                <p>Menu1</p>
+              </Animation>
+              <Animation name="fadeInRight" duration='0.5s' timing="ease-out" style={{float: 'right', marginRight: '20px'}}>
+                <p>Menu2</p>
+              </Animation>
+            </div>
+        }
+        <div style={{float: 'left'}}>
+          <Animation name="fadeInDownBig" duration="1s" timing="ease-out">
+            <h2>hello </h2>
+          </Animation>
+        </div>
+        <div style={{float: 'left'}}>
+          <Animation name="fadeInDownBig" duration="2s" timing="ease-out">
+            <h2>Word</h2>
+          </Animation>
+        </div>
       </div>
     )
   }
