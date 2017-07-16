@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
 import MenuIcon from './MenuIcon'
+import Radium from 'radium'
+import {fadeIn} from 'react-animations'
+
+const styles = {
+  fadeIn: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(fadeIn, 'fadeIn')
+  }
+}
 
 export default class extends Component {
   constructor() {
     super()
     this.state = {
-      menuIconStatus: 2
+      menuIconStatus: 0
     }
     this.menuClick = this.menuClick.bind(this)
   }
@@ -14,15 +23,17 @@ export default class extends Component {
     event.preventDefault()
     let s = this.state.menuIconStatus
     this.setState({
-      menuIconStatus: s == 2 ? 0 : (s ^ 1)
+      menuIconStatus: s ^ 1
     })
   }
 
   render() {
-    console.log(this.state.menuIconStatus)
     return (
-      <div onClick={this.menuClick}>
-        <MenuIcon Status={this.state.menuIconStatus} />
+      <div style={styles.fadeIn}>
+        // <div onClick={this.menuClick} style={{float: 'right'}}>
+        //   <MenuIcon Status={this.state.menuIconStatus} />
+        // </div>
+        <h1>hello word</h1>
       </div>
     )
   }

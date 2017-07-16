@@ -8,14 +8,29 @@ export default class extends Component {
   constructor() {
     super()
     this.state = {
-      bar: []
+      bar: [
+        {
+          rotate: 0,
+          translate: 0,
+          opacity: 1
+        },
+        {
+          rotate: 0,
+          translate: 0,
+          opacity: 1
+        },
+        {
+          rotate: 0,
+          translate: 0,
+          opacity: 1
+        }
+      ]
     }
   }
 
-  componentWillMount() {
-    let s = this.props.Status
-    console.log('dsad' + s)
-    if(s == 0) {
+  componentWillReceiveProps(nextProps) {
+    let s = nextProps.Status
+    if(s === 0) {
       this.setState({
         bar: [
           {
@@ -36,12 +51,12 @@ export default class extends Component {
         ]
       })
     }
-    else if(s == 1) {
+    else if(s === 1) {
       this.setState({
         bar: [
           {
-            rotate: 45,
-            translate: -8,
+            rotate: -45,
+            translate: -11.414,
             opacity: 1
           },
           {
@@ -50,29 +65,8 @@ export default class extends Component {
             opacity: 0
           },
           {
-            rotate: -45,
-            translate: -8,
-            opacity: 1
-          }
-        ]
-      })
-    }
-    else {
-      this.setState({
-        bar: [
-          {
-            rotate: -45,
-            translate: 8,
-            opacity: 1
-          },
-          {
-            rotate: 0,
-            translate: 35,
-            opacity: 1
-          },
-          {
             rotate: 45,
-            translate: 8,
+            translate: -11.414,
             opacity: 1
           }
         ]
@@ -95,7 +89,7 @@ export default class extends Component {
                   background: 'black',
                   borderRadius: '1px',
                   opacity: `${data.opacity}`,
-                  transform: `rotate(${data.rotate}deg), translate(${data.translate}px)`
+                  transform: `rotate(${data.rotate}deg) translate(${data.translate}px)`
                 }} />
               }
             }
