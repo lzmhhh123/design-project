@@ -1,4 +1,4 @@
-<img src="/pulic/image/logo_desktop.png">
+<img src="/public/image/logo_desktop.png">
 
 ## 小的企划
 
