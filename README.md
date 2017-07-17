@@ -8,4 +8,4 @@
 ### Develoy
 - `git clone` (from github) & `cd ${document}`
 - `npm install` or `yarn install`
-- To visit it at 'localshot:3000' with `npm start`
+- To visit it at http://localshot:3000 with `npm start`
