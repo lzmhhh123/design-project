@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import About from './About'
+import Portfolio from './Portfolio'
+import Contact from './Contact'
 
 export default class extends Component {
   constructor() {
@@ -7,7 +10,11 @@ export default class extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+      { this.props.about === 0 ? null : <About /> }
+      { this.props.portfolio === 0 ? null : <Portfolio /> }
+      { this.props.contact === 0 ? null : <Contact /> }
+      </div>
     )
   }
 }

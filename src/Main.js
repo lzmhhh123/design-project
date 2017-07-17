@@ -18,7 +18,7 @@ export default class extends Component {
     return (
       <Router history={browserHistory} >
         <Route path="/" component={Layout}>
-          <IndexRoute component={Homepage} />
+          <IndexRoute component={Homepage}/>
         </Route>
       </Router>
     )

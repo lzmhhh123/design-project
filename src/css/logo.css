@@ -1,0 +1,10 @@
+.logo {
+	-webkit-transition: all 600ms linear;
+  transition:         all 600ms linear;
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  margin-top: 35px;
+  margin-left: 50px;
+  opacity: 0.9;
+  position: absolute
+}

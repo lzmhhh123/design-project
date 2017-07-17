@@ -42,6 +42,12 @@ export default class extends Component {
   }
 
   render() {
+    const childrenWithProps = React.Children.map(this.props.children, (child) =>
+      React.cloneElement(child, {
+        about: this.state.about,
+        portfolio: this.state.portfolio,
+        contact: this.state.contact
+      }));
     return (
       <div>
         <Nav
