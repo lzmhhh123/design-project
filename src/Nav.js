@@ -16,7 +16,9 @@ export default class  extends Component {
     setTimeout(() => {
       let logo = document.getElementsByClassName("logo")
       console.log(logo)
-      logo[0].style.marginTop = "35px"
+      for(let i = 0; i < 5; ++i) {
+        logo[i].style.marginTop = "35px"
+      }
       let logoLine = document.getElementsByClassName("logoLine")
       logoLine[0].style.width = "135px"
       let aboutLogo = document.getElementsByClassName("aboutLogo")
@@ -49,7 +51,7 @@ export default class  extends Component {
           <div style={
               {
                 transition: "all 0.5s linear",
-                transitionDelay: "0.5s",
+                transitionDelay: "1.3s",
                 backgroundColor: 'orange',
                 marginTop: '40px',
                 width: '0px',
@@ -57,10 +59,42 @@ export default class  extends Component {
                 marginLeft: "50px",
                 position: "absolute"
               }} className="logoLine"/>
-          <img src="/image/logo_desktop.png" className="logo" style={{
-            transition: "all 0.5s linear",
+          <img src="/image/logo1.png" className="logo" style={{
+            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
             marginTop: "-35px",
             marginLeft: "50px",
+            opacity: "0.9",
+            position: "absolute"
+          }}/>
+          <img src="/image/logo2.png" className="logo" style={{
+            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+            transitionDelay: "0.2s",
+            marginTop: "-35px",
+            marginLeft: "85px",
+            opacity: "0.9",
+            position: "absolute"
+          }}/>
+          <img src="/image/logo3.png" className="logo" style={{
+            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+            transitionDelay: "0.4s",
+            marginTop: "-35px",
+            marginLeft: "110px",
+            opacity: "0.9",
+            position: "absolute"
+          }}/>
+          <img src="/image/logo4.png" className="logo" style={{
+            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+            transitionDelay: "0.6s",
+            marginTop: "-35px",
+            marginLeft: "135px",
+            opacity: "0.9",
+            position: "absolute"
+          }}/>
+          <img src="/image/logo5.png" className="logo" style={{
+            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+            transitionDelay: "0.8s",
+            marginTop: "-35px",
+            marginLeft: "160px",
             opacity: "0.9",
             position: "absolute"
           }}/>
@@ -72,14 +106,14 @@ export default class  extends Component {
             float: 'right',
             positon: 'absolute',
             transition: "all 0.5s linear",
-            transitionDelay: '1s'
+            transitionDelay: '1.8s'
           }} className="contactLogo" onClick={this.props.clickContact}>
             <img src="/image/button_contact_desktop.png" />
             <div style={{
               height: '15px',
               width: '0px',
               backgroundColor: 'orange',
-              transition: "all 0.3s linear",
+              transition: "all 0.2s linear",
               marginTop: '-20px'
             }} className="contactLine" />
           </div>
@@ -91,14 +125,14 @@ export default class  extends Component {
             float: 'right',
             positon: 'absolute',
             transition: "all 0.5s linear",
-            transitionDelay: '1s'
+            transitionDelay: '1.8s'
           }} className="portfolioLogo" onClick={this.props.clickPortfolio}>
             <img src="/image/button_portfolio_desktop.png" />
             <div style={{
               height: '15px',
               width: '0px',
               backgroundColor: 'orange',
-              transition: "all 0.3s linear",
+              transition: "all 0.2s linear",
               marginTop: '-20px'
             }} className="portfolioLine" />
           </div>
@@ -110,16 +144,16 @@ export default class  extends Component {
             float: 'right',
             positon: 'absolute',
             transition: "all 0.5s linear",
-            transitionDelay: '1s'
+            transitionDelay: '1.8s'
           }} className="aboutLogo" onClick={this.props.clickAbout}>
             <img src="/image/button_about_desktop.png" />
             <div style={{
               height: '15px',
               width: '0px',
               backgroundColor: 'orange',
-              transition: "all 0.3s linear",
+              transition: "all 0.2s linear",
               marginTop: '-20px',
-              transitionDelay: '1.5s'
+              transitionDelay: '2.3s'
             }} className="aboutLine" />
           </div>
         </div>
