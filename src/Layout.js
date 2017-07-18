@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
+import {browserHistory} from 'react-router'
 
 export default class extends Component {
   constructor() {
@@ -21,6 +22,8 @@ export default class extends Component {
       portfolio: 0,
       contact: 0
     })
+    console.log('haa');
+    browserHistory.push('')
   }
 
   clickPortfolio(event) {
@@ -30,6 +33,7 @@ export default class extends Component {
       portfolio: 1,
       contact: 0
     })
+    browserHistory.push('/portfolio')
   }
 
   clickContact(event) {
@@ -39,25 +43,22 @@ export default class extends Component {
       portfolio: 0,
       contact: 1
     })
+    browserHistory.push('/contact')
   }
 
   render() {
-    const childrenWithProps = React.Children.map(this.props.children, (child) =>
-      React.cloneElement(child, {
-        about: this.state.about,
-        portfolio: this.state.portfolio,
-        contact: this.state.contact
-      }));
     return (
       <div>
-        <Nav
-          clickAbout={this.clickAbout}
-          clickPortfolio={this.clickPortfolio}
-          clickContact={this.clickContact}
-          about={this.state.about}
-          portfolio={this.state.portfolio}
-          contact={this.state.contact}
-        />
+        <div style={{height: '80px'}}>
+          <Nav
+            clickAbout={this.clickAbout}
+            clickPortfolio={this.clickPortfolio}
+            clickContact={this.clickContact}
+            about={this.state.about}
+            portfolio={this.state.portfolio}
+            contact={this.state.contact}
+          />
+        </div>
         <div>{this.props.children}</div>
       </div>
     )

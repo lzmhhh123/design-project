@@ -5,7 +5,9 @@ import {
   browserHistory,
   IndexRoute
 } from 'react-router'
-import Homepage from './Homepage'
+import About from './About'
+import Portfolio from './Portfolio'
+import Contact from './Contact'
 import Layout from './Layout'
 
 export default class extends Component {
@@ -18,7 +20,9 @@ export default class extends Component {
     return (
       <Router history={browserHistory} >
         <Route path="/" component={Layout}>
-          <IndexRoute component={Homepage}/>
+          <IndexRoute component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/contact" component={Contact} />
         </Route>
       </Router>
     )

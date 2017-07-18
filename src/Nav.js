@@ -14,9 +14,12 @@ export default class  extends Component {
 
   componentDidMount() {
     setTimeout(() => {
+      let logoImage = document.getElementsByClassName("logoImage")
+      console.log(logoImage)
+      logoImage[0].style.transform = "rotate(0deg)"
       let logo = document.getElementsByClassName("logo")
       console.log(logo)
-      for(let i = 0; i < 5; ++i) {
+      for(let i = 0; i < 4; ++i) {
         logo[i].style.marginTop = "35px"
       }
       let logoLine = document.getElementsByClassName("logoLine")
@@ -59,9 +62,10 @@ export default class  extends Component {
                 marginLeft: "50px",
                 position: "absolute"
               }} className="logoLine"/>
-          <img src="/image/logo1.png" className="logo" style={{
+          <img src="/image/logo1.png" className="logoImage" style={{
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            marginTop: "-35px",
+            marginTop: "35px",
+            transform: "rotate(90deg)",
             marginLeft: "50px",
             opacity: "0.9",
             position: "absolute"
@@ -99,7 +103,7 @@ export default class  extends Component {
             position: "absolute"
           }}/>
         </div>
-        <div style={{float: 'right'}}>
+        <div style={{float: 'right'}} onClick={this.props.clickContact}>
           <div style={{
             marginTop: '45px',
             marginRight: '-130px',
@@ -107,7 +111,7 @@ export default class  extends Component {
             positon: 'absolute',
             transition: "all 0.5s linear",
             transitionDelay: '1.8s'
-          }} className="contactLogo" onClick={this.props.clickContact}>
+          }} className="contactLogo">
             <img src="/image/button_contact_desktop.png" />
             <div style={{
               height: '15px',
@@ -118,7 +122,7 @@ export default class  extends Component {
             }} className="contactLine" />
           </div>
         </div>
-        <div style={{float: 'right'}}>
+        <div style={{float: 'right'}} onClick={this.props.clickPortfolio}>
           <div style={{
             marginTop: '45px',
             marginRight: '-130px',
@@ -126,7 +130,7 @@ export default class  extends Component {
             positon: 'absolute',
             transition: "all 0.5s linear",
             transitionDelay: '1.8s'
-          }} className="portfolioLogo" onClick={this.props.clickPortfolio}>
+          }} className="portfolioLogo">
             <img src="/image/button_portfolio_desktop.png" />
             <div style={{
               height: '15px',
@@ -137,7 +141,7 @@ export default class  extends Component {
             }} className="portfolioLine" />
           </div>
         </div>
-        <div style={{float: 'right'}}>
+        <div style={{float: 'right'}} onClick={this.props.clickAbout}>
           <div style={{
             marginTop: '45px',
             marginRight: '-130px',
@@ -145,7 +149,7 @@ export default class  extends Component {
             positon: 'absolute',
             transition: "all 0.5s linear",
             transitionDelay: '1.8s'
-          }} className="aboutLogo" onClick={this.props.clickAbout}>
+          }} className="aboutLogo">
             <img src="/image/button_about_desktop.png" />
             <div style={{
               height: '15px',

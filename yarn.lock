@@ -5244,6 +5244,16 @@ rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@^2.3.6:
     css-animation "1.x"
     prop-types "15.x"
 
+rc-banner-anim@^0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/rc-banner-anim/-/rc-banner-anim-0.5.13.tgz#e751d78a161d5fb4beb9ebc39f73d20d1d7d45e8"
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.5.0"
+    rc-tween-one "~1.2.7"
+    style-utils "~0.1.10"
+    tween-functions "1.x"
+
 rc-calendar@~8.4.1:
   version "8.4.6"
   resolved "https://registry.yarnpkg.com/rc-calendar/-/rc-calendar-8.4.6.tgz#55dc45fcc8f91bf6f5bb5632c48b3a48e456f4e5"
@@ -5522,7 +5532,7 @@ rc-trigger@1.x:
     rc-animate "2.x"
     rc-util "4.x"
 
-rc-tween-one@^1.2.9:
+rc-tween-one@^1.2.9, rc-tween-one@~1.2.7:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/rc-tween-one/-/rc-tween-one-1.2.9.tgz#320598a9402f9b7e9be31b28a49f9db2fe590c62"
   dependencies:
@@ -6459,7 +6469,7 @@ style-loader@0.18.2:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-style-utils@~0.1.13:
+style-utils@~0.1.10, style-utils@~0.1.13:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/style-utils/-/style-utils-0.1.13.tgz#9df5c750daa41865f2238fd16f6e12b93a0a26a0"
 
@@ -6680,7 +6690,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-tween-functions@~1.2.0:
+tween-functions@1.x, tween-functions@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
 
