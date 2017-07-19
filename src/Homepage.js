@@ -10,12 +10,14 @@ export default class extends Component {
   render() {
     return (
       <div style={{marginTop: 'auto'}}>
-        <div>
-          <img src="/image/preview_1.gif" />
-        </div>
-        <div>
-          <img src="/image/preview_2.gif" />
-        </div>
+        <Animation name="fadeInUpBig" duration="1s">
+          <div>
+            <img src="/image/preview_1.gif" />
+          </div>
+          <div>
+            <img src="/image/preview_2.gif" />
+          </div>
+        </Animation>
       </div>
     )
   }
