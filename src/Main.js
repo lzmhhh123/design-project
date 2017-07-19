@@ -9,6 +9,7 @@ import About from './About'
 import Portfolio from './Portfolio'
 import Contact from './Contact'
 import Layout from './Layout'
+import Homepage from './Homepage'
 
 export default class extends Component {
   constructor() {
@@ -20,7 +21,8 @@ export default class extends Component {
     return (
       <Router history={browserHistory} >
         <Route path="/" component={Layout}>
-          <IndexRoute component={About} />
+          <IndexRoute component={Homepage} />
+          <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
         </Route>
