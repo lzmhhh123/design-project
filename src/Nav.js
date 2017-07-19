@@ -18,7 +18,6 @@ export default class  extends Component {
       console.log(logoImage)
       logoImage[0].style.transform = "rotate(0deg)"
       let logo = document.getElementsByClassName("logo")
-      console.log(logo)
       for(let i = 0; i < 4; ++i) {
         logo[i].style.marginTop = "35px"
       }
