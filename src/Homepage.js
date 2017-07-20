@@ -34,6 +34,7 @@ export default class extends Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <div style={{marginTop: 'auto'}} id="home">
       {
         this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeOutUp" duration="1s">
@@ -100,6 +101,17 @@ export default class extends Component {
           <img className="gif" src="/image/preview_4.gif" />
         </Animation> : null
       }
+=======
+      <div style={{marginTop: 'auto'}}>
+        <Animation name="fadeInUpBig" duration="1s">
+          <div>
+            <img src="/image/preview_1.gif" />
+          </div>
+          <div>
+            <img src="/image/preview_2.gif" />
+          </div>
+        </Animation>
+>>>>>>> 7f3ee35cf2cfdb2b0aed758c014f5070b8d1363b
       </div>
     )
   }
