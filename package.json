@@ -16,7 +16,7 @@
     "react-move": "^1.5.4",
     "react-router": "^2.8.1",
     "react-scripts": "1.0.10",
-    "styled-animation": "^1.0.3"
+    "styled-animation": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
