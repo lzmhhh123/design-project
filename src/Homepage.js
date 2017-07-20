@@ -3,6 +3,291 @@ import { Card } from 'material-ui/Card'
 import { Animation } from 'styled-animation'
 import BannerAnim, { Element } from 'rc-banner-anim';
 
+class Page1 extends Component {
+  constructor() {
+    super()
+    this.state = {
+      line1: 0,
+      line2: 0
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <img className="gif" src="/image/preview_1.gif" />
+        <br />
+        <p style={{color: '#666666',
+                  fontFamily: "Microsoft Yahei",
+                  fontSize: '12pt',
+                  textAlign: 'right',
+                  position: 'relative',
+                  bottom: '370px',
+                  right: '50px'
+                }}>
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line1 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+            left: '1570px'
+          }} />
+          <img src="/image/title_SB_cn.png"
+            onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line2 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+            left: '1490px'
+          }} />
+          <img src="/image/title_SB_en.png"
+            onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          依靠精心策划的品牌策略
+          <br />
+          以及对消费市场的洞察
+          <br />
+          <br />
+          我们致力于创造既让人惊叹、
+          <br />
+          又逼人买单的杰出作品
+          <br />
+          <br />
+          我们擅长的不多，
+          <br />
+          也就全案、活动、视频、平面等等
+        </p>
+      </div>
+    )
+  }
+}
+
+class Page2 extends Component {
+  constructor() {
+    super()
+    this.state = {
+      line1: 0,
+      line2: 0
+    }
+  }
+
+  render() {
+    return (
+      <div className="right">
+        <img className="gif" src="/image/preview_2.gif" style={{marginLeft: '500px'}}/>
+        <br />
+        <p style={{color: '#666666',
+                  fontFamily: "Microsoft Yahei",
+                  fontSize: '12pt',
+                  textAlign: 'left',
+                  position: 'relative',
+                  bottom: '370px',
+                  left: '50px'
+                }}>
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line1 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_CPD_cn.png"
+            onMouseMove={() => {this.setState({ line1: 340, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line2 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_CPD_en.png"
+            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          基于广告、战略咨询、金融、创业的
+          <br />
+          复合背景
+          <br />
+          <br />
+          我们为品牌创立、品牌转型、品牌升级
+          <br />
+          <br />
+          提供既科学又有创造力的
+          <br />
+          完整解决方案
+        </p>
+      </div>
+    )
+  }
+}
+
+class Page3 extends Component {
+  constructor() {
+    super()
+    this.state = {
+      line1: 0,
+      line2: 0
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <img className="gif" src="/image/preview_3.gif" />
+        <br />
+        <p style={{color: '#666666',
+                  fontFamily: "Microsoft Yahei",
+                  fontSize: '12pt',
+                  textAlign: 'right',
+                  position: 'relative',
+                  bottom: '370px',
+                  right: '50px'
+                }}>
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line1 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            left: '1520px',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_SMS_cn.png"
+            onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line2 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            left: '1310px',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_SMS_en.png"
+            onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          我们坚信
+          <br />
+          有趣就是生产力的一部分
+          <br />
+          <br />
+          另一部分
+          <br />
+          是不可描述的精耕细作
+          <br />
+          <br />
+          我们与客户深入合作
+          <br />
+          将一切好的立意变成实在的效益
+          <br />
+          <br />
+          并且共同承担风险收益
+        </p>
+      </div>
+    )
+  }
+}
+
+class Page4 extends Component {
+  constructor() {
+    super()
+    this.state = {
+      line1: 0,
+      line2: 0
+    }
+  }
+
+  render() {
+    return (
+      <div className="right">
+        <img className="gif" src="/image/preview_4.gif" style={{marginLeft: '500px'}}/>
+        <br />
+        <p style={{color: '#666666',
+                  fontFamily: "Microsoft Yahei",
+                  fontSize: '12pt',
+                  textAlign: 'left',
+                  position: 'relative',
+                  bottom: '370px',
+                  left: '50px'
+                }}>
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line1 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_SM_cn.png"
+            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <div style={{
+            backgroundColor: 'orange',
+            height: '20px',
+            width: this.state.line2 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-50px',
+          }} />
+          <img src="/image/title_SM_en.png"
+            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <br />
+          “文案日成堆，愁眉展不开……”
+          <br />
+          小编抱怨道，顺便想卖弄一波文才
+          <br />
+          <br />
+          我们却回答：“成堆是谁？”
+          <br />
+          <br />
+          有个资历颇深的砖家说过：
+          <br />
+          “抓住年轻人，才能抓住新市场；
+          <br />
+          懂得骚浪贱，才能抓住年轻人”
+          <br />
+          <br />
+          大概说的，就是我司。
+        </p>
+      </div>
+    )
+  }
+}
+
 export default class extends Component {
   constructor() {
     super()
@@ -34,84 +319,72 @@ export default class extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <div style={{marginTop: 'auto'}} id="home">
       {
         this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeOutUp" duration="1s">
-          <img className="gif" src="/image/preview_1.gif" />
+          <Page1 />
         </Animation> : null
       }
       {
         this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeInDown" duration="1s">
-          <img className="gif" src="/image/preview_1.gif" />
+          <Page1 />
         </Animation> : null
       }
       {
         this.state.status === 0 && this.state.lastStatus === -1 ? <Animation name="fadeInUp" duration="1s">
-          <img className="gif" src="/image/preview_1.gif" />
+          <Page1 />
         </Animation> : null
       }
       {
         this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeOutUp" duration="1s">
-          <img className="gif" src="/image/preview_2.gif" />
+          <Page2 />
         </Animation> : null
       }
       {
         this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeInUp" duration="1s">
-          <img className="gif" src="/image/preview_2.gif" />
+          <Page2 />
         </Animation> : null
       }
       {
         this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeInDown" duration="1s">
-          <img className="gif" src="/image/preview_2.gif" />
+          <Page2 />
         </Animation> : null
       }
       {
         this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeOutDown" duration="1s">
-          <img className="gif" src="/image/preview_2.gif" />
+          <Page2 />
         </Animation> : null
       }
       {
         this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeOutUp" duration="1s">
-          <img className="gif" src="/image/preview_3.gif" />
+          <Page3 />
         </Animation> : null
       }
       {
         this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeInUp" duration="1s">
-          <img className="gif" src="/image/preview_3.gif" />
+          <Page3 />
         </Animation> : null
       }
       {
         this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeInDown" duration="1s">
-          <img className="gif" src="/image/preview_3.gif" />
+          <Page3 />
         </Animation> : null
       }
       {
         this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeOutDown" duration="1s">
-          <img className="gif" src="/image/preview_3.gif" />
+          <Page3 />
         </Animation> : null
       }
       {
         this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeOutDown" duration="1s">
-          <img className="gif" src="/image/preview_4.gif" />
+          <Page4 />
         </Animation> : null
       }
       {
         this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeInUp" duration="1s">
-          <img className="gif" src="/image/preview_4.gif" />
+          <Page4 />
         </Animation> : null
       }
-=======
-      <div style={{marginTop: 'auto'}}>
-        <Animation name="fadeInUpBig" duration="1s">
-          <div>
-            <img src="/image/preview_1.gif" />
-          </div>
-          <div>
-            <img src="/image/preview_2.gif" />
-          </div>
-        </Animation>
->>>>>>> 7f3ee35cf2cfdb2b0aed758c014f5070b8d1363b
       </div>
     )
   }

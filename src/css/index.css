@@ -1,3 +1,9 @@
 .gif {
-  width: 60%;
+  width: 65%;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
