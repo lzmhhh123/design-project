@@ -21,8 +21,8 @@ class Page1 extends Component {
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'right',
-                  position: 'absolute',
-                  top: '600px',
+                  position: 'relative',
+                  bottom: '370px',
                   right: '50px'
                 }}>
           <div>
@@ -96,8 +96,8 @@ class Page2 extends Component {
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'left',
-                  position: 'absolute',
-                  top: '1570px',
+                  position: 'relative',
+                  bottom: '370px',
                   left: '50px'
                 }}>
           <div style={{
@@ -163,8 +163,8 @@ class Page3 extends Component {
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'right',
-                  position: 'absolute',
-                  top: '2570px',
+                  position: 'relative',
+                  bottom: '370px',
                   right: '50px'
                 }}>
           <div>
@@ -241,8 +241,8 @@ class Page4 extends Component {
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'left',
-                  position: 'absolute',
-                  top: '3570px',
+                  position: 'relative',
+                  bottom: '370px',
                   left: '50px'
                 }}>
           <div style={{
