@@ -20,9 +20,9 @@ class Page1 extends Component {
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
+                  marginTop: '-370px',
                   textAlign: 'right',
                   position: 'relative',
-                  bottom: '370px',
                   right: '50px'
                 }}>
           <div>
@@ -97,7 +97,7 @@ class Page2 extends Component {
                   fontSize: '12pt',
                   textAlign: 'left',
                   position: 'relative',
-                  bottom: '370px',
+                  marginTop: '-370px',
                   left: '50px'
                 }}>
           <div style={{
@@ -164,7 +164,7 @@ class Page3 extends Component {
                   fontSize: '12pt',
                   textAlign: 'right',
                   position: 'relative',
-                  bottom: '370px',
+                  marginTop: '-370px',
                   right: '50px'
                 }}>
           <div>
@@ -242,7 +242,7 @@ class Page4 extends Component {
                   fontSize: '12pt',
                   textAlign: 'left',
                   position: 'relative',
-                  bottom: '370px',
+                  marginTop: '-370px',
                   left: '50px'
                 }}>
           <div style={{
