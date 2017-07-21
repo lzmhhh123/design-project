@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { Animation } from 'styled-animation'
-import { Fullpage, Slide} from 'fullpage-react'
+import { SectionsContainer, Section } from 'react-fullpage'
+import './css/homep1.css'
 
 class Page1 extends Component {
   constructor() {
@@ -24,34 +25,39 @@ class Page1 extends Component {
                   bottom: '370px',
                   right: '50px'
                 }}>
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line1 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            bottom: '-50px',
-          }} />
-          <img src="/image/title_SB_cn.png"
-            onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
+          <div>
+            <div style={{
+              backgroundColor: 'orange',
+              height: '20px',
+              width: this.state.line1 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              top: '28px',
+              right: '-5px'
+            }} />
+            <img src="/image/title_SB_cn.png"
+              onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
           <br />
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line2 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            bottom: '-50px',
-            left: '1490px'
-          }} />
-          <img src="/image/title_SB_en.png"
-            onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
+          <div>
+            <div style={{
+              backgroundColor: 'orange',
+              height: '20px',
+              width: this.state.line2 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              top: '100px',
+              right: '-5px'
+            }} />
+            <img src="/image/title_SB_en.png"
+              onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
           <br />
           依靠精心策划的品牌策略
           <br />
@@ -161,35 +167,39 @@ class Page3 extends Component {
                   bottom: '370px',
                   right: '50px'
                 }}>
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line1 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            left: '1520px',
-            bottom: '-50px',
-          }} />
-          <img src="/image/title_SMS_cn.png"
-            onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
+          <div>
+            <div style={{
+              backgroundColor: 'orange',
+              height: '20px',
+              width: this.state.line1 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              right: '-5px',
+              top: '28px'
+            }} />
+            <img src="/image/title_SMS_cn.png"
+              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
           <br />
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line2 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            left: '1310px',
-            bottom: '-50px',
-          }} />
-          <img src="/image/title_SMS_en.png"
-            onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
+          <div>
+            <div style={{
+              backgroundColor: 'orange',
+              height: '20px',
+              width: this.state.line2 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              right: '-5px',
+              top: '100px',
+            }} />
+            <img src="/image/title_SMS_en.png"
+              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
           <br />
           我们坚信
           <br />
@@ -225,7 +235,7 @@ class Page4 extends Component {
   render() {
     return (
       <div className="right">
-        <img className="gif" src="/image/preview_4.gif" style={{marginLeft: '500px'}}/>
+        <div className="gifp4"></div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
@@ -293,22 +303,27 @@ export default class extends Component {
 
   render() {
     let options = {
-      scrollSensitivity: 3,
-      touchSensitivity: 3,
-      scrollSpeed: 500,
-      hideScrollBars: true,
-      enableArrowKeys: true,
-      breakpoint: 375,
+      activeClass:          'active',
+      anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
+      arrowNavigation:      true,
+      className:            'SectionContainer',
+      delay:                1000,
+      navigation:           false,
+      scrollBar:            false,
+      sectionClassName:     'Section',
+      sectionPaddingTop:    '0',
+      sectionPaddingBottom: '0',
+      verticalAlign:        false
     }
-    let slides = [
-      <Slide><Page1 /></Slide>,
-      <Slide><Page2 /></Slide>,
-      <Slide><Page3 /></Slide>,
-      <Slide><Page4 /></Slide>
-    ]
-    options.slides = slides
     return (
-      <Fullpage {...options} />
+      <Animation name="slideInUp" duration="4s" >
+        <SectionsContainer {...options} >
+          <Section><Page1 /></Section>
+          <Section><Page2 /></Section>
+          <Section><Page3 /></Section>
+          <Section><Page4 /></Section>
+        </SectionsContainer>
+      </Animation>
     )
   }
 }

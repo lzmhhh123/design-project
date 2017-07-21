@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
 import {browserHistory} from 'react-router'
+import {Header} from 'react-fullpage'
 
 export default class extends Component {
   constructor() {
@@ -19,7 +20,6 @@ export default class extends Component {
 
   clickAbout(event) {
     event.preventDefault()
-    console.log('hahahaha');
     this.setState({
       about: 1,
       portfolio: 0,
@@ -63,9 +63,10 @@ export default class extends Component {
   }
 
   render() {
+    console.log('hahaha');
     return (
       <div>
-        <div>
+        <Header>
           <img src="/image/banner_desktop.png" style={{height: '96px', position: 'fixed', width: '100%'}} />
           <Nav
             clickAbout={this.clickAbout}
@@ -77,8 +78,8 @@ export default class extends Component {
             portfolio={this.state.portfolio}
             contact={this.state.contact}
           />
-        </div>
-        <div>{this.props.children}</div>
+        </Header>
+        {this.props.children}
       </div>
     )
   }
