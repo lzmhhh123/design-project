@@ -308,10 +308,12 @@ export default class extends Component {
       else if (event.detail) {
         delta = event.detail;
 	    }
-      if(delta > 0) delta = 1;
-      else delta = -1;
-      if(delta == -1 && this.state.status == 0) return
-      if(delta == 1 && this.state.status == 3) return
+      if(delta >= 120) delta = 1;
+      else if(delta <= -120)delta = -1;
+      else delta = 0;
+      if(delta === 0) return
+      if(delta === -1 && this.state.status === 0) return
+      if(delta === 1 && this.state.status === 3) return
       this.setState({
         lastStatus: this.state.status,
         status: this.state.status + delta,
