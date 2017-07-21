@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Animation } from 'styled-animation'
+import { Fullpage, Slide} from 'fullpage-react'
 
 class Page1 extends Component {
   constructor() {
@@ -288,113 +289,26 @@ class Page4 extends Component {
 export default class extends Component {
   constructor() {
     super()
-    this.state = {
-      status: 0,
-      lastStatus: -1,
-      p1: true,
-      p2: true,
-      p3: true,
-      p4: true
-    }
-    this.setP = this.setP.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener('wheel', (event) => {
-      let delta
-      if(event.wheelDelta) {
-        delta = -event.wheelDelta;
-	    }
-      else if (event.detail) {
-        delta = event.detail;
-	    }
-      if(delta >= 120) delta = 1;
-      else if(delta <= -120)delta = -1;
-      else delta = 0;
-      if(delta === 0) return
-      if(delta === -1 && this.state.status === 0) return
-      if(delta === 1 && this.state.status === 3) return
-      this.setState({
-        lastStatus: this.state.status,
-        status: this.state.status + delta,
-      })
-    })
-  }
-
-  setP(event, p1, p2, p3, p4) {
-    event.preventDefault()
-    this.setState({ p1, p2, p3, p4 })
   }
 
   render() {
+    let options = {
+      scrollSensitivity: 3,
+      touchSensitivity: 3,
+      scrollSpeed: 500,
+      hideScrollBars: true,
+      enableArrowKeys: true,
+      breakpoint: 375,
+    }
+    let slides = [
+      <Slide><Page1 /></Slide>,
+      <Slide><Page2 /></Slide>,
+      <Slide><Page3 /></Slide>,
+      <Slide><Page4 /></Slide>
+    ]
+    options.slides = slides
     return (
-      <div style={{marginTop: 'auto'}} id="home">
-      {
-        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, true, false, false)}>
-          {this.state.p1 ? <Page1 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeInDown" duration="2s" >
-          {this.state.p1 ? <Page1 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 0 && this.state.lastStatus === -1 ? <Animation name="fadeInUp" duration="2s" >
-          {this.state.p1 ? <Page1 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, false, true, false)}>
-          {this.state.p2 ? <Page2 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeInUp" duration="2s" >
-          {this.state.p2 ? <Page2 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeInDown" duration="2s" >
-          {this.state.p2 ? <Page2 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, true, false, false, false)}>
-          {this.state.p2 ? <Page2 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, false, false, true)}>
-          {this.state.p3 ? <Page3 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeInUp" duration="2s" >
-          {this.state.p3 ? <Page3 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeInDown" duration="2s" >
-          {this.state.p3 ? <Page3 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, false, true, false, false)}>
-          {this.state.p3 ? <Page3 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, false, false, true, false)}>
-          {this.state.p4 ? <Page4 /> : null}
-        </Animation> : null
-      }
-      {
-        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeInUp" duration="2s" >
-          {this.state.p4 ? <Page4 /> : null}
-        </Animation> : null
-      }
-      </div>
+      <Fullpage {...options} />
     )
   }
 }

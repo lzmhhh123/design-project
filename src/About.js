@@ -7,9 +7,8 @@ export default class extends Component {
   }
   render() {
     return (
-      <Animation name="fadeOutLeft">
-        
-      </Animation>
+      <div>
+      </div>
     )
   }
 }
