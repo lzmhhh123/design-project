@@ -19,6 +19,7 @@ export default class extends Component {
 
   clickAbout(event) {
     event.preventDefault()
+    console.log('hahahaha');
     this.setState({
       about: 1,
       portfolio: 0,

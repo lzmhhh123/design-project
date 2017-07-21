@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Animation} from 'styled-animation'
 
 export default class extends Component {
   constructor() {
@@ -6,9 +7,9 @@ export default class extends Component {
   }
   render() {
     return (
-      <div>
-
-      </div>
+      <Animation name="fadeOutLeft">
+        
+      </Animation>
     )
   }
 }

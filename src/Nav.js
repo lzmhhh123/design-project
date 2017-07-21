@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import MenuIcon from './MenuIcon'
-import Radium from 'radium'
 import {fadeIn} from 'react-animations'
 import { Animation } from 'styled-animation'
-import {IconMenu, MenuItem, IconButton} from 'material-ui'
-import TweenOne from 'rc-tween-one'
-import {Motion, spring} from 'react-motion'
 
 export default class  extends Component {
   constructor() {
@@ -15,7 +11,6 @@ export default class  extends Component {
   componentDidMount() {
     setTimeout(() => {
       let logoImage = document.getElementsByClassName("logoImage")
-      console.log(logoImage)
       logoImage[0].style.transform = "rotate(0deg)"
       let logo = document.getElementsByClassName("logo")
       for(let i = 0; i < 4; ++i) {

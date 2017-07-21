@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
-import { Card } from 'material-ui/Card'
 import { Animation } from 'styled-animation'
-import BannerAnim, { Element } from 'rc-banner-anim';
 
 class Page1 extends Component {
   constructor() {
@@ -17,7 +15,7 @@ class Page1 extends Component {
       <div>
         <img className="gif" src="/image/preview_1.gif" />
         <br />
-        <p style={{color: '#666666',
+        <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'right',
@@ -32,7 +30,6 @@ class Page1 extends Component {
             transition: "all 0.5s linear",
             position: 'relative',
             bottom: '-50px',
-            left: '1570px'
           }} />
           <img src="/image/title_SB_cn.png"
             onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
@@ -68,7 +65,7 @@ class Page1 extends Component {
           我们擅长的不多，
           <br />
           也就全案、活动、视频、平面等等
-        </p>
+        </div>
       </div>
     )
   }
@@ -88,7 +85,7 @@ class Page2 extends Component {
       <div className="right">
         <img className="gif" src="/image/preview_2.gif" style={{marginLeft: '500px'}}/>
         <br />
-        <p style={{color: '#666666',
+        <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'left',
@@ -135,7 +132,7 @@ class Page2 extends Component {
           提供既科学又有创造力的
           <br />
           完整解决方案
-        </p>
+        </div>
       </div>
     )
   }
@@ -155,7 +152,7 @@ class Page3 extends Component {
       <div>
         <img className="gif" src="/image/preview_3.gif" />
         <br />
-        <p style={{color: '#666666',
+        <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'right',
@@ -209,7 +206,7 @@ class Page3 extends Component {
           <br />
           <br />
           并且共同承担风险收益
-        </p>
+        </div>
       </div>
     )
   }
@@ -229,7 +226,7 @@ class Page4 extends Component {
       <div className="right">
         <img className="gif" src="/image/preview_4.gif" style={{marginLeft: '500px'}}/>
         <br />
-        <p style={{color: '#666666',
+        <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
                   fontSize: '12pt',
                   textAlign: 'left',
@@ -282,7 +279,7 @@ class Page4 extends Component {
           <br />
           <br />
           大概说的，就是我司。
-        </p>
+        </div>
       </div>
     )
   }
@@ -293,18 +290,23 @@ export default class extends Component {
     super()
     this.state = {
       status: 0,
-      lastStatus: -1
+      lastStatus: -1,
+      p1: true,
+      p2: true,
+      p3: true,
+      p4: true
     }
+    this.setP = this.setP.bind(this)
   }
 
   componentDidMount() {
     window.addEventListener('wheel', (event) => {
       let delta
       if(event.wheelDelta) {
-        delta = event.wheelDelta;
+        delta = -event.wheelDelta;
 	    }
       else if (event.detail) {
-        delta = -event.detail;
+        delta = event.detail;
 	    }
       if(delta > 0) delta = 1;
       else delta = -1;
@@ -317,72 +319,77 @@ export default class extends Component {
     })
   }
 
+  setP(event, p1, p2, p3, p4) {
+    event.preventDefault()
+    this.setState({ p1, p2, p3, p4 })
+  }
+
   render() {
     return (
       <div style={{marginTop: 'auto'}} id="home">
       {
-        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeOutUp" duration="1s">
-          <Page1 />
+        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, true, false, false)}>
+          {this.state.p1 ? <Page1 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeInDown" duration="1s">
-          <Page1 />
+        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeInDown" duration="2s" >
+          {this.state.p1 ? <Page1 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 0 && this.state.lastStatus === -1 ? <Animation name="fadeInUp" duration="1s">
-          <Page1 />
+        this.state.status === 0 && this.state.lastStatus === -1 ? <Animation name="fadeInUp" duration="2s" >
+          {this.state.p1 ? <Page1 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeOutUp" duration="1s">
-          <Page2 />
+        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, false, true, false)}>
+          {this.state.p2 ? <Page2 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeInUp" duration="1s">
-          <Page2 />
+        this.state.status === 1 && this.state.lastStatus === 0 ? <Animation name="fadeInUp" duration="2s" >
+          {this.state.p2 ? <Page2 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeInDown" duration="1s">
-          <Page2 />
+        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeInDown" duration="2s" >
+          {this.state.p2 ? <Page2 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeOutDown" duration="1s">
-          <Page2 />
+        this.state.status === 0 && this.state.lastStatus === 1 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, true, false, false, false)}>
+          {this.state.p2 ? <Page2 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeOutUp" duration="1s">
-          <Page3 />
+        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeOutUp" duration="1s" onEnd={(event) => this.setP(event, false, false, false, true)}>
+          {this.state.p3 ? <Page3 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeInUp" duration="1s">
-          <Page3 />
+        this.state.status === 2 && this.state.lastStatus === 1 ? <Animation name="fadeInUp" duration="2s" >
+          {this.state.p3 ? <Page3 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeInDown" duration="1s">
-          <Page3 />
+        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeInDown" duration="2s" >
+          {this.state.p3 ? <Page3 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeOutDown" duration="1s">
-          <Page3 />
+        this.state.status === 1 && this.state.lastStatus === 2 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, false, true, false, false)}>
+          {this.state.p3 ? <Page3 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeOutDown" duration="1s">
-          <Page4 />
+        this.state.status === 2 && this.state.lastStatus === 3 ? <Animation name="fadeOutDown" duration="1s" onEnd={(event) => this.setP(event, false, false, true, false)}>
+          {this.state.p4 ? <Page4 /> : null}
         </Animation> : null
       }
       {
-        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeInUp" duration="1s">
-          <Page4 />
+        this.state.status === 3 && this.state.lastStatus === 2 ? <Animation name="fadeInUp" duration="2s" >
+          {this.state.p4 ? <Page4 /> : null}
         </Animation> : null
       }
       </div>
