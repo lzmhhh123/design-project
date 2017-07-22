@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Nav from './Nav'
 import {browserHistory} from 'react-router'
 import {Header} from 'react-fullpage'
+import PreLoad from './PreLoad'
 
 export default class extends Component {
   constructor() {
@@ -78,6 +79,7 @@ export default class extends Component {
             portfolio={this.state.portfolio}
             contact={this.state.contact}
           />
+          <PreLoad />
         </Header>
         {this.props.children}
       </div>

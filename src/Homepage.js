@@ -90,7 +90,8 @@ class Page2 extends Component {
     super()
     this.state = {
       line1: 0,
-      line2: 0
+      line2: 0,
+      running: 'paused'
     }
   }
 
