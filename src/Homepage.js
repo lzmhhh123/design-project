@@ -1,21 +1,28 @@
 import React, {Component} from 'react'
 import { Animation } from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import './css/homep4.css'
 import './css/homep1.css'
+import './css/homep2.css'
+import './css/homep3.css'
 
 class Page1 extends Component {
   constructor() {
     super()
     this.state = {
       line1: 0,
-      line2: 0
+      line2: 0,
+      running: 'paused'
     }
   }
 
   render() {
     return (
       <div>
-        <img className="gif" src="/image/preview_1.gif" />
+        <div className='gifp1'
+          onMouseMove={() => this.setState({running: 'running'})}
+          onMouseOut={() => this.setState({running: 'paused'})}
+          style={{animationPlayState: this.state.running}} />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
@@ -90,7 +97,10 @@ class Page2 extends Component {
   render() {
     return (
       <div className="right">
-        <img className="gif" src="/image/preview_2.gif" style={{marginLeft: '500px'}}/>
+        <div className='gifp2'
+          onMouseMove={() => this.setState({running: 'running'})}
+          onMouseOut={() => this.setState({running: 'paused'})}
+          style={{animationPlayState: this.state.running, marginLeft: 650}} />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
@@ -150,14 +160,18 @@ class Page3 extends Component {
     super()
     this.state = {
       line1: 0,
-      line2: 0
+      line2: 0,
+      running: 'paused'
     }
   }
 
   render() {
     return (
       <div>
-        <img className="gif" src="/image/preview_3.gif" />
+        <div className='gifp3'
+          onMouseMove={() => this.setState({running: 'running'})}
+          onMouseOut={() => this.setState({running: 'paused'})}
+          style={{animationPlayState: this.state.running}} />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
@@ -228,14 +242,18 @@ class Page4 extends Component {
     super()
     this.state = {
       line1: 0,
-      line2: 0
+      line2: 0,
+      running: 'paused'
     }
   }
 
   render() {
     return (
       <div className="right">
-        <div className="gifp4"></div>
+        <div className="gifp4"
+          onMouseMove={() => this.setState({running: 'running'})}
+          onMouseOut={() => this.setState({running: 'paused'})}
+          style={{animationPlayState: this.state.running, marginLeft: 400}} />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Microsoft Yahei",
