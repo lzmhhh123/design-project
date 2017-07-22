@@ -325,7 +325,7 @@ export default class extends Component {
       anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                1000,
+      delay:                2000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
