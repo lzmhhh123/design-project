@@ -45,38 +45,34 @@ class Page1 extends Component {
           完美解决方案
           <br />
           <br />
-          <div>
-            <div style={{
-              backgroundColor: '#FFE300',
-              height: '15px',
-              width: this.state.line1 + 'px',
-              transition: "all 0.5s linear",
-              position: 'absolute',
-              top: '225px',
-              right: '-5px'
-            }} />
+          <div style={{float: 'right', width: 345}}>
             <img src="/image/title_SB_cn.png"
               onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9}}
             />
-          </div>
-          <br />
-          <div>
             <div style={{
               backgroundColor: '#FFE300',
               height: '15px',
-              width: this.state.line2 + 'px',
+              width: this.state.line1 + 'px',
               transition: "all 0.5s linear",
-              position: 'absolute',
-              top: '295px',
-              right: '-5px'
+              marginTop: '-15px'
             }} />
+          </div>
+          <br />
+          <div style={{float: 'right', width: 425, marginTop: 8}}>
             <img src="/image/title_SB_en.png"
               onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9}}
             />
+            <div style={{
+              backgroundColor: '#FFE300',
+              height: '15px',
+              width: this.state.line2 + 'px',
+              transition: "all 0.5s linear",
+              marginTop: '-25px'
+            }} />
           </div>
         </div>
       </div>
@@ -202,38 +198,34 @@ class Page3 extends Component {
           并且共同承担风险收益
           <br />
           <br />
-          <div>
-            <div style={{
-              backgroundColor: '#FFE300',
-              height: '15px',
-              width: this.state.line1 + 'px',
-              transition: "all 0.5s linear",
-              position: 'absolute',
-              right: '-5px',
-              top: '298px'
-            }} />
+          <div style={{float: 'right', width: 390}}>
             <img src="/image/title_SMS_cn.png"
               onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9}}
             />
-          </div>
-          <br />
-          <div>
             <div style={{
               backgroundColor: '#FFE300',
               height: '15px',
-              width: this.state.line2 + 'px',
+              width: this.state.line1 + 'px',
               transition: "all 0.5s linear",
-              position: 'absolute',
-              right: '-5px',
-              top: '366px',
+              marginTop: '-15px'
             }} />
+          </div>
+          <br />
+          <div style={{float: 'right', width: 600, marginTop: 8}}>
             <img src="/image/title_SMS_en.png"
               onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9}}
             />
+            <div style={{
+              backgroundColor: '#FFE300',
+              height: '15px',
+              width: this.state.line2 + 'px',
+              transition: "all 0.5s linear",
+              marginTop: '-25px'
+            }} />
           </div>
         </div>
       </div>
