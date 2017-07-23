@@ -14,16 +14,16 @@ export default class  extends Component {
       logoImage[0].style.transform = "rotate(0deg)"
       let logo = document.getElementsByClassName("logo")
       for(let i = 0; i < 4; ++i) {
-        logo[i].style.marginTop = "35px"
+        logo[i].style.marginTop = "56px"
       }
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = "135px"
+      logoLine[0].style.width = "139px"
       let aboutLogo = document.getElementsByClassName("aboutLogo")
-      aboutLogo[0].style.marginRight = "130px"
+      aboutLogo[0].style.marginRight = "135px"
       let portfolioLogo = document.getElementsByClassName("portfolioLogo")
-      portfolioLogo[0].style.marginRight = "150px"
+      portfolioLogo[0].style.marginRight = "144px"
       let contactLogo = document.getElementsByClassName("contactLogo")
-      contactLogo[0].style.marginRight = "200px"
+      contactLogo[0].style.marginRight = "163px"
     }, 0)
   }
 
@@ -35,9 +35,9 @@ export default class  extends Component {
       let contactLine = document.getElementsByClassName("contactLine")
       logoLine[0].style.transitionDelay = '0s'
       logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '68px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '110px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '93px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '82px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '120px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '120px' : '0px')
     }, 0)
   }
 
@@ -49,18 +49,18 @@ export default class  extends Component {
               {
                 transition: "all 0.2s linear",
                 transitionDelay: "1.3s",
-                backgroundColor: 'orange',
-                marginTop: '40px',
+                backgroundColor: '#FFE300',
+                marginTop: '64px',
                 width: '0px',
-                height: "15px",
-                marginLeft: "50px",
+                height: "13px",
+                marginLeft: "43px",
                 position: "fixed"
               }} className="logoLine"/>
           <img src="/image/logo1.png" className="logoImage" style={{
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            marginTop: "35px",
+            marginTop: "56px",
             transform: "rotate(90deg)",
-            marginLeft: "50px",
+            marginLeft: "49px",
             opacity: "0.9",
             position: "fixed"
           }}/>
@@ -68,7 +68,7 @@ export default class  extends Component {
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
             transitionDelay: "0.2s",
             marginTop: "-35px",
-            marginLeft: "85px",
+            marginLeft: "82.5px",
             opacity: "0.9",
             position: "fixed"
           }}/>
@@ -76,7 +76,7 @@ export default class  extends Component {
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
             transitionDelay: "0.4s",
             marginTop: "-35px",
-            marginLeft: "110px",
+            marginLeft: "108px",
             opacity: "0.9",
             position: "fixed"
           }}/>
@@ -84,7 +84,7 @@ export default class  extends Component {
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
             transitionDelay: "0.6s",
             marginTop: "-35px",
-            marginLeft: "135px",
+            marginLeft: "133px",
             opacity: "0.9",
             position: "fixed"
           }}/>
@@ -92,66 +92,66 @@ export default class  extends Component {
             transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
             transitionDelay: "0.8s",
             marginTop: "-35px",
-            marginLeft: "160px",
+            marginLeft: "157.6px",
             opacity: "0.9",
             position: "fixed"
           }}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact}>
           <div style={{
-            marginTop: '45px',
-            marginRight: '-130px',
+            marginTop: '64px',
+            marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="contactLogo">
             <div style={{
-              height: '15px',
+              height: '13px',
               width: '0px',
-              backgroundColor: 'orange',
+              backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
               marginTop: '0px'
             }} className="contactLine" />
-            <img src="/image/button_contact_desktop.png" style={{position: "fixed", opacity: 0.9}}/>
+            <img src="/image/button_contact_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10}}/>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickPortfolio}>
           <div style={{
-            marginTop: '45px',
-            marginRight: '-130px',
+            marginTop: '64px',
+            marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="portfolioLogo">
             <div style={{
-              height: '15px',
+              height: '13px',
               width: '0px',
-              backgroundColor: 'orange',
+              backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
               marginTop: '0px'
             }} className="portfolioLine" />
-            <img src="/image/button_portfolio_desktop.png" style={{position: "fixed", opacity: 0.9}}/>
+            <img src="/image/button_portfolio_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5}}/>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickAbout}>
           <div style={{
-            marginTop: '45px',
-            marginRight: '-130px',
+            marginTop: '64px',
+            marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="aboutLogo">
             <div style={{
-              height: '15px',
+              height: '13px',
               width: '0px',
-              backgroundColor: 'orange',
+              backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
               marginTop: '0px',
             }} className="aboutLine" />
-            <img src="/image/button_about_desktop.png" style={{position: "fixed", opacity: 0.9}}/>
+            <img src="/image/button_about_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6}}/>
           </div>
         </div>
       </div>

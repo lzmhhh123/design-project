@@ -18,28 +18,41 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{height: '85%'}}>
         <div className='gifp1'
           onMouseMove={() => this.setState({running: 'running'})}
           onMouseOut={() => this.setState({running: 'paused'})}
           style={{animationPlayState: this.state.running}} />
         <br />
         <div style={{color: '#666666',
-                  fontFamily: "Microsoft Yahei",
-                  fontSize: '12pt',
-                  marginTop: '-370px',
+                  fontFamily: "方正正准黑宋体",
+                  fontSize: '13pt',
                   textAlign: 'right',
                   position: 'relative',
-                  right: '50px'
+                  right: '50px',
+                  width: '40%',
+                  marginLeft: '60%'
                 }}>
+          <br />
+          基于广告、战略、金融、创业的复合背景
+          <br />
+          <br />
+          我们为品牌创立、品牌转型、品牌升级
+          <br />
+          <br />
+          提供既科学又有创造力的
+          <br />
+          完美解决方案
+          <br />
+          <br />
           <div>
             <div style={{
-              backgroundColor: 'orange',
-              height: '20px',
+              backgroundColor: '#FFE300',
+              height: '15px',
               width: this.state.line1 + 'px',
               transition: "all 0.5s linear",
               position: 'absolute',
-              top: '28px',
+              top: '225px',
               right: '-5px'
             }} />
             <img src="/image/title_SB_cn.png"
@@ -51,12 +64,12 @@ class Page1 extends Component {
           <br />
           <div>
             <div style={{
-              backgroundColor: 'orange',
-              height: '20px',
+              backgroundColor: '#FFE300',
+              height: '15px',
               width: this.state.line2 + 'px',
               transition: "all 0.5s linear",
               position: 'absolute',
-              top: '100px',
+              top: '295px',
               right: '-5px'
             }} />
             <img src="/image/title_SB_en.png"
@@ -65,20 +78,6 @@ class Page1 extends Component {
               style={{opacity: 0.9}}
             />
           </div>
-          <br />
-          依靠精心策划的品牌策略
-          <br />
-          以及对消费市场的洞察
-          <br />
-          <br />
-          我们致力于创造既让人惊叹、
-          <br />
-          又逼人买单的杰出作品
-          <br />
-          <br />
-          我们擅长的不多，
-          <br />
-          也就全案、活动、视频、平面等等
         </div>
       </div>
     )
@@ -97,27 +96,42 @@ class Page2 extends Component {
 
   render() {
     return (
-      <div className="right">
+      <div className="right" style={{height: '85%'}}>
         <div className='gifp2'
           onMouseMove={() => this.setState({running: 'running'})}
           onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running, marginLeft: 650}} />
+          style={{animationPlayState: this.state.running}} />
         <br />
         <div style={{color: '#666666',
-                  fontFamily: "Microsoft Yahei",
-                  fontSize: '12pt',
+                  fontFamily: "方正正准黑宋体",
+                  fontSize: '13pt',
                   textAlign: 'left',
                   position: 'relative',
-                  marginTop: '-370px',
-                  left: '50px'
+                  marginLeft: '50px',
+                  width: '40%'
                 }}>
+          依靠精心策划的品牌策略
+          <br />
+          以及对消费市场的洞察
+          <br />
+          <br />
+          我们致力于创造既让人惊叹、
+          <br />
+          又逼人买单的杰出作品
+          <br />
+          <br />
+          我们擅长的不多，
+          <br />
+          也就全案、活动、视频、平面等等
+          <br />
+          <br />
           <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
+            backgroundColor: '#FFE300',
+            height: '15px',
             width: this.state.line1 + 'px',
             transition: "all 0.5s linear",
             position: 'relative',
-            bottom: '-50px',
+            bottom: '-45px',
           }} />
           <img src="/image/title_CPD_cn.png"
             onMouseMove={() => {this.setState({ line1: 340, line2: 600})}}
@@ -126,30 +140,18 @@ class Page2 extends Component {
           />
           <br />
           <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
+            backgroundColor: '#FFE300',
+            height: '15px',
             width: this.state.line2 + 'px',
             transition: "all 0.5s linear",
             position: 'relative',
-            bottom: '-50px',
+            bottom: '-45px',
           }} />
           <img src="/image/title_CPD_en.png"
             onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
             style={{opacity: 0.9}}
           />
-          <br />
-          基于广告、战略咨询、金融、创业的
-          <br />
-          复合背景
-          <br />
-          <br />
-          我们为品牌创立、品牌转型、品牌升级
-          <br />
-          <br />
-          提供既科学又有创造力的
-          <br />
-          完整解决方案
         </div>
       </div>
     )
@@ -168,54 +170,20 @@ class Page3 extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{height: '85%'}}>
         <div className='gifp3'
           onMouseMove={() => this.setState({running: 'running'})}
           onMouseOut={() => this.setState({running: 'paused'})}
           style={{animationPlayState: this.state.running}} />
-        <br />
         <div style={{color: '#666666',
-                  fontFamily: "Microsoft Yahei",
-                  fontSize: '12pt',
+                  fontFamily: "方正正准黑宋体",
+                  fontSize: '13pt',
                   textAlign: 'right',
                   position: 'relative',
-                  marginTop: '-370px',
-                  right: '50px'
+                  right: '50px',
+                  width: '43%',
+                  marginLeft: '57%'
                 }}>
-          <div>
-            <div style={{
-              backgroundColor: 'orange',
-              height: '20px',
-              width: this.state.line1 + 'px',
-              transition: "all 0.5s linear",
-              position: 'absolute',
-              right: '-5px',
-              top: '28px'
-            }} />
-            <img src="/image/title_SMS_cn.png"
-              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
-              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
-            />
-          </div>
-          <br />
-          <div>
-            <div style={{
-              backgroundColor: 'orange',
-              height: '20px',
-              width: this.state.line2 + 'px',
-              transition: "all 0.5s linear",
-              position: 'absolute',
-              right: '-5px',
-              top: '100px',
-            }} />
-            <img src="/image/title_SMS_en.png"
-              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
-              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
-            />
-          </div>
-          <br />
           我们坚信
           <br />
           有趣就是生产力的一部分
@@ -232,6 +200,41 @@ class Page3 extends Component {
           <br />
           <br />
           并且共同承担风险收益
+          <br />
+          <br />
+          <div>
+            <div style={{
+              backgroundColor: '#FFE300',
+              height: '15px',
+              width: this.state.line1 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              right: '-5px',
+              top: '298px'
+            }} />
+            <img src="/image/title_SMS_cn.png"
+              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
+          <br />
+          <div>
+            <div style={{
+              backgroundColor: '#FFE300',
+              height: '15px',
+              width: this.state.line2 + 'px',
+              transition: "all 0.5s linear",
+              position: 'absolute',
+              right: '-5px',
+              top: '366px',
+            }} />
+            <img src="/image/title_SMS_en.png"
+              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+              style={{opacity: 0.9}}
+            />
+          </div>
         </div>
       </div>
     )
@@ -250,49 +253,20 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right">
+      <div className="right" style={{height: '85%'}}>
         <div className="gifp4"
           onMouseMove={() => this.setState({running: 'running'})}
           onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running, marginLeft: 400}} />
+          style={{animationPlayState: this.state.running}} />
         <br />
         <div style={{color: '#666666',
-                  fontFamily: "Microsoft Yahei",
-                  fontSize: '12pt',
+                  fontFamily: "方正正准黑宋体",
+                  fontSize: '13pt',
                   textAlign: 'left',
                   position: 'relative',
-                  marginTop: '-370px',
-                  left: '50px'
+                  left: '50px',
+                  width: '40%'
                 }}>
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line1 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            bottom: '-50px',
-          }} />
-          <img src="/image/title_SM_cn.png"
-            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
-          <br />
-          <div style={{
-            backgroundColor: 'orange',
-            height: '20px',
-            width: this.state.line2 + 'px',
-            transition: "all 0.5s linear",
-            position: 'relative',
-            bottom: '-50px',
-          }} />
-          <img src="/image/title_SM_en.png"
-            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
-            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
-          />
-          <br />
-          <br />
           “文案日成堆，愁眉展不开……”
           <br />
           小编抱怨道，顺便想卖弄一波文才
@@ -309,6 +283,35 @@ class Page4 extends Component {
           <br />
           <br />
           大概说的，就是我司。
+          <br />
+          <br />
+          <div style={{
+            backgroundColor: '#FFE300',
+            height: '15px',
+            width: this.state.line1 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-45px',
+          }} />
+          <img src="/image/title_SM_cn.png"
+            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
+          <br />
+          <div style={{
+            backgroundColor: '#FFE300',
+            height: '15px',
+            width: this.state.line2 + 'px',
+            transition: "all 0.5s linear",
+            position: 'relative',
+            bottom: '-45px',
+          }} />
+          <img src="/image/title_SM_en.png"
+            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
+            onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
+            style={{opacity: 0.9}}
+          />
         </div>
       </div>
     )

@@ -68,7 +68,7 @@ export default class extends Component {
     return (
       <div>
         <Header>
-          <img src="/image/banner_desktop.png" style={{height: '96px', position: 'fixed', width: '100%'}} />
+          <img src="/image/banner_desktop.png" style={{height: '15%', position: 'fixed', width: '100%'}} />
           <Nav
             clickAbout={this.clickAbout}
             clickPortfolio={this.clickPortfolio}
