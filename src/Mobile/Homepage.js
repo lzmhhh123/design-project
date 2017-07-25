@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import { Animation } from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
-import './css/homep4.css'
-import './css/homep1.css'
-import './css/homep2.css'
-import './css/homep3.css'
+import '../css/homep4.css'
+import '../css/homep1.css'
+import '../css/homep2.css'
+import '../css/homep3.css'
 
 class Page1 extends Component {
   constructor() {

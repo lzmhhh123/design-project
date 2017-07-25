@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Nav from './Nav'
 import {browserHistory} from 'react-router'
 import {Header} from 'react-fullpage'
-import PreLoad from './PreLoad'
 
 export default class extends Component {
   constructor() {
@@ -67,7 +66,7 @@ export default class extends Component {
     return (
       <div>
         <Header>
-          <img src="/image/banner_desktop.png" style={{height: '15%', position: 'fixed', width: '100%'}} />
+          <img src="/image/banner_mobile@2x.png" style={{height: '12%', position: 'fixed', width: '100%'}} />
           <Nav
             clickAbout={this.clickAbout}
             clickPortfolio={this.clickPortfolio}
@@ -78,7 +77,6 @@ export default class extends Component {
             portfolio={this.state.portfolio}
             contact={this.state.contact}
           />
-          <PreLoad />
         </Header>
         {this.props.children}
       </div>
