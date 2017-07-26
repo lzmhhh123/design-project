@@ -1,10 +1,6 @@
 import React, {Component} from 'react'
 import { Animation } from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
-import '../css/homep4.css'
-import '../css/homep1.css'
-import '../css/homep2.css'
-import '../css/homep3.css'
 
 class Page1 extends Component {
   constructor() {
@@ -12,26 +8,19 @@ class Page1 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div style={{height: '85%'}}>
-        <div className='gifp1'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <img src="/image/mobile/mobile_1.gif" />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
-                  textAlign: 'right',
+                  textAlign: 'center',
                   position: 'relative',
-                  right: '50px',
-                  width: '40%',
-                  marginLeft: '60%'
                 }}>
           <br />
           基于广告、战略、金融、创业的复合背景
@@ -86,25 +75,19 @@ class Page2 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div className="right" style={{height: '85%'}}>
-        <div className='gifp2'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <img src="/image/mobile/mobile_2.gif" />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
-                  textAlign: 'left',
+                  textAlign: 'center',
                   position: 'relative',
-                  marginLeft: '50px',
-                  width: '40%'
                 }}>
           依靠精心策划的品牌策略
           <br />
@@ -160,25 +143,18 @@ class Page3 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div style={{height: '85%'}}>
-        <div className='gifp3'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <img src="/image/mobile/mobile_3.gif" />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
-                  textAlign: 'right',
+                  textAlign: 'center',
                   position: 'relative',
-                  right: '50px',
-                  width: '43%',
-                  marginLeft: '57%'
                 }}>
           我们坚信
           <br />
@@ -239,25 +215,19 @@ class Page4 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div className="right" style={{height: '85%'}}>
-        <div className="gifp4"
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <img src="/image/mobile/mobile_4.gif" />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
-                  textAlign: 'left',
+                  textAlign: 'center',
                   position: 'relative',
-                  left: '50px',
-                  width: '40%'
                 }}>
           “文案日成堆，愁眉展不开……”
           <br />
@@ -330,7 +300,7 @@ export default class extends Component {
       verticalAlign:        false
     }
     return (
-      <Animation name="slideInUp" duration="4s" >
+      <Animation name="slideInUp" duration="2s" >
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
           <Section><Page2 /></Section>
