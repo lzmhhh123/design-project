@@ -152,6 +152,7 @@ class Page5 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
+        <img src="/image/1-2.jpg" style={{width: 100, height: 200}}/>
         <Footer isAddress={false} />
       </div>
     )
@@ -318,7 +319,7 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
-          <Section><Page1 /></Section>
+          <Section><Page5 /></Section>
         </SectionsContainer>
       </Animation>
     )
