@@ -6,15 +6,9 @@ class Page1 extends Component {
   constructor() {
     super()
     this.state = {
-      line1: '0%',
-      line2: '0%',
-    }
-  }
-  componentDidMount() {
-    this.setState({
       line1: '106%',
       line2: '106%',
-    })
+    }
   }
   render() {
     return (
@@ -77,15 +71,9 @@ class Page2 extends Component {
   constructor() {
     super()
     this.state = {
-      line1: '0%',
-      line2: '0%',
-    }
-  }
-  componentDidMount() {
-    this.setState({
       line1: '106%',
       line2: '106%',
-    })
+    }
   }
   render() {
     return (

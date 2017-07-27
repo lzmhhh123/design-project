@@ -34,12 +34,39 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '130px'}}>
-        <div style={{textAlign: 'center', height: '45%', fontFamily: 'Helvetica', fontSize: 30, marginTop: '35%'}}>
-          <div style={{marginBottom: -15}}>一家小,而美的品牌策划公司。</div>
-          <div id="page1line" style={{height: 20, width: 400, background: '#FFE300', marginLeft: '50%', transform: 'translate(-200px, 0)'}} />
+      <div style={{marginTop: '130px'}}>
+        <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30, marginTop: '25%'}}>
+          <div>一家小,而美的品牌策划公司</div>
         </div>
+        <div style={{
+          background: "#FFE300",
+          height: 15,
+          marginBottom: '20%',
+          width: 400,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: '20%'}} />
         <Footer isAddress={true} />
+      </div>
+    )
+  }
+}
+
+class Page2 extends Component {
+  constructor() {
+    super()
+  }
+  render() {
+    return (
+      <div style={{marginTop: '130px'}}>
+        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
+        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+          AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪<br />
+          / muse de patisserie / Lara Bohinc / Something Market 有眼<br />
+          Bayr / Roundabout / Tabao maker festival 造物节
+        </div>
+        <img src="/image/7.png" style={{width: '100%', marginTop: '-70', marginBottom: '-100'}}/>
+        <Footer isAddress={false} />
       </div>
     )
   }
@@ -52,7 +79,7 @@ export default class extends Component {
   mapAnchors() {
     let r = []
     for(let i = 1; i <= 15; ++i) {
-      r.concat(['section' + i])
+      r = r.concat(['section' + i])
     }
     return r
   }
@@ -74,7 +101,7 @@ export default class extends Component {
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
-
+          <Section><Page2 /></Section>
         </SectionsContainer>
       </Animation>
     )

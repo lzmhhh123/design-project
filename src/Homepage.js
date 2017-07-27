@@ -330,7 +330,7 @@ export default class extends Component {
       verticalAlign:        false
     }
     return (
-      <Animation name="slideInUp" duration="4s" >
+      <Animation name="slideInUp" duration="2s" >
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
           <Section><Page2 /></Section>
