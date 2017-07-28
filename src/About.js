@@ -86,8 +86,21 @@ class Page3 extends Component {
   render() {
     return (
       <div style={{marginTop: '150px'}}>
-        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 60}}>Made by 小的企划</div>
+        <div style={{
+          textAlign: 'center',
+          fontSize: 40,
+          fontFamily: 'Helvetica',
+          width: 1200,
+          height: 600,
+          backgroundImage: 'url(/image/head.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '0% 70%',
+          backgroundSize: '400px 500px',
+          paddingTop: 100,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
           <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
             <div style={{height: 30}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: 440, background: '#FFE300', marginLeft: 530}} />
@@ -356,6 +369,16 @@ class Page10 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
+        <div style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          width: 400,
+          height: 400,
+          backgroundImage: 'url(/image/eye.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '400px 400px'
+        }}>
+        </div>
         <Footer isAddress={false} />
       </div>
     )
@@ -399,6 +422,7 @@ export default class extends Component {
           <Section><Page7 /></Section>
           <Section><Page8 /></Section>
           <Section><Page9 /></Section>
+          <Section><Page10 /></Section>
         </SectionsContainer>
       </Animation>
     )
