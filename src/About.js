@@ -125,7 +125,17 @@ class Page4 extends Component {
             <div style={{height: 20, width: 255, background: '#FFE300', marginLeft: 125}} />
           </div>
         </div>
-        <div style={{marginBottom: '20%'}} />
+        <div style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          width: 700,
+          height: 400,
+          backgroundImage: 'url(/image/圆环-01.png)',
+          backgroundSize: '700px 400px',
+          backgroundRepeat: 'no-repeat',
+          marginBottom: 10,
+          marginTop: 10
+        }}></div>
         <Footer isAddress={false} />
       </div>
     )
@@ -216,7 +226,21 @@ class Page7 extends Component {
     return (
       <div style={{marginTop: '150px'}}>
         <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+        <div style={{
+          textAlign: 'center',
+          fontSize: 40,
+          fontFamily: 'Helvetica',
+          width: 1200,
+          height: 500,
+          backgroundImage: 'url(/image/2027060392.jpg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 0',
+          backgroundSize: '1200px 800px',
+          paddingTop: 300,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: -250
+        }}>
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
@@ -228,7 +252,6 @@ class Page7 extends Component {
             <div style={{height: 20, width: 545, background: '#FFE300', marginLeft: 415}} />
           </div>
         </div>
-        <div style={{marginBottom: '20%'}} />
         <Footer isAddress={false} />
       </div>
     )
@@ -248,15 +271,14 @@ class Page8 extends Component {
           fontSize: 40,
           fontFamily: 'Helvetica',
           width: 1200,
-          height: 500,
-          backgroundImage: 'url(/image/2027060392.jpg)',
+          height: 600,
+          backgroundImage: 'url(/image/蛋糕品牌设计-02.jpg)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: '50% 0',
-          backgroundSize: '1200px 800px',
-          paddingTop: 300,
+          backgroundPosition: '100% 30%',
+          backgroundSize: '700px 500px',
+          paddingTop: 100,
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: -150
         }}>
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
@@ -282,8 +304,21 @@ class Page9 extends Component {
   render() {
     return (
       <div style={{marginTop: '150px'}}>
-        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 50}}>Made by 小的企划</div>
+        <div style={{
+          textAlign: 'center',
+          fontSize: 40,
+          fontFamily: 'Helvetica',
+          width: 1300,
+          height: 500,
+          backgroundImage: 'url(/image/Cardboard.jpg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '100% 70%',
+          backgroundSize: '600px 400px',
+          paddingTop: 100,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+        }}>
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
@@ -295,7 +330,6 @@ class Page9 extends Component {
             <div style={{height: 20, width: 95, background: '#FFE300'}} />
           </div>
         </div>
-        <div style={{marginBottom: '20%'}} />
         <Footer isAddress={false} />
       </div>
     )
@@ -356,7 +390,15 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
+          <Section><Page1 /></Section>
+          <Section><Page2 /></Section>
+          <Section><Page3 /></Section>
+          <Section><Page4 /></Section>
+          <Section><Page5 /></Section>
+          <Section><Page6 /></Section>
+          <Section><Page7 /></Section>
           <Section><Page8 /></Section>
+          <Section><Page9 /></Section>
         </SectionsContainer>
       </Animation>
     )
