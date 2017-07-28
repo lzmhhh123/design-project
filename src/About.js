@@ -61,9 +61,9 @@ class Page2 extends Component {
       <div style={{marginTop: '150px'}}>
         <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
         <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 900}}>
-            <div style={{height: 30}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
-            <div style={{height: 20, width: 110, background: '#FFE300'}} />
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+            <div style={{height: 20, width: 120, background: '#FFE300'}} />
           </div>
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
@@ -101,8 +101,8 @@ class Page3 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto',
         }}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
-            <div style={{height: 30}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: 440, background: '#FFE300', marginLeft: 530}} />
           </div>
           <div>
@@ -133,8 +133,8 @@ class Page4 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
-            <div style={{height: 30}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: 255, background: '#FFE300', marginLeft: 125}} />
           </div>
         </div>
@@ -178,8 +178,8 @@ class Page5 extends Component {
           paddingTop: 50,
           marginTop: 30
         }}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
-            <div style={{height: 30}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: 360, background: '#FFE300', marginLeft: 150}}></div>
           </div>
           <div>
@@ -207,8 +207,8 @@ class Page6 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 1200}}>
-            <div style={{height: 30}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: 245, background: '#FFE300', marginLeft: 450}} />
           </div>
           <div>
@@ -260,8 +260,8 @@ class Page7 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
-            <div style={{height: 30}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: 545, background: '#FFE300', marginLeft: 415}} />
           </div>
         </div>
@@ -296,8 +296,8 @@ class Page8 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 1200}}>
-            <div style={{height: 30}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: 395, background: '#FFE300', marginLeft: 30}} />
           </div>
           <div>
@@ -338,8 +338,8 @@ class Page9 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
-            <div style={{height: 30}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: 95, background: '#FFE300'}} />
           </div>
         </div>
@@ -361,8 +361,8 @@ class Page10 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 1200}}>
-            <div style={{height: 30}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
+            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: 475, background: '#FFE300', marginLeft: 725}} />
           </div>
           <div>
