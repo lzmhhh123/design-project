@@ -61,8 +61,8 @@ class Page2 extends Component {
       <div style={{marginTop: '150px'}}>
         <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
         <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: '12%', background: '#FFE300'}} />
           </div>
           <div>
@@ -101,8 +101,8 @@ class Page3 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto',
         }}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: '45%', background: '#FFE300', marginLeft: '55%'}} />
           </div>
           <div>
@@ -133,8 +133,8 @@ class Page4 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: '26%', background: '#FFE300', marginLeft: '13%'}} />
           </div>
         </div>
@@ -178,8 +178,8 @@ class Page5 extends Component {
           paddingTop: 50,
           marginTop: 30
         }}>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
             <div style={{height: 20, width: '38.5%', background: '#FFE300', marginLeft: '15%'}}></div>
           </div>
           <div>
@@ -207,8 +207,8 @@ class Page6 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: '21%', background: '#FFE300', marginLeft: '37%'}} />
           </div>
           <div>
@@ -260,8 +260,8 @@ class Page7 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: '58%', background: '#FFE300', marginLeft: '42%'}} />
           </div>
         </div>
@@ -296,8 +296,8 @@ class Page8 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: '32%', background: '#FFE300', marginLeft: '2%'}} />
           </div>
           <div>
@@ -338,8 +338,8 @@ class Page9 extends Component {
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>Bayr / Roundabout / Tabao maker festival 造物节</div>
             <div style={{height: 20, width: '10%', background: '#FFE300'}} />
           </div>
         </div>
@@ -361,8 +361,8 @@ class Page10 extends Component {
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
-          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content'}}>
-            <div style={{height: 30, width: 'fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
+          <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
+            <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}}>/ muse de patisserie / Lara Bohinc / Something Market 有眼</div>
             <div style={{height: 20, width: '40%', background: '#FFE300', marginLeft: '60%'}} />
           </div>
           <div>
