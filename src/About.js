@@ -139,11 +139,25 @@ class Page5 extends Component {
   render() {
     return (
       <div style={{marginTop: '150px'}}>
-        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica'}}>Made by 小的企划</div>
+        <div style={{
+          width: 1200,
+          height: 600,
+          textAlign: 'center',
+          fontSize: 40,
+          fontFamily: 'Helvetica',
+          backgroundImage: 'url(/image/1-2.jpg)',
+          backgroundSize: '800px 500px',
+          backgroundPosition: '50% 0%',
+          backgroundRepeat: 'no-repeat',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          paddingTop: 50,
+          marginTop: 30
+        }}>
           <div style={{height: 50, marginLeft: 'auto', marginRight: 'auto', width: 960}}>
             <div style={{height: 30}}>AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪</div>
-            <div style={{height: 20, width: 360, background: '#FFE300', marginLeft: 150}} />
+            <div style={{height: 20, width: 360, background: '#FFE300', marginLeft: 150}}></div>
           </div>
           <div>
             / muse de patisserie / Lara Bohinc / Something Market 有眼
@@ -152,7 +166,6 @@ class Page5 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
-        <img src="/image/1-2.jpg" style={{width: 100, height: 200}}/>
         <Footer isAddress={false} />
       </div>
     )
@@ -178,6 +191,16 @@ class Page6 extends Component {
           <div>
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
+        </div>
+        <div style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          width: 400,
+          height: 400,
+          backgroundImage: 'url(/image/computer.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '400px 400px'
+        }}>
         </div>
         <Footer isAddress={false} />
       </div>
@@ -219,8 +242,22 @@ class Page8 extends Component {
   render() {
     return (
       <div style={{marginTop: '150px'}}>
-        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 100}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica'}}>
+        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica'}}>Made by 小的企划</div>
+        <div style={{
+          textAlign: 'center',
+          fontSize: 40,
+          fontFamily: 'Helvetica',
+          width: 1200,
+          height: 500,
+          backgroundImage: 'url(/image/2027060392.jpg)',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '50% 0',
+          backgroundSize: '1200px 800px',
+          paddingTop: 300,
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginTop: -150
+        }}>
           <div>
             AWW / Zai Mei Jian在梅间 / Mei Xiao Cong梅小聪
           </div>
@@ -319,7 +356,7 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
-          <Section><Page5 /></Section>
+          <Section><Page8 /></Section>
         </SectionsContainer>
       </Animation>
     )
