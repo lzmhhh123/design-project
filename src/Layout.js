@@ -64,10 +64,15 @@ export default class extends Component {
   }
 
   render() {
+    let color = this.state.portfolio === 1 ? 'black' : 'white'
     return (
-      <div>
+      <div style={{height: '100%', backgroundColor: color}}>
         <Header>
-          <img src="/image/banner_desktop.png" style={{height: '15%', position: 'fixed', width: '100%'}} />
+          {
+            this.state.portfolio === 0 ?
+            <img src="/image/banner_mobile@2x.png" style={{height: '15%', position: 'fixed', width: '100%'}} /> :
+            <div style={{height: '15%', position: 'fixed', width: '100%', backgroundColor: 'black'}} />
+          }
           <Nav
             clickAbout={this.clickAbout}
             clickPortfolio={this.clickPortfolio}

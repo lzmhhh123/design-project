@@ -2,7 +2,7 @@
   "name": "design-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lzmhhh123.github.io/design-project/",
+  "homepage": "https://lzmhhh123.github.io/",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.1",
