@@ -11,7 +11,7 @@ class Page1 extends Component {
       <div style={{
         height: '85%',
         marginTop: '15%',
-        backgroundImage: 'url(/)'
+        backgroundImage: 'url(/image/number.png)'
       }}>
 
       </div>
