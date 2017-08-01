@@ -3,7 +3,8 @@ import {
   Router,
   Route,
   browserHistory,
-  IndexRoute
+  IndexRoute,
+  Redirect
 } from 'react-router'
 import About from './About'
 import Portfolio from './Portfolio'
@@ -25,6 +26,7 @@ export default class extends Component {
           <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
+          <Redirect path="*" to="/" />
         </Route>
       </Router>
     )

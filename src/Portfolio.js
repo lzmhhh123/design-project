@@ -9,11 +9,19 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{
-        height: '85%',
+        height: '70%',
         marginTop: '15%',
-        backgroundImage: 'url(/image/number.png)'
+        width: '100%',
+        backgroundImage: 'url(/image/number.png)',
+        backgroundSize: '70% 50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '40% 60%'
       }}>
-
+        <div style={{fontSize: 20, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
+          <div style={{marginLeft: '15%', display: 'inline-block'}}>—OFFICE</div>
+          <div style={{marginLeft: '15%', display: 'inline-block'}}>—PEOPLE</div>
+          <div style={{marginLeft: '20%', display: 'inline-block'}}>—PROJECT</div>
+        </div>
       </div>
     )
   }
@@ -24,8 +32,44 @@ class Page2 extends Component {
     super()
   }
   render() {
+    const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '70%', marginTop: '10%'}}>
+        <div style={{
+          fontSize: 40,
+          color: 'white',
+          width: '',
+          textAlign: 'center',
+          fontFamily: 'Helvetica'
+        }}>
+          <div style={{height: 35, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
+            The brand we’ve work along with
+          </div>
+          <div style={{height: 15, width: 750, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
+        </div>
+        <div style={{width: '60%', height: '50%', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%'}}>
+          <div style={rowStyle}>
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+          </div>
+          <div style={rowStyle}>
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+          </div>
+          <div style={rowStyle}>
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+          </div>
+        </div>
       </div>
     )
   }
@@ -37,7 +81,20 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{
+        height: '70%',
+        marginTop: '15%',
+        width: '100%',
+        backgroundImage: 'url(/image/numberfill.png)',
+        backgroundSize: '70% 50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '40% 60%'
+      }}>
+        <div style={{fontSize: 20, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
+          <div style={{marginLeft: '15%', display: 'inline-block'}}>—OFFICE</div>
+          <div style={{marginLeft: '15%', display: 'inline-block'}}>—PEOPLE</div>
+          <div style={{marginLeft: '20%', display: 'inline-block'}}>—PROJECT</div>
+        </div>
       </div>
     )
   }
