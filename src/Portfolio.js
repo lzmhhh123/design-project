@@ -36,38 +36,37 @@ class Page2 extends Component {
     return (
       <div style={{height: '70%', marginTop: '10%'}}>
         <div style={{
-          fontSize: 40,
+          fontSize: 60,
           color: 'white',
-          width: '',
           textAlign: 'center',
           fontFamily: 'Helvetica'
         }}>
-          <div style={{height: 35, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
+          <div style={{height: 55, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             The brand we’ve work along with
           </div>
-          <div style={{height: 15, width: 750, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
+          <div style={{height: 15, width: 1075, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
         </div>
-        <div style={{width: '60%', height: '50%', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%'}}>
+        <div style={{width: '70%', height: '60%', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%'}}>
           <div style={rowStyle}>
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-1.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-2.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/104.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-9.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-7.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
           </div>
           <div style={rowStyle}>
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-5.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-6.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-8.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-3.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/5-01.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
           </div>
           <div style={rowStyle}>
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
-            <div style={{width: '20%', height: '33.3%', backgroundImage: 'url()', backgroundSize: '100% 100%', display: 'inline-block'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-10.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-11.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-12.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-4.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+            <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-13.png)', backgroundSize: '80% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
           </div>
         </div>
       </div>
