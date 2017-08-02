@@ -51,6 +51,14 @@ export default class  extends Component {
       let portfolioLine = document.getElementsByClassName("portfolioLine")
       let contactLine = document.getElementsByClassName("contactLine")
       logoLine[0].style.transitionDelay = '0s'
+      let logo = document.getElementsByClassName("logo")
+      for(let i = 0; i < logo.length; ++i) {
+        logo[i].style.transition = "all 0s ease"
+        logo[i].style.transitionDelay = '0s'
+      }
+      for(let i = 0; i < logo.length; ++i) {
+        logo[i].style.marginTop = "20px"
+      }
       logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
       aboutLine[0].style.width = (nextProps.about === 1 ? '82px' : '0px')
       portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '120px' : '0px')
@@ -78,46 +86,56 @@ export default class  extends Component {
                 marginLeft: "5px",
                 position: "fixed"
               }} className="logoLine"/>
-          <img src="/image/logo1.png" className="logoImage" style={{
-            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            marginTop: "20px",
-            transform: "rotate(90deg)",
-            marginLeft: "11px",
-            opacity: "0.9",
-            position: "fixed"
-          }}/>
-          <img src="/image/logo2.png" className="logo" style={{
-            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            transitionDelay: "0.2s",
-            marginTop: "-35px",
-            marginLeft: "44.5px",
-            opacity: "0.9",
-            position: "fixed"
-          }}/>
-          <img src="/image/logo3.png" className="logo" style={{
-            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            transitionDelay: "0.4s",
-            marginTop: "-35px",
-            marginLeft: "70px",
-            opacity: "0.9",
-            position: "fixed"
-          }}/>
-          <img src="/image/logo4.png" className="logo" style={{
-            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            transitionDelay: "0.6s",
-            marginTop: "-35px",
-            marginLeft: "95px",
-            opacity: "0.9",
-            position: "fixed"
-          }}/>
-          <img src="/image/logo5.png" className="logo" style={{
-            transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-            transitionDelay: "0.8s",
-            marginTop: "-35px",
-            marginLeft: "119.6px",
-            opacity: "0.9",
-            position: "fixed"
-          }}/>
+          {
+            this.props.portfolio === 0 ? <div>
+            <img src="/image/logo1.png" className="logoImage" style={{
+              transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+              marginTop: "20px",
+              transform: "rotate(90deg)",
+              marginLeft: "11px",
+              opacity: "0.9",
+              position: "fixed"
+            }}/>
+            <img src="/image/logo2.png" className="logo" style={{
+              transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+              transitionDelay: "0.2s",
+              marginTop: "-35px",
+              marginLeft: "44.5px",
+              opacity: "0.9",
+              position: "fixed"
+            }}/>
+            <img src="/image/logo3.png" className="logo" style={{
+              transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+              transitionDelay: "0.4s",
+              marginTop: "-35px",
+              marginLeft: "70px",
+              opacity: "0.9",
+              position: "fixed"
+            }}/>
+            <img src="/image/logo4.png" className="logo" style={{
+              transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+              transitionDelay: "0.6s",
+              marginTop: "-35px",
+              marginLeft: "95px",
+              opacity: "0.9",
+              position: "fixed"
+            }}/>
+            <img src="/image/logo5.png" className="logo" style={{
+              transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
+              transitionDelay: "0.8s",
+              marginTop: "-35px",
+              marginLeft: "119.6px",
+              opacity: "0.9",
+              position: "fixed"
+            }}/></div> :
+            <img src="/image/logowhite.png" style={{
+              marginTop: '20px',
+              position: 'fixed',
+              opacity: 0.9,
+              marginLeft: '11px',
+              width: '127px',
+            }}/>
+          }
         </div>
         <div ref="menuIconDiv" style={{
           float: 'right',
@@ -126,7 +144,7 @@ export default class  extends Component {
           transition: 'all 0.3s linear',
           transitionDelay: '1.5s',
         }}>
-          <MenuIcon ref="menuIcon" onClick={this.menuOnClick}/>
+          <MenuIcon ref="menuIcon" portfolio={this.props.portfolio} onClick={this.menuOnClick}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact}>
           <div style={{
@@ -143,8 +161,13 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '0px'
             }} className="contactLine" />
-            <img src="/image/button_contact_mobile@2x.png"
-              style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '90px'}}/>
+            {
+              this.props.portfolio === 0 ?
+              <img src="/image/button_contact_mobile@2x.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '90px'}}/> :
+              <img src="/image/contact.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '90px'}}/>
+            }
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickPortfolio}>
@@ -162,8 +185,13 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '0px'
             }} className="portfolioLine" />
-            <img src="/image/button_portfolio_mobile@2x.png"
-              style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '110px'}}/>
+            {
+              this.props.portfolio === 0 ?
+              <img src="/image/button_portfolio_mobile@2x.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '110px'}}/> :
+              <img src="/image/portfolio.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '110px'}}/>
+            }
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickAbout}>
@@ -181,8 +209,13 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '0px',
             }} className="aboutLine" />
-            <img src="/image/button_about_mobile@2x.png"
-              style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '75px'}}/>
+            {
+              this.props.portfolio === 0 ?
+              <img src="/image/button_about_mobile@2x.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '75px'}}/> :
+              <img src="/image/about.png"
+                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '75px'}}/>
+            }
           </div>
         </div>
       </div>

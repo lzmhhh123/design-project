@@ -46,6 +46,7 @@ export default class extends Component {
         opacity: 1
       }
     ]
+    let color = this.props.portfolio === 1 ? 'white' : 'black'
     return (
       <div style={this.props.style} onClick={this.props.onClick}>
       {bar.map((val, k) =>
@@ -57,7 +58,7 @@ export default class extends Component {
                   marginTop: '3px',
                   marginBottom: '3px',
                   height: '3px',
-                  background: 'black',
+                  background: color,
                   borderRadius: '1px',
                   opacity: `${data.opacity}`,
                   transform: `rotate(${data.rotate}deg) translate(${data.translate}px)`

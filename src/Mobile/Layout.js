@@ -63,8 +63,9 @@ export default class extends Component {
   }
 
   render() {
+    let color = this.state.portfolio === 1 ? 'black' : 'white'
     return (
-      <div>
+      <div style={{backgroundColor: color}}>
         <Header>
           { this.state.portfolio === 0 ?
             <img src="/image/banner_mobile@2x.png" style={{height: '12%', position: 'fixed', width: '100%'}} /> :
