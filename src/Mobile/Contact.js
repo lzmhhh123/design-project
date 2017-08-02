@@ -8,7 +8,7 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14, marginTop: '20%', height: '100%'}}>
           <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}}> AWW </div>
@@ -49,7 +49,7 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{
           textAlign: 'center',
           fontFamily: 'Helvetica',
@@ -97,7 +97,7 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14, marginTop: '20%', height: '100%'}}>
           <div> AWW </div><br />
           <div> Zai Mei Jian在梅间 </div><br />
@@ -139,7 +139,7 @@ class Page4 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{
           textAlign: 'center',
           fontFamily: 'Helvetica',
@@ -185,7 +185,7 @@ class Page5 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{
           textAlign: 'center',
           fontFamily: 'Helvetica',
@@ -233,7 +233,7 @@ class Page6 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{
           textAlign: 'center',
           fontFamily: 'Helvetica',
@@ -281,7 +281,7 @@ class Page7 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14, marginTop: '20%', height: '100%'}}>
           <div> AWW </div><br />
           <div> Zai Mei Jian在梅间 </div><br />
@@ -323,7 +323,7 @@ class Page8 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '15%'}}>
+      <div style={{height: '85%'}}>
         <div style={{
           textAlign: 'center',
           fontFamily: 'Helvetica',
