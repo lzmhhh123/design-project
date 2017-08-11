@@ -28,8 +28,8 @@ export default class extends Component {
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/contact" component={Contact} />
           <Route path="/admin" component={Admin} />
-          <Redirect path="*" to="/" />
         </Route>
+        <Redirect path="*" to="/" />
       </Router>
     )
   }

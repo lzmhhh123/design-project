@@ -14,7 +14,32 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', express.static(path.join(__dirname, '..' , 'build')));
+app.use(express.static(__dirname + '/build'))
+
+app.get('*', function (request, response){
+  response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+})
+
+var { Password } = require('./db')
+Password.findOne({id: 'lzmhhh123'}, (err, one) => {
+  if(one === null || err) {
+    let innialPassword = new Password({string: '123456', id: 'lzmhhh123'})
+    innialPassword.save(err => {
+      if(err) {
+        console.log(err);
+      }
+    })
+  }
+  else {
+    one.string = '123456'
+    one.save(err => {
+      if(err) console.log(err);
+    })
+  }
+})
+
+app.use('/api', require('./routes/file'))
+app.use('/api', require('./routes/password'))
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import {browserHistory, Link} from 'react-router'
 
 class Footer extends Component {
   constructor() {
@@ -31,6 +32,11 @@ class Footer extends Component {
 class Page2 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page1.pdf'
   }
   render() {
     return (
@@ -49,6 +55,17 @@ class Page2 extends Component {
           </div>
         </div>
         <img src="/image/7.png" style={{width: '100%', marginTop: '-70', marginBottom: '-100'}}/>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 220,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginTop: -55,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
