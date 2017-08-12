@@ -5,6 +5,11 @@ import { SectionsContainer, Section } from 'react-fullpage'
 class Page1 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page1.pdf'
   }
   render() {
     return (
@@ -35,8 +40,8 @@ class Page1 extends Component {
             background: '#FFE300',
             fontSize: 16,
             marginLeft: 'auto',
-            marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+            marginRight: 'auto'
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -46,6 +51,11 @@ class Page1 extends Component {
 class Page2 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page2.pdf'
   }
   render() {
     return (
@@ -60,7 +70,7 @@ class Page2 extends Component {
           backgroundSize: '100% 50%',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: '0% 40%'
-        }}>
+        }} onClick={this.view}>
           <div> AWW </div><br />
           <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}}> Zai Mei Jian在梅间 </div>
@@ -94,6 +104,11 @@ class Page2 extends Component {
 class Page3 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page3.pdf'
   }
   render() {
     return (
@@ -126,7 +141,7 @@ class Page3 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -136,6 +151,11 @@ class Page3 extends Component {
 class Page4 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page4.pdf'
   }
   render() {
     return (
@@ -172,7 +192,7 @@ class Page4 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -182,6 +202,11 @@ class Page4 extends Component {
 class Page5 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page5.pdf'
   }
   render() {
     return (
@@ -220,7 +245,7 @@ class Page5 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -230,6 +255,11 @@ class Page5 extends Component {
 class Page6 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page6.pdf'
   }
   render() {
     return (
@@ -268,7 +298,7 @@ class Page6 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -278,6 +308,11 @@ class Page6 extends Component {
 class Page7 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page7.pdf'
   }
   render() {
     return (
@@ -310,7 +345,7 @@ class Page7 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )
@@ -320,6 +355,11 @@ class Page7 extends Component {
 class Page8 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page8.pdf'
   }
   render() {
     return (
@@ -358,7 +398,7 @@ class Page8 extends Component {
             fontSize: 16,
             marginLeft: 'auto',
             marginRight: 'auto',
-          }}> VIEW PROJECT </div>
+          }} onClick={this.view}> VIEW PROJECT </div>
         </div>
       </div>
     )

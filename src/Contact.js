@@ -65,7 +65,7 @@ class Page2 extends Component {
           fontSize: 20,
           marginTop: -55,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -119,7 +119,7 @@ class Page3 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -171,7 +171,7 @@ class Page4 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -226,7 +226,7 @@ class Page5 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -277,7 +277,7 @@ class Page6 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -332,7 +332,7 @@ class Page7 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -386,7 +386,7 @@ class Page8 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -440,7 +440,7 @@ class Page9 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -491,7 +491,7 @@ class Page10 extends Component {
           fontFamily: 'Helvetica',
           fontSize: 20,
           marginBottom: 15
-        }} onClick={this.view}>View Porject</div>
+        }} onClick={this.view}>VIEW PROJECT</div>
         <Footer isAddress={false} />
       </div>
     )
