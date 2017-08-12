@@ -58,7 +58,7 @@ class Page2 extends Component {
         <div style={{
           margin: 'auto',
           height: 24,
-          width: 220,
+          width: 150,
           backgroundColor: '#FFE300',
           textAlign: 'center',
           fontFamily: 'Helvetica',
@@ -75,6 +75,11 @@ class Page2 extends Component {
 class Page3 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page2.pdf'
   }
   render() {
     return (
@@ -105,6 +110,16 @@ class Page3 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -114,6 +129,11 @@ class Page3 extends Component {
 class Page4 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page3.pdf'
   }
   render() {
     return (
@@ -142,6 +162,16 @@ class Page4 extends Component {
           marginBottom: 10,
           marginTop: 10
         }}></div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -151,6 +181,11 @@ class Page4 extends Component {
 class Page5 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page4.pdf'
   }
   render() {
     return (
@@ -182,6 +217,16 @@ class Page5 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -191,6 +236,11 @@ class Page5 extends Component {
 class Page6 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page5.pdf'
   }
   render() {
     return (
@@ -218,6 +268,16 @@ class Page6 extends Component {
           backgroundSize: '400px 100%'
         }}>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -227,6 +287,11 @@ class Page6 extends Component {
 class Page7 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page6.pdf'
   }
   render() {
     return (
@@ -258,6 +323,16 @@ class Page7 extends Component {
             <div style={{height: 20, width: '58%', background: '#FFE300', marginLeft: '42%'}} />
           </div>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -267,6 +342,11 @@ class Page7 extends Component {
 class Page8 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page7.pdf'
   }
   render() {
     return (
@@ -297,6 +377,16 @@ class Page8 extends Component {
             Bayr / Roundabout / Tabao maker festival 造物节
           </div>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -306,6 +396,11 @@ class Page8 extends Component {
 class Page9 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page8.pdf'
   }
   render() {
     return (
@@ -336,6 +431,16 @@ class Page9 extends Component {
             <div style={{height: 20, width: '10%', background: '#FFE300'}} />
           </div>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
@@ -345,6 +450,11 @@ class Page9 extends Component {
 class Page10 extends Component {
   constructor() {
     super()
+    this.view = this.view.bind(this)
+  }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = '/pdf/page9.pdf'
   }
   render() {
     return (
@@ -372,6 +482,16 @@ class Page10 extends Component {
           backgroundSize: '400px 100%'
         }}>
         </div>
+        <div style={{
+          margin: 'auto',
+          height: 24,
+          width: 150,
+          backgroundColor: '#FFE300',
+          textAlign: 'center',
+          fontFamily: 'Helvetica',
+          fontSize: 20,
+          marginBottom: 15
+        }} onClick={this.view}>View Porject</div>
         <Footer isAddress={false} />
       </div>
     )
