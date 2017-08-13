@@ -19,4 +19,4 @@
 
 ### Under Development
 - to resolve ip to domain.
-- to deploy CDN.
+- to deploy CDN(because the static resource is too much!!!).
