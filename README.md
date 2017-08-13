@@ -16,3 +16,7 @@
 - `npm install` or `yarn install`
 - `mongod --dbpath $(dbpath)`
 - To visit it at http://localhost:4000 with `yarn webstart`
+
+### Under Develop
+- to resolve ip to domain.
+- to deploy CDN.
