@@ -7,6 +7,15 @@ export default class extends Component {
   render() {
     return (
       <div>
+      <img src='/image/7.png' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/head.png' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/圆环-01.png' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/1-2.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/computer.png' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/2027060392.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/蛋糕品牌设计-02.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/eye.png' style={{visibility: 'hidden', height: 0, width: 0}} />
+      <img src='/image/' style={{visibility: 'hidden', height: 0, width: 0}} />
       <img src='/image/final0722/final01/export010001.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />
 <img src='/image/final0722/final01/export010002.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />
 <img src='/image/final0722/final01/export010003.jpg' style={{visibility: 'hidden', height: 0, width: 0}} />

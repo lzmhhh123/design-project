@@ -116,7 +116,7 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                2000,
+      delay:                1000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',

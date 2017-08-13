@@ -17,7 +17,7 @@ class Page1 extends Component {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '40% 40%'
       }}>
-        <div style={{fontSize: 15, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
+        <div style={{fontSize: '75%', fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
           <div style={{marginLeft: '8%', display: 'inline-block'}}>—OFFICE</div>
           <div style={{marginLeft: '8%', display: 'inline-block'}}>—PEOPLE</div>
           <div style={{marginLeft: '12%', display: 'inline-block'}}>—PROJECT</div>
@@ -36,7 +36,7 @@ class Page2 extends Component {
     return (
       <div style={{height: '75%', marginTop: '25%'}}>
         <div style={{
-          fontSize: 20,
+          fontSize: '100%',
           color: 'white',
           textAlign: 'center',
           fontFamily: 'Helvetica'
@@ -89,7 +89,7 @@ class Page3 extends Component {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '40% 40%'
       }}>
-        <div style={{fontSize: 15, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
+        <div style={{fontSize: '75%', fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
           <div style={{marginLeft: '8%', display: 'inline-block'}}>—OFFICE</div>
           <div style={{marginLeft: '8%', display: 'inline-block'}}>—PEOPLE</div>
           <div style={{marginLeft: '12%', display: 'inline-block'}}>—PROJECT</div>
@@ -116,7 +116,7 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                2000,
+      delay:                1000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',

@@ -30,15 +30,15 @@ export default class  extends Component {
     let contactLogo = document.getElementsByClassName("contactLogo")
     let logoAll = document.getElementsByClassName('logoAll')
     if(this.refs.menuIcon.state.s === 0) {
-      contactLogo[0].style.marginRight = "110px"
-      aboutLogo[0].style.marginRight = "85px"
-      portfolioLogo[0].style.marginRight = "120px"
+      contactLogo[0].style.marginRight = "90px"
+      aboutLogo[0].style.marginRight = "70px"
+      portfolioLogo[0].style.marginRight = "100px"
       logoAll[0].style.marginLeft = '-200px'
     }
     else {
-      contactLogo[0].style.marginRight = this.props.contact ? "110px" : "-200px"
-      aboutLogo[0].style.marginRight = this.props.about ? "85px" : "-200px"
-      portfolioLogo[0].style.marginRight = this.props.portfolio ? "120px" : "-200px"
+      contactLogo[0].style.marginRight = this.props.contact ? "90px" : "-200px"
+      aboutLogo[0].style.marginRight = this.props.about ? "70px" : "-200px"
+      portfolioLogo[0].style.marginRight = this.props.portfolio ? "100px" : "-200px"
       logoAll[0].style.marginLeft = "0px"
     }
     this.refs.menuIcon.setState({s: this.refs.menuIcon.state.s ^ 1})
@@ -60,9 +60,9 @@ export default class  extends Component {
         logo[i].style.marginTop = "20px"
       }
       logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '82px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '120px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '100px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '70px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '98px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '82px' : '0px')
     }, 0)
   }
 
@@ -87,7 +87,7 @@ export default class  extends Component {
                 position: "fixed"
               }} className="logoLine"/>
           {
-            this.props.portfolio === 0 ? <div>
+            this.props.contact === 0 ? <div>
             <img src="/image/logo1.png" className="logoImage" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "20px",
@@ -144,7 +144,7 @@ export default class  extends Component {
           transition: 'all 0.3s linear',
           transitionDelay: '1.5s',
         }}>
-          <MenuIcon ref="menuIcon" portfolio={this.props.portfolio} onClick={this.menuOnClick}/>
+          <MenuIcon ref="menuIcon" contact={this.props.contact} onClick={this.menuOnClick}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact}>
           <div style={{
@@ -162,11 +162,11 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="contactLine" />
             {
-              this.props.portfolio === 0 ?
+              this.props.contact === 0 ?
               <img src="/image/button_contact_mobile@2x.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '90px'}}/> :
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '72px'}}/> :
               <img src="/image/contact.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '90px'}}/>
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '72px'}}/>
             }
           </div>
         </div>
@@ -186,11 +186,11 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="portfolioLine" />
             {
-              this.props.portfolio === 0 ?
+              this.props.contact === 0 ?
               <img src="/image/button_portfolio_mobile@2x.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '110px'}}/> :
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '88px'}}/> :
               <img src="/image/portfolio.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '110px'}}/>
+                style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '88px'}}/>
             }
           </div>
         </div>
@@ -210,11 +210,11 @@ export default class  extends Component {
               marginTop: '0px',
             }} className="aboutLine" />
             {
-              this.props.portfolio === 0 ?
+              this.props.contact === 0 ?
               <img src="/image/button_about_mobile@2x.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '75px'}}/> :
+                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '60px'}}/> :
               <img src="/image/about.png"
-                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '75px'}}/>
+                style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '60px'}}/>
             }
           </div>
         </div>

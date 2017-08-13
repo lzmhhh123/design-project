@@ -46,7 +46,6 @@ class Page1 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto',
           marginBottom: '20%'}} />
-        <Footer isAddress={true} />
       </div>
     )
   }
@@ -58,7 +57,7 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div style={{marginTop: '150px', height: '55%', width: '100%', paddingTop: '15%'}}>
+      <div style={{marginTop: '150px', height: '55%', width: '100%', paddingTop: '5%'}}>
         <div style={{
           marginLeft: '10%',
           fontSize: 50,
@@ -88,6 +87,8 @@ class Page2 extends Component {
           专业领域包括:消费者洞察、市场分析、品牌战略、品牌策划、视觉设计、活动策划、广告创意、<br />
           运营推广以咨询、品牌、设计、广告、投资的多方复合背景，为客户提供「有创意」且「有实效」的专业服务。<br />
         </div>
+        <div style={{height: '30%'}} />
+        <Footer isAddress={true} />
       </div>
     )
   }
@@ -110,7 +111,7 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                2000,
+      delay:                1000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',

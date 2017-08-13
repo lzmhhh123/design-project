@@ -11,7 +11,7 @@ class Page1 extends Component {
       <div style={{marginTop: '15%', height: '85%'}}>
         <div style={{
           marginTop: '25%',
-          fontSize: 20,
+          fontSize: '150%',
           fontFamily: 'Helvetica',
           width: 'fit-content',
           width: '-webkit-fit-content',
@@ -19,23 +19,18 @@ class Page1 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto'
         }}>
-          <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}}>
+          <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}}>
             一家小，而美的品牌策划公司
           </div>
-          <div style={{height: 12, width: '100%', background: '#FEE300'}}></div>
+          <div style={{height: 10, width: '100%', background: '#FEE300'}}></div>
         </div>
         <div style={{
           height: '60%',
           backgroundImage: 'url(/image/二维码.png)',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: '50% 50%',
+          backgroundPosition: '50% 70%',
           backgroundSize: '50% 66.67%'
         }}></div>
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14}}>
-          media@xiaodeqihua.com<br /><br />
-          上海市 静安区 威海路696号<br /><br />
-          No.696 Weihai Road, Jing An District ,Shanghai
-        </div>
       </div>
     )
   }
@@ -51,16 +46,16 @@ class Page2 extends Component {
         <div style={{
           marginTop: '25%',
           fontFamily: 'Helvetica',
-          fontSize: 34,
+          fontSize: '170%',
           width: 'fit-content',
           width: '-webkit-fit-content'
         }}>
-          <div style={{height: 24, width: 'fit-content', width: '-webkit-fit-content'}}>This is what we do</div>
-          <div style={{width: '105%', height: 15, background: '#FFE300' }}></div>
+          <div style={{height: 16, width: 'fit-content', width: '-webkit-fit-content'}}>This is what we do</div>
+          <div style={{width: '105%', height: 8, background: '#FFE300' }}></div>
         </div>
         <div style={{
           marginTop: '10%',
-          fontSize: 16,
+          fontSize: '80%',
           fontFamily: 'Helvetica'
         }}>
           小的企划 —— 一间小而美的广告公司， <br /><br />
@@ -69,6 +64,12 @@ class Page2 extends Component {
           的效果?”。 <br /><br />
           在“消费升级、地产革新、实体店重生”的市场背景下， <br /><br />
           我们志在成为新商业领域的品牌营销专家。
+        </div>
+        <div style={{height: '10%'}}/>
+        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '70%'}}>
+          media@xiaodeqihua.com<br /><br />
+          上海市 静安区 威海路696号<br /><br />
+          No.696 Weihai Road, Jing An District ,Shanghai
         </div>
       </div>
     )
@@ -92,7 +93,7 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                2000,
+      delay:                1000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',

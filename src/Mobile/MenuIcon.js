@@ -46,7 +46,7 @@ export default class extends Component {
         opacity: 1
       }
     ]
-    let color = this.props.portfolio === 1 ? 'white' : 'black'
+    let color = this.props.contact === 1 ? 'white' : 'black'
     return (
       <div style={this.props.style} onClick={this.props.onClick}>
       {bar.map((val, k) =>

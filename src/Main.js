@@ -24,9 +24,9 @@ export default class extends Component {
       <Router history={browserHistory} >
         <Route path="/" component={Layout}>
           <IndexRoute component={Homepage} />
-          <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={Contact} />
+          <Route path="/portfolio" component={About} />
+          <Route path="/contact" component={Portfolio} />
           <Route path="/admin" component={Admin} />
         </Route>
         <Redirect path="*" to="/" />

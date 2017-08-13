@@ -17,7 +17,7 @@ class Page1 extends Component {
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
-                  fontSize: '10pt',
+                  fontSize: '50%',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -82,7 +82,7 @@ class Page2 extends Component {
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
-                  fontSize: '10pt',
+                  fontSize: '50%',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -150,7 +150,7 @@ class Page3 extends Component {
         <img src="/image/mobile/mobile_3.gif" style={{width: '90%', height: '48%', marginTop: '16%', marginRight: '5%'}}/>
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
-                  fontSize: '10pt',
+                  fontSize: '50%',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -222,7 +222,7 @@ class Page4 extends Component {
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
-                  fontSize: '10pt',
+                  fontSize: '50%',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -289,7 +289,7 @@ export default class extends Component {
       anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                2000,
+      delay:                1000,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
