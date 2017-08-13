@@ -83,7 +83,6 @@ export default class extends Component {
             portfolio={this.state.portfolio}
             contact={this.state.contact}
           />
-          <PreLoad />
         </Header>
         {this.props.children}
       </div>
