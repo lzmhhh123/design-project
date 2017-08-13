@@ -165,24 +165,8 @@ export default class extends Component {
               <Button submit>submit</Button>
             </Form>
           </Card>
-          <strong><h2 style={{color: 'red'}}>请上传文件名page1.pdf的文件：</h2></strong>
+          <strong><h2 style={{color: 'red'}}>请上传文件名page.pdf的文件：</h2></strong>
           <DropzoneComponent config={config1} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page2.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config2} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page3.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config3} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page4.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config4} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page5.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config5} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page6.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config6} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page7.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config7} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page8.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config8} eventHandlers={eventHandlers} djsConfig={djsConfig} />
-          <strong><h2 style={{color: 'red'}}>请上传文件名page9.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config9} eventHandlers={eventHandlers} djsConfig={djsConfig} />
         </div>
       ) : (
         <Card>
