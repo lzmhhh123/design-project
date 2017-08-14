@@ -63,11 +63,11 @@ export default class extends Component {
   }
 
   render() {
-    let color = this.state.contact === 1 ? 'black' : 'white'
+    let color = this.state.about === 1 ? 'black' : 'white'
     return (
       <div style={{backgroundColor: color}}>
         <Header>
-          { this.state.contact === 0 ?
+          { this.state.about === 0 ?
             <img src="/image/banner_mobile@2x.png" style={{height: '12%', position: 'fixed', width: '100%'}} /> :
             <div style={{height: '12%', position: 'fixed', width: '100%', backgroundColor: 'black'}} />
           }

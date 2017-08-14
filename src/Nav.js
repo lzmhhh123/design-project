@@ -76,7 +76,7 @@ export default class  extends Component {
                 position: "fixed"
               }} className="logoLine"/>
           {
-            this.props.contact === 0 ? <div>
+            this.props.about === 0 ? <div>
             <img src="/image/logo1.png" className="logoImage" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "56px",
@@ -143,7 +143,7 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="contactLine" />
             {
-              this.props.contact === 0 ?
+              this.props.about === 0 ?
               <img src="/image/button_contact_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10}}/> :
               <img src="/image/contact.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10}}/>
             }
@@ -166,7 +166,7 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="portfolioLine" />
             {
-              this.props.contact === 0 ?
+              this.props.about === 0 ?
               <img src="/image/button_portfolio_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5}}/> :
               <img src="/image/portfolio.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5}}/>
             }
@@ -189,7 +189,7 @@ export default class  extends Component {
               marginTop: '0px',
             }} className="aboutLine" />
             {
-              this.props.contact === 0 ?
+              this.props.about === 0 ?
               <img src="/image/button_about_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6}}/> :
               <img src="/image/about.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6}}/>
             }
