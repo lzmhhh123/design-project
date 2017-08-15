@@ -11,7 +11,9 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 const Password = require('./schema/Password')
+const Label = require('./schema/Label')
 
 module.exports = {
-  Password: mongoose.model('Password', Password)
+  Password: mongoose.model('Password', Password),
+  Label: mongoose.model('Label', Label),
 }

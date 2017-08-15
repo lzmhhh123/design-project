@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import reactDOM from 'react-dom'
 import axios from 'axios'
 import {Form, Alert, FormField, FormInput, Button, Card} from 'elemental'
+import {Menu, Layout} from 'antd'
 import FileUpload from 'react-fileupload'
 import DropzoneComponent from 'react-dropzone-component'
 
@@ -10,10 +11,13 @@ export default class extends Component {
     super()
     this.state = {
       isLogin: false,
-      errorMessage: null
+      errorMessage: null,
+      selectLable: '1',
+      labelMessage: null
     }
     this.login = this.login.bind(this);
     this.changePassword = this.changePassword.bind(this);
+    this.changeLabel = this.changeLabel.bind(this);
   }
   login(event) {
     event.preventDefault()
@@ -34,6 +38,11 @@ export default class extends Component {
           })
         }
       })
+  }
+  check() {
+    let n = this.state.selectLable
+    if(n === '1' || n === '3' || n === '5' || n === '6' || n === '8') return true;
+    return false;
   }
   changePassword(event) {
     event.preventDefault()
@@ -60,73 +69,54 @@ export default class extends Component {
           })
         }
       })
-   }
+  }
+  changeLabel(event) {
+    event.preventDefault()
+    let label = reactDOM.findDOMNode(this.refs.label).value
+    axios
+      .post('/api/changeLabel', {number: this.state.selectLable, label})
+      .then((res) => {
+        if(res.data.message === '') {
+          this.setState({
+            labelMessage: 'change label successful!'
+          })
+        }
+        else {
+          this.setState({
+            labelMessage: res.data.message
+          })
+        }
+      })
+  }
   render() {
+    console.log(this.state.selectLable);
     this.djsConfig = {
         addRemoveLinks: true,
         acceptedFiles: "application/pdf"
     };
-    this.componentConfig1 = {
+    this.componentConfig = {
         iconFiletypes: ['.pdf'],
+        showFiletypeIcon: true,
+        postUrl: '/api/uploadHandler'
+    };
+    this.djsConfigImage = {
+        addRemoveLinks: true,
+        acceptedFiles: "image/png,image/jpg"
+    };
+    this.componentConfigImage = {
+        iconFiletypes: ['.png', '.jpg'],
         showFiletypeIcon: true,
         postUrl: '/api/uploadHandler1'
-    };
-    this.componentConfig2 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler2'
-    };
-    this.componentConfig3 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler3'
-    };
-    this.componentConfig4 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler4'
-    };
-    this.componentConfig5 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler5'
-    };
-    this.componentConfig6 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler6'
-    };
-    this.componentConfig7 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler7'
-    };
-    this.componentConfig8 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler8'
-    };
-    this.componentConfig9 = {
-        iconFiletypes: ['.pdf'],
-        showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler9'
     };
     this.callbackArray = [() => console.log('Hi!'), () => console.log('Ho!')];
     this.callback = () => console.log('Hello!');
     this.success = file => console.log('uploaded', file);
     this.removedfile = file => console.log('removing...', file);
     this.dropzone = null;
-    const config1 = this.componentConfig1;
-    const config2 = this.componentConfig2;
-    const config3 = this.componentConfig3;
-    const config4 = this.componentConfig4;
-    const config5 = this.componentConfig5;
-    const config6 = this.componentConfig6;
-    const config7 = this.componentConfig7;
-    const config8 = this.componentConfig8;
-    const config9 = this.componentConfig9;
+    const config = this.componentConfig;
     const djsConfig = this.djsConfig;
-
+    const configImage = this.componentConfigImage;
+    const djsConfigImage = this.djsConfigImage;
     // For a list of all possible events (there are many), see README.md!
     const eventHandlers = {
         init: dz => {this.dropzone = dz; console.log('haha');},
@@ -135,13 +125,13 @@ export default class extends Component {
         success: this.success,
         removedfile: this.removedfile
     }
-    return <div style={{margin: '200px auto', width: 400}}>
+    return <div style={{margin: '200px auto', width: 800, textAlign: 'center'}}>
     {
       this.state.isLogin ?
       (
         <div>
           <Card>
-          <strong><h2 style={{color: 'red'}}>这里可以修改admin的口令</h2></strong>
+            <strong><h2 style={{color: 'red'}}>这里可以修改admin的口令</h2></strong>
             <Form onSubmit={this.changePassword}>
               {
                 this.state.errorMessage && this.state.errorMessage !== 'change successful!'
@@ -150,7 +140,7 @@ export default class extends Component {
               }
               {
                 this.state.errorMessage === 'change successful!' ?
-                <Alert type="danger"><strong> {this.state.errorMessage}</strong></Alert>
+                <Alert type="success"><strong> {this.state.errorMessage}</strong></Alert>
                 : null
               }
               <FormField label="新密码:" htmlFor="form-input-password">
@@ -165,8 +155,46 @@ export default class extends Component {
               <Button submit>submit</Button>
             </Form>
           </Card>
-          <strong><h2 style={{color: 'red'}}>请上传文件名page.pdf的文件：</h2></strong>
-          <DropzoneComponent config={config1} eventHandlers={eventHandlers} djsConfig={djsConfig} />
+          <Layout style={{marginTop: 50}}>
+            <Layout.Sider style={{width: 200}}>
+              <Menu defaultSelectedKeys={['1']} onClick={(item) => this.setState({selectLable: item.key})}>
+                <Menu.Item key='1'>label one</Menu.Item>
+                <Menu.Item key='2'>label two</Menu.Item>
+                <Menu.Item key='3'>label three</Menu.Item>
+                <Menu.Item key='4'>label four</Menu.Item>
+                <Menu.Item key='5'>label five</Menu.Item>
+                <Menu.Item key='6'>label six</Menu.Item>
+                <Menu.Item key='7'>label seven</Menu.Item>
+                <Menu.Item key='8'>label eight</Menu.Item>
+                <Menu.Item key='9'>label nine</Menu.Item>
+              </Menu>
+            </Layout.Sider>
+            <Layout.Content>
+              <strong><h2 style={{color: 'red'}}>{`请上传文件名page${this.state.selectLable}.pdf的文件：`}</h2></strong>
+              <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
+              <div style={{height: 30}} />
+              <strong><h2 style={{color: 'red'}}>{`请上传文件名image${this.state.selectLable}.${this.check() ? 'png' : 'jpg'}的文件：`}</h2></strong>
+              <DropzoneComponent config={configImage} eventHandlers={eventHandlers} djsConfig={djsConfigImage} />
+              <div style={{height: 30}} />
+              <strong><h2 style={{color: 'red'}}>{`这里可以修改标签${this.state.selectLable}：`}</h2></strong>
+              <Form onSubmit={this.changeLabel}>
+                {
+                  this.state.labelMessage && this.state.labelMessage !== 'change label successful!'
+                    ? <Alert type="danger"><strong>Error:</strong> {this.state.labelMessage}</Alert>
+                    : null
+                }
+                {
+                  this.state.labelMessage === 'change label successful!' ?
+                  <Alert type="success"><strong> {this.state.labelMessage}</strong></Alert>
+                  : null
+                }
+                <FormField label={`标签${this.state.selectLable}的新内容`} htmlFor="form-input-label">
+                  <FormInput type="string" placeholder={`label${this.state.selectLable}`} name="label" ref="label" />
+                </FormField>
+                <Button submit>submit</Button>
+              </Form>
+            </Layout.Content>
+          </Layout>
         </div>
       ) : (
         <Card>

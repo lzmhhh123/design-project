@@ -5,6 +5,10 @@ import { Animation } from 'styled-animation'
 export default class  extends Component {
   constructor() {
     super()
+    this.mouseLeaveLogo = this.mouseLeaveLogo.bind(this)
+    this.mouseLeaveAbout = this.mouseLeaveAbout.bind(this)
+    this.mouseLeaveContact = this.mouseLeaveContact.bind(this)
+    this.mouseLeavePortfolio = this.mouseLeavePortfolio.bind(this)
   }
 
   componentDidMount() {
@@ -60,10 +64,70 @@ export default class  extends Component {
     }, 0)
   }
 
+  mouseOverLogo() {
+    setTimeout(() => {
+      let logoLine = document.getElementsByClassName("logoLine")
+      logoLine[0].style.width = '135px'
+    })
+  }
+
+  mouseLeaveLogo(event) {
+    event.preventDefault()
+    setTimeout(() => {
+      let logoLine = document.getElementsByClassName("logoLine")
+      if(this.props.home === 0) logoLine[0].style.width = '0px'
+    })
+  }
+
+  mouseOverAbout() {
+    setTimeout(() => {
+      let aboutLine = document.getElementsByClassName("aboutLine")
+      aboutLine[0].style.width = '82px'
+    })
+  }
+
+  mouseLeaveAbout(event) {
+    event.preventDefault()
+    setTimeout(() => {
+      let aboutLine = document.getElementsByClassName("aboutLine")
+      if(this.props.about === 0) aboutLine[0].style.width = '0px'
+    })
+  }
+
+  mouseOverPortfolio() {
+    setTimeout(() => {
+      let portfolioLine = document.getElementsByClassName("portfolioLine")
+      portfolioLine[0].style.width = '120px'
+    })
+  }
+
+  mouseLeavePortfolio(event) {
+    event.preventDefault()
+    setTimeout(() => {
+      let portfolioLine = document.getElementsByClassName("portfolioLine")
+      if(this.props.portfolio === 0) portfolioLine[0].style.width = '0px'
+    })
+  }
+
+  mouseOverContact() {
+    setTimeout(() => {
+      let contactLine = document.getElementsByClassName("contactLine")
+      contactLine[0].style.width = '120px'
+    })
+  }
+
+  mouseLeaveContact(event) {
+    event.preventDefault()
+    setTimeout(() => {
+      let contactLine = document.getElementsByClassName("contactLine")
+      if(this.props.contact === 0) contactLine[0].style.width = '0px'
+    })
+  }
+
   render() {
     return (
       <div>
-        <div style={{float: 'left'}} onClick={this.props.clickHome}>
+        <div style={{float: 'left'}} onClick={this.props.clickHome} onMouseOver={this.mouseOverLogo} onMouseOut={this.mouseLeaveLogo}>
           <div style={
               {
                 transition: "all 0.2s linear",
@@ -126,7 +190,7 @@ export default class  extends Component {
             }}/>
           }
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickContact}>
+        <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
           <div style={{
             marginTop: '64px',
             marginRight: '0px',
@@ -149,7 +213,7 @@ export default class  extends Component {
             }
           </div>
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickPortfolio}>
+        <div style={{float: 'right'}} onClick={this.props.clickPortfolio} onMouseOver={this.mouseOverPortfolio} onMouseOut={this.mouseLeavePortfolio}>
           <div style={{
             marginTop: '64px',
             marginRight: '0px',
@@ -172,7 +236,7 @@ export default class  extends Component {
             }
           </div>
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickAbout}>
+        <div style={{float: 'right'}} onClick={this.props.clickAbout} onMouseOver={this.mouseOverAbout} onMouseOut={this.mouseLeaveAbout}>
           <div style={{
             marginTop: '64px',
             marginRight: '0px',

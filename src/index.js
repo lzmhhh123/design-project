@@ -5,6 +5,8 @@ import Mobile from './Mobile/Main'
 import './css/index.css'
 import './css/filepicker.css'
 import './css/dropzone.min.css'
+import './css/styles.min.css'
+import './css/antd.min.css'
 
 var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
 var browser = navigator.userAgent.toLowerCase();
