@@ -48,7 +48,7 @@ export default class extends Component {
     ]
     let color = this.props.about === 1 ? 'white' : 'black'
     return (
-      <div style={{width: 'fit-content', width: '-webkit-fit-content'}}>
+      <div style={{display: 'inline-block', width: 'fit-content', width: '-webkit-fit-content', cursor: 'pointer'}} onClick={this.props.onClick}>
       {bar.map((val, k) =>
           <Animate data={val} key={k}>
             {

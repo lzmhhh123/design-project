@@ -76,7 +76,7 @@ export default class  extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{marginTop: -50}}>
         <div className="logoAll" onClick={this.props.clickHome}
           style={{
             float: 'left',
@@ -148,12 +148,12 @@ export default class  extends Component {
         <div ref="menuIconDiv" style={{
           float: 'right',
           marginTop: '20px',
-          marginRight: '-30px',
+          marginRight: '-100px',
           transition: 'all 0.3s linear',
           transitionDelay: '1.5s',
           width: 'fit-content', width: '-webkit-fit-content'
-        }} onClick={this.menuOnClick}>
-          <MenuIcon ref="menuIcon" about={this.props.about} />
+        }}>
+          <MenuIcon ref="menuIcon" about={this.props.about} onClick={this.menuOnClick}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact}>
           <div style={{
