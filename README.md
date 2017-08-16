@@ -15,7 +15,7 @@
 - `git clone` (from github) & `cd ${document}`
 - `npm install` or `yarn install`
 - `mongod --dbpath $(dbpath)`
-- To visit it at http://localhost:4000 with `yarn webstart`
+- To visit it at http://localhost:8080 with `yarn webstart`
 
 ### Under Development
 - to resolve ip to domain.
