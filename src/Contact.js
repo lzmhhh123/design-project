@@ -50,7 +50,7 @@ class Page2 extends Component {
       .post('/api/asklabel')
       .then(res => {
         console.log(res.data.labels);
-        res.data.labels.sort((a, b) => a['id'] > b['id'])
+        res.data.labels.sort((a, b) => a.id > b.id)
         this.setState({
           labels: res.data.labels
         })
