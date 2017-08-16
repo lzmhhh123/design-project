@@ -48,7 +48,7 @@ export default class extends Component {
     ]
     let color = this.props.about === 1 ? 'white' : 'black'
     return (
-      <div style={this.props.style} onClick={this.props.onClick}>
+      <div style={{height: 23, width: 28}} onClick={this.props.onClick}>
       {bar.map((val, k) =>
           <Animate data={val} key={k}>
             {

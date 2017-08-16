@@ -208,7 +208,7 @@ export default class  extends Component {
             }} className="contactLine" />
             {
               this.props.about === 0 ?
-              <img src="/image/button_contact_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10}}/> :
+              <img src="/image/button_contact_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10, width: 94, height: 16}}/> :
               <img src="/image/contact.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10}}/>
             }
           </div>
@@ -231,7 +231,7 @@ export default class  extends Component {
             }} className="portfolioLine" />
             {
               this.props.about === 0 ?
-              <img src="/image/button_portfolio_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5}}/> :
+              <img src="/image/button_portfolio_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5, width: 110, height: 16}}/> :
               <img src="/image/portfolio.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5}}/>
             }
           </div>
@@ -254,7 +254,7 @@ export default class  extends Component {
             }} className="aboutLine" />
             {
               this.props.about === 0 ?
-              <img src="/image/button_about_desktop.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6}}/> :
+              <img src="/image/button_about_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6, width: 68, height: 16}}/> :
               <img src="/image/about.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6}}/>
             }
           </div>

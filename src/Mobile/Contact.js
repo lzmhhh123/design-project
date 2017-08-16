@@ -15,7 +15,7 @@ class Footer extends Component {
     let { isAddress } = this.props
     if(isAddress) {
       return (
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '50%'}}>
+        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '70%'}}>
           media@xiaodeqihua.com<br />
           上海市 静安区 威海路696号<br />
           No.696 Weihai Road, Jing An District ,Shanghai
@@ -24,7 +24,7 @@ class Footer extends Component {
     }
     else {
       return (
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '50%'}}>
+        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '70%'}}>
           有想法?我们有兴趣。联系我们!<br />
           GET A PROJECT? We’d love to hear about it. Get in touch.
         </div>
@@ -77,69 +77,60 @@ class Page2 extends Component {
     if(!this.state.labels) return <div />
     return (
       <div style={containStyle}>
-        <div style={{textAlign: 'center', fontSize: '100%', fontFamily: 'Helvetica', height: '85%'}}>
+        <div style={{textAlign: 'center', fontSize: '120%', fontFamily: 'Helvetica', height: '85%'}}>
           <div style={{margin: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
                 {this.state.labels[0].string}
               </div>
-              <div style={this.state.p[0] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(1)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(1)}>
                 {this.state.labels[1].string}
               </div>
-              <div style={this.state.p[1] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(2)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(2)}>
                 {this.state.labels[2].string}
               </div>
-              <div style={this.state.p[2] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(3)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(3)}>
                 {this.state.labels[3].string}
               </div>
-              <div style={this.state.p[3] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(4)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(4)}>
                 {this.state.labels[4].string}
               </div>
-              <div style={this.state.p[4] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(5)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(5)}>
                 {this.state.labels[5].string}
               </div>
-              <div style={this.state.p[5] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(6)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(6)}>
                 {this.state.labels[6].string}
               </div>
-              <div style={this.state.p[6] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(7)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(7)}>
                 {this.state.labels[7].string}
               </div>
-              <div style={this.state.p[7] ? styleLineTrue : styleLineFalse}/>
             </div>
             <div style={{height: 12}} />
             <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 10, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(8)}>
+              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(8)}>
                 {this.state.labels[8].string}
               </div>
-              <div style={this.state.p[8] ? styleLineTrue : styleLineFalse}/>
             </div>
           </div>
         </div>

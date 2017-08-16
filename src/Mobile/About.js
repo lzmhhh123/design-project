@@ -19,7 +19,7 @@ class Page1 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto'
         }}>
-          <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}}>
+          <div style={{height: 15, width: 'fit-content', width: '-webkit-fit-content'}}>
             一家小，而美的品牌策划公司
           </div>
           <div style={{height: 10, width: '100%', background: '#FEE300'}}></div>
@@ -54,7 +54,7 @@ class Page2 extends Component {
           <div style={{width: '105%', height: 8, background: '#FFE300' }}></div>
         </div>
         <div style={{
-          marginTop: '10%',
+          marginTop: '20%',
           fontSize: '80%',
           fontFamily: 'Helvetica'
         }}>
