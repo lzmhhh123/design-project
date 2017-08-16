@@ -47,6 +47,7 @@ class Page2 extends Component {
     axios
       .post('/api/asklabel')
       .then(res => {
+        res.data.labels.sort((a, b) => a['id'] > b['id'])
         this.setState({
           labels: res.data.labels
         })
