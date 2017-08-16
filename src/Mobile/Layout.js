@@ -68,8 +68,8 @@ export default class extends Component {
       <div style={{backgroundColor: color}}>
         <Header>
           { this.state.about === 0 ?
-            <img src="/image/banner_mobile@2x.png" style={{height: '12%', position: 'fixed', width: '100%'}} /> :
-            <div style={{height: '12%', position: 'fixed', width: '100%', backgroundColor: 'black'}} />
+            <img src="/image/banner_mobile@2x.png" style={{height: '14%', position: 'fixed', width: '100%'}} /> :
+            <div style={{height: '14%', position: 'fixed', width: '100%', backgroundColor: 'black'}} />
           }
           <Nav
             clickAbout={this.clickAbout}

@@ -12,8 +12,8 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%'}}>
-        <img style={{width: '95%', height: '60%', marginTop: '12%'}} src="/image/mobile/mobile_1.gif" />
+      <div style={{height: '85%', marginTop: '16%'}}>
+        <img style={{width: '95%', height: '60%'}} src="/image/mobile/mobile_1.gif" />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -77,8 +77,8 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%'}}>
-        <img src="/image/mobile/mobile_2.gif" style={{width: '90%', height: '48%', marginTop: '16%', marginRight: '5%'}}/>
+      <div className="right" style={{height: '85%', marginTop: '16%'}}>
+        <img src="/image/mobile/mobile_2.gif" style={{width: '90%', height: '48%', marginRight: '5%'}}/>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -146,8 +146,8 @@ class Page3 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%'}}>
-        <img src="/image/mobile/mobile_3.gif" style={{width: '90%', height: '48%', marginTop: '16%', marginRight: '5%'}}/>
+      <div style={{height: '85%', marginTop: '16%'}}>
+        <img src="/image/mobile/mobile_3.gif" style={{width: '90%', height: '48%', marginRight: '5%'}}/>
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '80%',
@@ -217,8 +217,8 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%'}}>
-        <img src="/image/mobile/mobile_4.gif" style={{width: '90%', height: '48%', marginTop: '14%', marginRight: '5%'}}/>
+      <div className="right" style={{height: '85%', marginTop: '16%'}}>
+        <img src="/image/mobile/mobile_4.gif" style={{width: '90%', height: '48%', marginRight: '5%'}}/>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
