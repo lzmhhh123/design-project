@@ -34,60 +34,23 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{marginTop: '150px'}}>
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30, marginTop: '18%'}}>
-          <div>一家小,而美的品牌策划公司</div>
+      <div style={{marginTop: '150px', height: '85%'}}>
+        <div style={{width: '100%', display: 'table', height: '70%'}}>
+          <div style={{display: 'inline-table', width: '50%', height: '100%'}}>
+            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30, marginTop: '18%'}}>
+              <div>一家小,而美的品牌策划公司</div>
+            </div>
+            <div style={{
+              background: "#FFE300",
+              height: 15,
+              marginBottom: '20%',
+              width: 400,
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              marginBottom: '20%'}} />
+          </div>
+          <div style={{display: 'inline-table', width: '50%', height: '100%', backgroundImage: 'url(/image/二维码.png)', backgroundPosition: 'center'}} />
         </div>
-        <div style={{
-          background: "#FFE300",
-          height: 15,
-          marginBottom: '20%',
-          width: 400,
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '20%'}} />
-      </div>
-    )
-  }
-}
-
-class Page2 extends Component {
-  constructor() {
-    super()
-  }
-  render() {
-    return (
-      <div style={{marginTop: '150px', height: '55%', width: '100%', paddingTop: '5%'}}>
-        <div style={{
-          marginLeft: '10%',
-          fontSize: 50,
-          fontFamily: 'Helvetica',
-          width: 'fit-content', width: '-webkit-fit-content'
-        }}>
-          <div style={{width: 'fit-content', width: '-webkit-fit-content', height: 30}}>This is what we do</div>
-          <div style={{width: '100%', height: 15, background: '#FFE300'}}></div>
-        </div>
-        <div style={{
-          marginLeft: '10%',
-          marginTop: '3%',
-          fontSize: 14,
-          fontFamily: 'Helvetica'
-        }}>
-          一家小，而美的品牌策划公司。<br />
-          专业领域包括:消费者洞察、市场分析、品牌战略、品牌策划、视觉设计、活动策划、广告创意、<br />
-          运营推广以咨询、品牌、设计、广告、投资的多方复合背景，为客户提供「有创意」且「有实效」的专业服务。<br />
-        </div>
-        <div style={{
-          marginLeft: '10%',
-          marginTop: '3%',
-          fontSize: 14,
-          fontFamily: 'Helvetica'
-        }}>
-          一家小，而美的品牌策划公司。<br />
-          专业领域包括:消费者洞察、市场分析、品牌战略、品牌策划、视觉设计、活动策划、广告创意、<br />
-          运营推广以咨询、品牌、设计、广告、投资的多方复合背景，为客户提供「有创意」且「有实效」的专业服务。<br />
-        </div>
-        <div style={{height: '30%'}} />
         <Footer isAddress={true} />
       </div>
     )
@@ -123,7 +86,6 @@ export default class extends Component {
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
-          <Section><Page2 /></Section>
         </SectionsContainer>
       </Animation>
     )

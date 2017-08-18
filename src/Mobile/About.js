@@ -31,40 +31,6 @@ class Page1 extends Component {
           backgroundPosition: '50% 70%',
           backgroundSize: '50% 66.67%'
         }}></div>
-      </div>
-    )
-  }
-}
-
-class Page2 extends Component {
-  constructor() {
-    super()
-  }
-  render() {
-    return (
-      <div style={{height: '85%', marginTop: '15%', marginLeft: '8%'}}>
-        <div style={{
-          marginTop: '25%',
-          fontFamily: 'Helvetica',
-          fontSize: '170%',
-          width: 'fit-content',
-          width: '-webkit-fit-content'
-        }}>
-          <div style={{height: 16, width: 'fit-content', width: '-webkit-fit-content'}}>This is what we do</div>
-          <div style={{width: '105%', height: 8, background: '#FFE300' }}></div>
-        </div>
-        <div style={{
-          marginTop: '20%',
-          fontSize: '80%',
-          fontFamily: 'Helvetica'
-        }}>
-          小的企划 —— 一间小而美的广告公司， <br /><br />
-          立志于解决一个没什么人想解决的问题: <br /><br />
-          “如何给小公司做小预算的品牌营销，用100万做出1个亿 <br /><br />
-          的效果?”。 <br /><br />
-          在“消费升级、地产革新、实体店重生”的市场背景下， <br /><br />
-          我们志在成为新商业领域的品牌营销专家。
-        </div>
         <div style={{height: '10%'}}/>
         <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '70%'}}>
           media@xiaodeqihua.com<br /><br />
@@ -105,7 +71,6 @@ export default class extends Component {
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
-          <Section><Page2 /></Section>
         </SectionsContainer>
       </Animation>
     )

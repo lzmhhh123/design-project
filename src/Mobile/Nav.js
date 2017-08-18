@@ -95,7 +95,7 @@ export default class  extends Component {
                 position: "fixed"
               }} className="logoLine"/>
           {
-            this.props.about === 0 ? <div>
+            this.props.about === 0 || window.location.hash === '#section2' ? <div>
             <img src="/image/logo1.png" className="logoImage" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "20px",
@@ -171,7 +171,7 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="contactLine" />
             {
-              this.props.about === 0 ?
+              this.props.about === 0 || window.location.hash === '#section2' ?
               <img src="/image/button_contact_mobile@2x.png"
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '72px'}}/> :
               <img src="/image/contact.png"
@@ -195,7 +195,7 @@ export default class  extends Component {
               marginTop: '0px'
             }} className="portfolioLine" />
             {
-              this.props.about === 0 ?
+              this.props.about === 0 || window.location.hash === '#section2' ?
               <img src="/image/button_portfolio_mobile@2x.png"
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5, height: '16.3px', width: '88px'}}/> :
               <img src="/image/portfolio.png"
@@ -219,7 +219,7 @@ export default class  extends Component {
               marginTop: '0px',
             }} className="aboutLine" />
             {
-              this.props.about === 0 ?
+              this.props.about === 0 || window.location.hash === '#section2'?
               <img src="/image/button_about_mobile@2x.png"
                 style={{position: "fixed", opacity: 0.9, marginLeft: 6, height: '16.3px', width: '60px'}}/> :
               <img src="/image/about.png"

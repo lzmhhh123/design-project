@@ -63,11 +63,11 @@ export default class extends Component {
   }
 
   render() {
-    let color = this.state.about === 1 ? 'black' : 'white'
+    let color = this.state.about === 1 && window.location.hash !== '#section2' ? 'black' : 'white'
     return (
       <div style={{backgroundColor: color}}>
         <Header>
-          { this.state.about === 0 ?
+          { this.state.about === 0 || window.location.hash === '#section2' ?
             <div style={{height: 50, width: '100%', backgroundImage: 'url(/image/banner_mobile@2x.png)'}} /> :
             <div style={{height: 50, width: '100%', backgroundColor: 'black'}} />
           }

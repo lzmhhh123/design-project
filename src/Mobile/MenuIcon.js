@@ -46,7 +46,7 @@ export default class extends Component {
         opacity: 1
       }
     ]
-    let color = this.props.about === 1 ? 'white' : 'black'
+    let color = this.props.about === 1 && window.location.hash !== '#section2' ? 'white' : 'black'
     return (
       <div style={{display: 'inline-block', width: 'fit-content', width: '-webkit-fit-content', cursor: 'pointer'}} onClick={this.props.onClick}>
       {bar.map((val, k) =>

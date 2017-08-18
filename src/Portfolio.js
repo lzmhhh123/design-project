@@ -80,24 +80,41 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{
-        height: '70%',
-        marginTop: '15%',
-        width: '100%',
-        backgroundImage: 'url(/image/numberfill.png)',
-        backgroundSize: '70% 50%',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: '40% 60%'
-      }}>
-        <div style={{fontSize: 20, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
-          <div style={{marginLeft: '15%', display: 'inline-block'}}>—OFFICE</div>
-          <div style={{marginLeft: '15%', display: 'inline-block'}}>—PEOPLE</div>
-          <div style={{marginLeft: '20%', display: 'inline-block'}}>—PROJECT</div>
+      <div style={{marginTop: '150px', height: '55%', width: '100%', paddingTop: '5%'}}>
+        <div style={{
+          marginLeft: '10%',
+          fontSize: 50,
+          fontFamily: 'Helvetica',
+          width: 'fit-content', width: '-webkit-fit-content'
+        }}>
+          <div style={{width: 'fit-content', width: '-webkit-fit-content', height: 30}}>This is what we do</div>
+          <div style={{width: '100%', height: 15, background: '#FFE300'}}></div>
+        </div>
+        <div style={{
+          marginLeft: '10%',
+          marginTop: '3%',
+          fontSize: 14,
+          fontFamily: 'Helvetica'
+        }}>
+          一家小，而美的品牌策划公司。<br />
+          专业领域包括:消费者洞察、市场分析、品牌战略、品牌策划、视觉设计、活动策划、广告创意、<br />
+          运营推广以咨询、品牌、设计、广告、投资的多方复合背景，为客户提供「有创意」且「有实效」的专业服务。<br />
+        </div>
+        <div style={{
+          marginLeft: '10%',
+          marginTop: '3%',
+          fontSize: 14,
+          fontFamily: 'Helvetica'
+        }}>
+          一家小，而美的品牌策划公司。<br />
+          专业领域包括:消费者洞察、市场分析、品牌战略、品牌策划、视觉设计、活动策划、广告创意、<br />
+          运营推广以咨询、品牌、设计、广告、投资的多方复合背景，为客户提供「有创意」且「有实效」的专业服务。<br />
         </div>
       </div>
     )
   }
 }
+
 
 export default class extends Component {
   constructor() {
@@ -124,12 +141,13 @@ export default class extends Component {
       sectionPaddingBottom: '0',
       verticalAlign:        false
     }
+    console.log(window.location);
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
-          <Section><Page2 /></Section>
           <Section><Page3 /></Section>
+          <Section><Page2 /></Section>
         </SectionsContainer>
       </Animation>
     )

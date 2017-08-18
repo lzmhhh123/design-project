@@ -12,17 +12,13 @@ class Page1 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div style={{height: '85%'}}>
-        <div className='gifp1'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <div className='gifp1' />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -86,17 +82,13 @@ class Page2 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div className="right" style={{height: '85%'}}>
-        <div className='gifp2'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <div className='gifp2'/>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -160,17 +152,13 @@ class Page3 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div style={{height: '85%'}}>
-        <div className='gifp3'
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <div className='gifp3'/>
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
@@ -239,17 +227,13 @@ class Page4 extends Component {
     this.state = {
       line1: 0,
       line2: 0,
-      running: 'paused'
     }
   }
 
   render() {
     return (
       <div className="right" style={{height: '85%'}}>
-        <div className="gifp4"
-          onMouseMove={() => this.setState({running: 'running'})}
-          onMouseOut={() => this.setState({running: 'paused'})}
-          style={{animationPlayState: this.state.running}} />
+        <div className="gifp4"/>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
