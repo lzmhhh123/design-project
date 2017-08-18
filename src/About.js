@@ -34,10 +34,10 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{marginTop: '150px', height: '85%'}}>
-        <div style={{width: '100%', display: 'table', height: '70%'}}>
-          <div style={{display: 'inline-table', width: '50%', height: '100%'}}>
-            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30, marginTop: '18%'}}>
+      <div style={{marginTop: '150px', height: '85%', width: '100%'}}>
+        <div style={{width: '100%', display: 'table', height: '80%'}}>
+          <div style={{display: 'inline-table', width: '50%', float: 'left', marginTop: '18%'}}>
+            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30}}>
               <div>一家小,而美的品牌策划公司</div>
             </div>
             <div style={{
@@ -49,7 +49,7 @@ class Page1 extends Component {
               marginRight: 'auto',
               marginBottom: '20%'}} />
           </div>
-          <div style={{display: 'inline-table', width: '50%', height: '100%', backgroundImage: 'url(/image/二维码.png)', backgroundPosition: 'center'}} />
+          <div style={{float: 'right', display: 'inline-table', width: '50%', height: '100%', backgroundImage: 'url(/image/二维码.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
         </div>
         <Footer isAddress={true} />
       </div>
