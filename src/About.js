@@ -71,7 +71,7 @@ export default class extends Component {
   render() {
     let options = {
       activeClass:          'active',
-      anchors:              this.mapAnchors(),
+      anchors:              ['section1'],
       arrowNavigation:      true,
       className:            'SectionContainer',
       delay:                1000,
