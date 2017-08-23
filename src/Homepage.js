@@ -17,7 +17,7 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%'}}>
+      <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp1' />
         <br />
         <div style={{color: '#666666',
@@ -25,8 +25,8 @@ class Page1 extends Component {
                   fontSize: '13pt',
                   textAlign: 'right',
                   position: 'relative',
-                  right: '50px',
-                  width: '40%',
+                  right: '5%',
+                  width: '35%',
                   marginLeft: '60%'
                 }}>
           <br />
@@ -87,7 +87,7 @@ class Page2 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%'}}>
+      <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp2'/>
         <br />
         <div style={{color: '#666666',
@@ -157,7 +157,7 @@ class Page3 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%'}}>
+      <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp3'/>
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -232,7 +232,7 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%'}}>
+      <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className="gifp4"/>
         <br />
         <div style={{color: '#666666',
