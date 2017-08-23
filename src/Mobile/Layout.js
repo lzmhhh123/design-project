@@ -18,6 +18,17 @@ export default class extends Component {
     this.clickHome = this.clickHome.bind(this)
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      let about = 0, portfolio = 0, contact = 0, home = 0;
+      if (window.location.pathname === '/') home = 1;
+      if (window.location.pathname === '/about') about = 1;
+      if (window.location.pathname === '/contact') contact = 1;
+      if (window.location.pathname === '/portfolio') portfolio = 1;
+      this.setState({about, home, portfolio, contact});
+    }, 0)
+  }
+
   clickAbout(event) {
     event.preventDefault()
     this.setState({

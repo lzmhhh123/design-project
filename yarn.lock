@@ -4348,6 +4348,10 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
 
+melanke-watchjs@^1.3.1:
+  version "1.3.1"
+  resolved "http://registry.npm.taobao.org/melanke-watchjs/download/melanke-watchjs-1.3.1.tgz#7b3eaf66838f091926d1d239d94c05c765d0eb89"
+
 memory-fs@^0.4.0, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"

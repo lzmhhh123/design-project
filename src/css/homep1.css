@@ -1,8 +1,10 @@
 .gifp1 {
   background-image: url(/image/preview_1.gif);
-  background-size: 100% 100%;
-  height: 95%;
-  width: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1040px 832px;
+  height: 832px;
+  width: 1040px;
   margin-top: 130px;
   margin-left: 50px;
   margin-bottom: -370px;
