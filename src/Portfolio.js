@@ -10,14 +10,14 @@ class Page1 extends Component {
     return (
       <div style={{
         height: '70%',
-        marginTop: '15%',
+        marginTop: 150,
         width: '100%',
         backgroundImage: 'url(/image/number.png)',
         backgroundSize: '70% 50%',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '40% 60%'
       }}>
-        <div style={{fontSize: 20, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
+        <div style={{fontSize: 20 * document.body.clientWidth / 1679, fontFamily: 'Helvetica', width: '100%', color: 'white', display: 'table'}}>
           <div style={{marginLeft: '15%', display: 'inline-block'}}>—OFFICE</div>
           <div style={{marginLeft: '15%', display: 'inline-block'}}>—PEOPLE</div>
           <div style={{marginLeft: '20%', display: 'inline-block'}}>—PROJECT</div>
@@ -34,17 +34,17 @@ class Page2 extends Component {
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: '70%', marginTop: '10%'}}>
+      <div style={{height: '70%', marginTop: 150}}>
         <div style={{
-          fontSize: 60,
+          fontSize: 60 * document.body.clientWidth / 1679,
           color: 'white',
           textAlign: 'center',
           fontFamily: 'Helvetica'
         }}>
-          <div style={{height: 55, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
+          <div style={{height: 55 * document.body.clientWidth / 1679, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             The brand we’ve work along with
           </div>
-          <div style={{height: 15, width: 1075, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
+          <div style={{height: 15 * document.body.clientWidth / 1679, width: 1075 * document.body.clientWidth / 1679, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
         </div>
         <div style={{width: '70%', height: '70%', marginLeft: 'auto', marginRight: 'auto', marginTop: '5%'}}>
           <div style={rowStyle}>

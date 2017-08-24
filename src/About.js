@@ -36,20 +36,27 @@ class Page1 extends Component {
     return (
       <div style={{marginTop: '150px', height: '85%', width: '100%'}}>
         <div style={{width: '100%', display: 'table', height: '80%'}}>
-          <div style={{display: 'inline-table', width: '50%', float: 'left', marginTop: '18%'}}>
-            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 30}}>
+          <div style={{display: 'inline-table', width: '55%', float: 'left', marginTop: '18%'}}>
+            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 25}}>
               <div>一家小,而美的品牌策划公司</div>
             </div>
             <div style={{
               background: "#FFE300",
               height: 15,
               marginBottom: '20%',
-              width: 400,
+              width: 325,
               marginLeft: 'auto',
               marginRight: 'auto',
               marginBottom: '20%'}} />
           </div>
-          <div style={{float: 'right', display: 'inline-table', width: '50%', height: '100%', backgroundImage: 'url(/image/二维码.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}} />
+          <div style={{
+            float: 'right',
+            display: 'inline-table',
+            width: '45%',
+            height: '100%',
+            backgroundImage: 'url(/image/二维码.png)',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'}} />
         </div>
         <Footer isAddress={true} />
       </div>
