@@ -6,19 +6,43 @@ import './css/homep1.css'
 import './css/homep2.css'
 import './css/homep3.css'
 
-class Page1 extends Component {
+export class Page1 extends Component {
   constructor() {
     super()
     this.state = {
       line1: 0,
       line2: 0,
+      maxWidth: 0,
+      height: 0
     }
+  }
+
+  handleResize(event) {
+    event.preventDefault();
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
   }
 
   render() {
     return (
       <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp1' />
+        <div className='gifp1' style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp1' />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -76,19 +100,44 @@ class Page1 extends Component {
   }
 }
 
-class Page2 extends Component {
+export class Page2 extends Component {
   constructor() {
     super()
     this.state = {
       line1: 0,
       line2: 0,
+      maxWidth: 0,
+      height: 0
     }
   }
+
+  handleResize(event) {
+    event.preventDefault();
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
 
   render() {
     return (
       <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp2'/>
+        <div className='gifp2' style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp2' />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
@@ -146,19 +195,44 @@ class Page2 extends Component {
   }
 }
 
-class Page3 extends Component {
+export class Page3 extends Component {
   constructor() {
     super()
     this.state = {
       line1: 0,
       line2: 0,
+      maxWidth: 0,
+      height: 0
     }
   }
+
+  handleResize(event) {
+    event.preventDefault();
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
 
   render() {
     return (
       <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp3'/>
+        <div className='gifp3'  style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp3' />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
                   fontSize: '13pt',
@@ -221,19 +295,44 @@ class Page3 extends Component {
   }
 }
 
-class Page4 extends Component {
+export class Page4 extends Component {
   constructor() {
     super()
     this.state = {
       line1: 0,
       line2: 0,
+      maxWidth: 0,
+      height: 0
     }
   }
+
+  handleResize(event) {
+    event.preventDefault();
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    let width = document.body.clientWidth * 0.6;
+    this.setState({
+      maxWidth: 1040 * window.screen.height * 0.8 / 832,
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
 
   render() {
     return (
       <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className="gifp4"/>
+        <div className="gifp4"  style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp4' />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "Helvetica",
