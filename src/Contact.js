@@ -35,7 +35,8 @@ class Page2 extends Component {
     super()
     this.state = {
       p: [false, false, false, false, false, false, false, false, false],
-      labels: null
+      labels: null,
+      height: 0
     }
   }
   changeImage(index) {
@@ -59,11 +60,26 @@ class Page2 extends Component {
   viewProject(index) {
     window.location.pathname = `/pdf/page${index}.pdf`
   }
+  handleResize(event) {
+    event.preventDefault()
+    this.setState({
+       height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this))
+    this.setState({
+      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this))
+  }
   renderStyle() {
     let {p} = this.state
     let s = {
-      height: window.screen.availHeight,
-      paddingTop: `${window.screen.availHeight * 0.396604938271605}px`
+      height: this.state.height,
+      paddingTop: this.state.height * 0.396604938271605
     }
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'
@@ -143,7 +159,7 @@ class Page2 extends Component {
           fontSize: 24,
           color: '#333333',
           fontFamily: 'PingFangSC-Light, sans-serif',
-          height: `${window.screen.availHeight * (1 - 0.396604938271605)}px`}}
+          height: `${this.state.height * (1 - 0.396604938271605)}px`}}
         >
           <div style={{
             height: 48,

@@ -5,12 +5,34 @@ import { SectionsContainer, Section } from 'react-fullpage'
 class Page1 extends Component {
   constructor() {
     super()
+    this.state = {
+      height: 0
+    }
   }
+
+  handleResize(event) {
+    event.preventDefault()
+    this.setState({
+      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this))
+    this.setState({
+      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this))
+  }
+
   render() {
     return (
       <div style={{
         width: '100%',
-        height: '100%',
+        height: this.state.height,
         paddingTop: '10%',
         paddingLeft: '5.469%',
         paddingRight: '6.562%',
@@ -19,7 +41,7 @@ class Page1 extends Component {
         <div style={{
           display: 'inline-table',
           width: '45%',
-          height: '80%',
+          height: '75%',
           backgroundImage: 'url(/image/小的企划网站2.2-19.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
@@ -28,7 +50,7 @@ class Page1 extends Component {
           display: 'inline-table',
           width: '53%',
           marginLeft: '2%',
-          height: '80%',
+          height: '75%',
           backgroundImage: 'url(/image/小的企划网站2.2-18.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'

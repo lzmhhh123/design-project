@@ -119,11 +119,33 @@ import { SectionsContainer, Section } from 'react-fullpage'
 class Page5 extends Component {
   constructor() {
     super()
+    this.state = {
+      height: 0
+    }
   }
+
+  handleResize(event) {
+    event.preventDefault();
+    this.setState({
+      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize.bind(this));
+    this.setState({
+      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: '70%', marginTop: 170}}>
+      <div style={{height: this.state.height, marginTop: 170}}>
         <div style={{
           fontSize: 36 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
