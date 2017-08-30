@@ -2,63 +2,37 @@ import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
 
-class Footer extends Component {
-  constructor() {
-    super()
-  }
-  render() {
-    let { isAddress } = this.props
-    if(isAddress) {
-      return (
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14}}>
-          media@xiaodeqihua.com<br /><br />
-          上海市 静安区 威海路696号<br /><br />
-          No.696 Weihai Road, Jing An District ,Shanghai
-        </div>
-      )
-    }
-    else {
-      return (
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: 14}}>
-          有想法?我们有兴趣。联系我们!<br />
-          GET A PROJECT? We’d love to hear about it. Get in touch.
-        </div>
-      )
-    }
-  }
-}
-
 class Page1 extends Component {
   constructor() {
     super()
   }
   render() {
     return (
-      <div style={{marginTop: '150px', height: '85%', width: '100%'}}>
-        <div style={{width: '100%', display: 'table', height: '80%'}}>
-          <div style={{display: 'inline-table', width: '55%', float: 'left', marginTop: '18%'}}>
-            <div style={{textAlign: 'center', fontFamily: 'Helvetica', height: 20, fontSize: 25}}>
-              <div>一家小,而美的品牌策划公司</div>
-            </div>
-            <div style={{
-              background: "#FFE300",
-              height: 15,
-              marginBottom: '20%',
-              width: 325,
-              marginLeft: 'auto',
-              marginRight: 'auto',
-              marginBottom: '20%'}} />
-          </div>
-          <div style={{
-            float: 'right',
-            display: 'inline-table',
-            width: '45%',
-            height: '100%',
-            backgroundImage: 'url(/image/二维码.png)',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'}} />
-        </div>
-        <Footer isAddress={true} />
+      <div style={{
+        width: '100%',
+        height: '100%',
+        paddingTop: '10%',
+        paddingLeft: '5.469%',
+        paddingRight: '6.562%',
+        display: 'table'
+      }}>
+        <div style={{
+          display: 'inline-table',
+          width: '45%',
+          height: '80%',
+          backgroundImage: 'url(/image/小的企划网站2.2-19.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100% 100%'
+        }} />
+        <div style={{
+          display: 'inline-table',
+          width: '53%',
+          marginLeft: '2%',
+          height: '80%',
+          backgroundImage: 'url(/image/小的企划网站2.2-18.png)',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100% 100%'
+        }} />
       </div>
     )
   }
@@ -67,13 +41,6 @@ class Page1 extends Component {
 export default class extends Component {
   constructor() {
     super()
-  }
-  mapAnchors() {
-    let r = []
-    for(let i = 1; i <= 2; ++i) {
-      r = r.concat(['section' + i])
-    }
-    return r
   }
   render() {
     let options = {

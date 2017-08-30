@@ -13,25 +13,28 @@ export class Page1 extends Component {
       line1: 0,
       line2: 0,
       maxWidth: 0,
-      height: 0
+      height: 0,
+      marginBottom: -400
     }
   }
 
   handleResize(event) {
     event.preventDefault();
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
@@ -42,16 +45,18 @@ export class Page1 extends Component {
   render() {
     return (
       <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp1' style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp1' />
+        <div className='gifp1' style={{
+          height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
+          ref='gifp1' />
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "Helvetica",
-                  fontSize: '13pt',
+        <div style={{color: '#333333',
+                  fontFamily: 'PingFangSC-Light, sans-serif',
+                  fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
                   right: '5%',
                   width: '35%',
-                  marginLeft: '60%'
+                  marginLeft: '65%'
                 }}>
           <br />
           基于广告、战略、金融、创业的复合背景
@@ -107,25 +112,28 @@ export class Page2 extends Component {
       line1: 0,
       line2: 0,
       maxWidth: 0,
-      height: 0
+      height: 0,
+      marginBottom: -430
     }
   }
 
   handleResize(event) {
     event.preventDefault();
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
@@ -137,14 +145,16 @@ export class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp2' style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp2' />
+        <div className='gifp2'
+          style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
+          ref='gifp2' />
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "Helvetica",
-                  fontSize: '13pt',
+        <div style={{color: '#333333',
+                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',
-                  marginLeft: '50px',
+                  marginLeft: '84px',
                   width: '40%'
                 }}>
           依靠精心策划的品牌策略
@@ -202,25 +212,28 @@ export class Page3 extends Component {
       line1: 0,
       line2: 0,
       maxWidth: 0,
-      height: 0
+      height: 0,
+      marginBottom: -430
     }
   }
 
   handleResize(event) {
     event.preventDefault();
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this));
-    let width = document.body.clientWidth * 0.6;
+    let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
@@ -232,15 +245,17 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp3'  style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp3' />
-        <div style={{color: '#666666',
-                  fontFamily: "Helvetica",
-                  fontSize: '13pt',
+        <div className='gifp3'
+          style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
+          ref='gifp3' />
+        <div style={{color: '#333333',
+                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
                   right: '50px',
                   width: '43%',
-                  marginLeft: '57%'
+                  marginLeft: '54%'
                 }}>
           我们坚信
           <br />
@@ -302,7 +317,8 @@ export class Page4 extends Component {
       line1: 0,
       line2: 0,
       maxWidth: 0,
-      height: 0
+      height: 0,
+      marginBottom: -472
     }
   }
 
@@ -311,7 +327,8 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
@@ -320,7 +337,8 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832)
+      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.8 / 832)
     })
   }
 
@@ -332,14 +350,16 @@ export class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className="gifp4"  style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`}} ref='gifp4' />
+        <div className="gifp4"
+          style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
+          ref='gifp4' />
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "Helvetica",
-                  fontSize: '13pt',
+        <div style={{color: '#333333',
+                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',
-                  left: '50px',
+                  left: '84px',
                   width: '40%'
                 }}>
           “文案日成堆，愁眉展不开……”
@@ -383,7 +403,7 @@ export class Page4 extends Component {
             bottom: '-45px',
           }} />
           <img src="/image/title_SM_en.png"
-            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
+            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
             style={{opacity: 0.9}}
           />
@@ -401,7 +421,7 @@ export default class extends Component {
   render() {
     let options = {
       activeClass:          'active',
-      anchors:              ['sectionOne', 'sectionTwo', 'sectionThree', 'sectionFour'],
+      anchors:              ['sectionOne'],
       arrowNavigation:      true,
       className:            'SectionContainer',
       delay:                1000,
@@ -415,10 +435,7 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s" >
         <SectionsContainer {...options} >
-          <Section><Page1 /></Section>
-          <Section><Page2 /></Section>
-          <Section><Page3 /></Section>
-          <Section><Page4 /></Section>
+          <Section><div /></Section>
         </SectionsContainer>
       </Animation>
     )

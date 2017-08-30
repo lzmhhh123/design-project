@@ -62,74 +62,74 @@ class Page2 extends Component {
   renderStyle() {
     let {p} = this.state
     let s = {
-      marginTop: 150,
-      height: '80%'
+      height: window.screen.availHeight,
+      paddingTop: `${window.screen.availHeight * 0.396604938271605}px`
     }
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 70%'
-      s['backgroundPosition'] = '0% 70%'
+      s['backgroundSize'] = '100% 50%'
+      s['backgroundPosition'] = '0% 95%'
     }
     else if(p[2]) {
       s['backgroundImage'] = 'url(/image/image3.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '30% 70%'
-      s['backgroundPosition'] = '20% 20%'
+      s['backgroundSize'] = '30% 50%'
+      s['backgroundPosition'] = '10% 60%'
     }
     else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '50% 45%'
-      s['backgroundPosition'] = '50% 65%'
+      s['backgroundSize'] = '45% 45%'
+      s['backgroundPosition'] = '50% 85%'
     }
     else if(p[1]) {
       s['backgroundImage'] = 'url(/image/image2.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '60% 70%'
-      s['backgroundPosition'] = '50% 25%'
+      s['backgroundSize'] = '50% 60%'
+      s['backgroundPosition'] = '50% 55%'
     }
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '30% 55%'
-      s['backgroundPosition'] = '50% 70%'
+      s['backgroundSize'] = '20% 32%'
+      s['backgroundPosition'] = '50% 80%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '85% 130%'
-      s['backgroundPosition'] = '50% -200px'
+      s['backgroundSize'] = '60% 60%'
+      s['backgroundPosition'] = '50% 40%'
     }
     else if(p[3]) {
       s['backgroundImage'] = 'url(/image/image4.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45% 60%'
-      s['backgroundPosition'] = '90% 20%'
+      s['backgroundSize'] = '35% 45%'
+      s['backgroundPosition'] = '80% 50%'
     }
     else if(p[5]) {
       s['backgroundImage'] = 'url(/image/image6.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '30% 60%'
-      s['backgroundPosition'] = '50% 70%'
+      s['backgroundSize'] = '20% 35%'
+      s['backgroundPosition'] = '50% 85%'
     }
     else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45% 65%'
-      s['backgroundPosition'] = '90% 20%'
+      s['backgroundSize'] = '40% 50%'
+      s['backgroundPosition'] = '95% 55%'
     }
     return s
   }
   render() {
     let styleLineTrue = {
-      height: 20,
+      height: 12,
       width: '100%',
       background: '#FFE300',
       transition: 'all 0.5s linear'
     }
     let styleLineFalse = {
-      height: 20,
+      height: 12,
       width: 0,
       background: '#FFE300',
       transition: 'all 0.5s linear'
@@ -138,94 +138,98 @@ class Page2 extends Component {
     if(!this.state.labels) return <div />
     return (
       <div style={containStyle}>
-        <div style={{textAlign: 'center', fontSize: 14, fontFamily: 'Helvetica', marginBottom: 50}}>Made by 小的企划</div>
-        <div style={{textAlign: 'center', fontSize: 40, fontFamily: 'Helvetica', height: '70%'}}>
+        <div style={{
+          textAlign: 'center',
+          fontSize: 24,
+          color: '#333333',
+          fontFamily: 'PingFangSC-Light, sans-serif',
+          height: `${window.screen.availHeight * (1 - 0.396604938271605)}px`}}
+        >
           <div style={{
-            height: 50,
+            height: 48,
             marginLeft: 'auto',
             marginRight: 'auto',
             width: 'fit-content', width: '-webkit-fit-content',
             display: 'table'
           }}>
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(0)} onClick={() => this.viewProject(1)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(0)} onClick={() => this.viewProject(1)}>
                 {this.state.labels[0].string}
               </div>
               <div style={this.state.p[0] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(1)} onClick={() => this.viewProject(2)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(1)} onClick={() => this.viewProject(2)}>
                 {this.state.labels[1].string}
               </div>
               <div style={this.state.p[1] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(2)} onClick={() => this.viewProject(3)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(2)} onClick={() => this.viewProject(3)}>
                 {this.state.labels[2].string}
               </div>
               <div style={this.state.p[2] ? styleLineTrue : styleLineFalse}/>
             </div>
           </div>
           <div style={{
-            height: 50,
+            height: 48,
             marginLeft: 'auto',
             marginRight: 'auto',
             width: 'fit-content', width: '-webkit-fit-content',
             display: 'table'
           }}>
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(3)} onClick={() => this.viewProject(4)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(3)} onClick={() => this.viewProject(4)}>
                 {this.state.labels[3].string}
               </div>
               <div style={this.state.p[3] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(4)} onClick={() => this.viewProject(5)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(4)} onClick={() => this.viewProject(5)}>
                 {this.state.labels[4].string}
               </div>
               <div style={this.state.p[4] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(5)} onClick={() => this.viewProject(6)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(5)} onClick={() => this.viewProject(6)}>
                 {this.state.labels[5].string}
               </div>
               <div style={this.state.p[5] ? styleLineTrue : styleLineFalse}/>
             </div>
           </div>
           <div style={{
-            height: 50,
+            height: 48,
             marginLeft: 'auto',
             marginRight: 'auto',
             width: 'fit-content', width: '-webkit-fit-content',
             display: 'table'
           }}>
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(6)} onClick={() => this.viewProject(7)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(6)} onClick={() => this.viewProject(7)}>
                 {this.state.labels[6].string}
               </div>
               <div style={this.state.p[6] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(7)} onClick={() => this.viewProject(8)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(7)} onClick={() => this.viewProject(8)}>
                 {this.state.labels[7].string}
               </div>
               <div style={this.state.p[7] ? styleLineTrue : styleLineFalse}/>
             </div>
             &nbsp;/&nbsp;
             <div style={{display: 'inline-table', width: 'fit-content', width: '-webkit-fit-content'}}>
-              <div style={{height: 30, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(8)} onClick={() => this.viewProject(9)}>
+              <div style={{height: 18, width: 'fit-content', width: '-webkit-fit-content'}} onMouseOver={() => this.changeImage(8)} onClick={() => this.viewProject(9)}>
                 {this.state.labels[8].string}
               </div>
               <div style={this.state.p[8] ? styleLineTrue : styleLineFalse}/>
             </div>
           </div>
         </div>
-        <Footer isAddress={false} />
       </div>
     )
   }
