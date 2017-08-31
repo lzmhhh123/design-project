@@ -150,7 +150,7 @@ class Page5 extends Component {
           fontSize: 36 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
           color: '#333333',
-          fontFamily: "PingFangSC-Light, sans-serif"
+          fontFamily: "PingFangSC-Light"
         }}>
           <div style={{height: 30 * document.body.clientWidth / window.screen.width, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             The brand we’ve worked along with
@@ -211,19 +211,19 @@ export class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
+      <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp1' style={{
           height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
           ref='gifp1' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: 'PingFangSC-Light, sans-serif',
+                  fontFamily: 'PingFangSC-Light',
                   fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
                   right: '5%',
                   width: '35%',
-                  marginLeft: '65%'
+                  marginLeft: '60%'
                 }}>
           <br />
           基于广告、战略、金融、创业的复合背景
@@ -311,13 +311,13 @@ export class Page2 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
+      <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp2'
           style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
           ref='gifp2' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontFamily: "PingFangSC-Light",
                   fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',
@@ -411,12 +411,12 @@ export class Page3 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
+      <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className='gifp3'
           style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
           ref='gifp3' />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontFamily: "PingFangSC-Light",
                   fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
@@ -516,13 +516,13 @@ export class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
+      <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <div className="gifp4"
           style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
           ref='gifp4' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light, sans-serif",
+                  fontFamily: "PingFangSC-Light",
                   fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',
@@ -609,11 +609,11 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
-          <Section><Page5 /></Section>
           <Section><Page1 /></Section>
           <Section><Page2 /></Section>
           <Section><Page3 /></Section>
           <Section><Page4 /></Section>
+          <Section><Page5 /></Section>
         </SectionsContainer>
       </Animation>
     )

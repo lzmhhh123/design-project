@@ -20,7 +20,7 @@ export default class  extends Component {
         logo[i].style.marginTop = "30px"
       }
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = "139px"
+      logoLine[0].style.width = '147px'
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.marginRight = "136px"
       let portfolioLogo = document.getElementsByClassName("portfolioLogo")
@@ -45,7 +45,7 @@ export default class  extends Component {
       for(let i = 0; i < logo.length; ++i) {
         logo[i].style.marginTop = "30px"
       }
-      logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
+      logoLine[0].style.width = (nextProps.home === 1 ? '147px' : '0px')
       aboutLine[0].style.width = (nextProps.about === 1 ? '82px' : '0px')
       portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '120px' : '0px')
       contactLine[0].style.width = (nextProps.contact === 1 ? '120px' : '0px')
@@ -67,7 +67,7 @@ export default class  extends Component {
   mouseOverLogo() {
     setTimeout(() => {
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = '135px'
+      logoLine[0].style.width = '147px'
     })
   }
 
@@ -146,41 +146,50 @@ export default class  extends Component {
               transform: "rotate(90deg)",
               marginLeft: "66px",
               opacity: "0.9",
+              width: 28,
+              height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo2.png" className="logo" style={{
+            <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.2s",
               marginTop: "-35px",
-              marginLeft: "99.5px",
+              marginLeft: "101.5px",
               opacity: "0.9",
+              width: 19,
+              height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo3.png" className="logo" style={{
+            <img src="/image/logo3.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.4s",
               marginTop: "-35px",
-              marginLeft: "125px",
+              marginLeft: "129px",
               opacity: "0.9",
+              width: 19,
+              height: 27,
               position: "fixed"
             }}/>
             <img src="/image/logo4.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.6s",
               marginTop: "-35px",
-              marginLeft: "150px",
+              marginLeft: "156px",
               opacity: "0.9",
+              width: 21,
+              height: 27,
               position: "fixed"
             }}/>
             <img src="/image/logo5.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.8s",
               marginTop: "-35px",
-              marginLeft: "174.6px",
+              marginLeft: "182.6px",
               opacity: "0.9",
+              width: 19,
+              height: 27,
               position: "fixed"
             }}/>
-
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
           <div style={{

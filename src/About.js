@@ -36,6 +36,7 @@ class Page1 extends Component {
         paddingTop: '10%',
         paddingLeft: '5.469%',
         paddingRight: '6.562%',
+        overflow: 'hidden',
         display: 'table'
       }}>
         <div style={{
