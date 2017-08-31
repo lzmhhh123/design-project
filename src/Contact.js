@@ -159,7 +159,7 @@ class Page2 extends Component {
           textAlign: 'center',
           fontSize: 24,
           color: '#333333',
-          fontFamily: 'PingFangSC-Light, sans-serif',
+          fontFamily: 'PingFangSC-Regular, sans-serif',
           height: `${this.state.height * (1 - 0.396604938271605)}px`}}
         >
           <div style={{

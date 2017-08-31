@@ -150,12 +150,16 @@ class Page5 extends Component {
           fontSize: 36 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
           color: '#333333',
-          fontFamily: "PingFangSC-Light"
+          fontFamily: "PingFangSC-Light",
+          width: 'fit-content',
+          width: '-webkit-fit-content',
+          marginLeft: 'auto',
+          marginRight: 'auto'
         }}>
           <div style={{height: 30 * document.body.clientWidth / window.screen.width, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
             The brand we’ve worked along with
           </div>
-          <div style={{height: 16 * document.body.clientWidth / window.screen.width, width: 600 * document.body.clientWidth / window.screen.width, backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
+          <div style={{height: 16 * document.body.clientWidth / window.screen.width, width: '100%', backgroundColor: '#FFE300', marginLeft: 'auto', marginRight: 'auto'}} />
         </div>
         <div style={{
           width: '70%',
