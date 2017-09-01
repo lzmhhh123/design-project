@@ -37,11 +37,20 @@ class Page2 extends Component {
   constructor() {
     super()
     this.state = {
-      p: [true, false, false, false, false, false, false, false, false]
+      p: [false, false, false, false, false, false, false, false, false],
+      index: -1
     }
   }
+  view(event) {
+    event.preventDefault()
+    window.location.pathname = `/pdf/page${this.state.index}.pdf`
+  }
   changeImage(index) {
-    window.location.pathname = `/pdf/page${index}.pdf`
+    let { p } = this.state
+    for(let i = 0; i < 9; ++i)
+      p[i] = false;
+    p[index] = true;
+    this.setState({ p, index })
   }
   componentWillMount() {
     axios
@@ -57,7 +66,61 @@ class Page2 extends Component {
     let {p} = this.state
     let s = {
       marginTop: 70,
-      height: '80%'
+      height: '85%'
+    }
+    if(p[0]) {
+      s['backgroundImage'] = 'url(/image/image1.png)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '100% 35%'
+      s['backgroundPosition'] = '0% 90%'
+    }
+    else if(p[2]) {
+      s['backgroundImage'] = 'url(/image/image3.png)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '50% 70%'
+      s['backgroundPosition'] = '0% 30%'
+    }
+    else if(p[7]) {
+      s['backgroundImage'] = 'url(/image/image8.png)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '100% 50%'
+      s['backgroundPosition'] = '50% 85%'
+    }
+    else if(p[1]) {
+      s['backgroundImage'] = 'url(/image/image2.jpg)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '100% 60%'
+      s['backgroundPosition'] = '50% 60%'
+    }
+    else if(p[4]) {
+      s['backgroundImage'] = 'url(/image/image5.png)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '38% 35%'
+      s['backgroundPosition'] = '50% 90%'
+    }
+    else if(p[8]) {
+      s['backgroundImage'] = 'url(/image/image9.jpg)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '120% 55%'
+      s['backgroundPosition'] = '50% 95%'
+    }
+    else if(p[3]) {
+      s['backgroundImage'] = 'url(/image/image4.jpg)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '100% 50%'
+      s['backgroundPosition'] = '50% 80%'
+    }
+    else if(p[5]) {
+      s['backgroundImage'] = 'url(/image/image6.png)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '38% 35%'
+      s['backgroundPosition'] = '50% 90%'
+    }
+    else if(p[6]) {
+      s['backgroundImage'] = 'url(/image/image7.jpg)'
+      s['backgroundRepeat'] = 'no-repeat'
+      s['backgroundSize'] = '100% 50%'
+      s['backgroundPosition'] = '50% 80%'
     }
     return s;
   }
@@ -78,64 +141,83 @@ class Page2 extends Component {
     if(!this.state.labels) return <div />
     return (
       <div style={containStyle}>
-        <div style={{textAlign: 'center', fontSize: '120%', fontFamily: 'Helvetica', height: '85%'}}>
+        <div style={{textAlign: 'center', fontSize: 16, fontFamily: 'PingFangSC-Light', height: '85%', color: '#333333'}}>
           <div style={{margin: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
                 {this.state.labels[0].string}
               </div>
+              {this.state.p[0] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(1)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(1)}>
                 {this.state.labels[1].string}
               </div>
+              {this.state.p[1] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(2)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(2)}>
                 {this.state.labels[2].string}
               </div>
+              {this.state.p[2] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(3)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(3)}>
                 {this.state.labels[3].string}
               </div>
+              {this.state.p[3] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(4)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(4)}>
                 {this.state.labels[4].string}
               </div>
+              {this.state.p[4] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(5)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(5)}>
                 {this.state.labels[5].string}
               </div>
+              {this.state.p[5] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(6)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(6)}>
                 {this.state.labels[6].string}
               </div>
+              {this.state.p[6] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(7)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(7)}>
                 {this.state.labels[7].string}
               </div>
+              {this.state.p[7] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
-            <div style={{height: 12}} />
-            <div style={{width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-              <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(8)}>
+            <div style={{height: 15}} />
+            <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
+              <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(8)}>
                 {this.state.labels[8].string}
               </div>
+              {this.state.p[8] ? <div style={{height: 8, width: '100%', backgroundColor: '#FFE300'}} /> : null}
             </div>
           </div>
         </div>
-        <Footer isAddress={false} />
+        {
+          this.state.index === -1 ? null :
+          <div style={{
+            margin: 'auto',
+            height: 23,
+            width: 100,
+            marginTop: 30,
+            backgroundImage: 'url(/image/viewProject.jpg)',
+            backgroundSize: '100% 100%'
+          }} onClick={this.view} />
+        }
       </div>
     )
   }

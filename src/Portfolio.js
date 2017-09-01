@@ -145,7 +145,7 @@ class Page5 extends Component {
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: this.state.height, marginTop: 170}}>
+      <div style={{height: this.state.height, marginTop: 130}}>
         <div style={{
           fontSize: 36 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
@@ -221,7 +221,7 @@ export class Page1 extends Component {
           ref='gifp1' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: 'PingFangSC-Light',
+                  fontFamily: "PingFangSC-Ultralight",
                   fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
@@ -230,7 +230,7 @@ export class Page1 extends Component {
                   marginLeft: '60%'
                 }}>
           <br />
-          基于广告、战略、金融、创业的复合背景
+          基于广告、战略咨询、金融、创业的复合背景
           <br />
           <br />
           我们为品牌创立、品牌转型、品牌升级
@@ -321,7 +321,7 @@ export class Page2 extends Component {
           ref='gifp2' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light",
+                  fontFamily: "PingFangSC-Ultralight",
                   fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',
@@ -420,7 +420,7 @@ export class Page3 extends Component {
           style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
           ref='gifp3' />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light",
+                  fontFamily: "PingFangSC-Ultralight",
                   fontSize: 16,
                   textAlign: 'right',
                   position: 'relative',
@@ -526,7 +526,7 @@ export class Page4 extends Component {
           ref='gifp4' />
         <br />
         <div style={{color: '#333333',
-                  fontFamily: "PingFangSC-Light",
+                  fontFamily: "PingFangSC-Ultralight",
                   fontSize: 16,
                   textAlign: 'left',
                   position: 'relative',

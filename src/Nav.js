@@ -46,9 +46,9 @@ export default class  extends Component {
         logo[i].style.marginTop = "30px"
       }
       logoLine[0].style.width = (nextProps.home === 1 ? '147px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '82px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '120px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '120px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '78px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '118px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '110px' : '0px')
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.transition = "all 0s ease"
       aboutLogo[0].style.transitionDelay = '0s'
@@ -82,7 +82,7 @@ export default class  extends Component {
   mouseOverAbout() {
     setTimeout(() => {
       let aboutLine = document.getElementsByClassName("aboutLine")
-      aboutLine[0].style.width = '82px'
+      aboutLine[0].style.width = '78px'
     })
   }
 
@@ -97,7 +97,7 @@ export default class  extends Component {
   mouseOverPortfolio() {
     setTimeout(() => {
       let portfolioLine = document.getElementsByClassName("portfolioLine")
-      portfolioLine[0].style.width = '120px'
+      portfolioLine[0].style.width = '118px'
     })
   }
 
@@ -112,7 +112,7 @@ export default class  extends Component {
   mouseOverContact() {
     setTimeout(() => {
       let contactLine = document.getElementsByClassName("contactLine")
-      contactLine[0].style.width = '120px'
+      contactLine[0].style.width = '110px'
     })
   }
 
@@ -193,7 +193,7 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
           <div style={{
-            marginTop: '35px',
+            marginTop: '32px',
             marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
@@ -205,14 +205,22 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
-              marginTop: '0px'
+              marginTop: '3.5px'
             }} className="contactLine" />
-              <img src="/image/button_contact_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 10, width: 94, height: 16}}/>
+            <div style={{
+              position: "fixed",
+              marginLeft: 10,
+              width: 94,
+              fontSize: 18,
+              fontFamily: "PingFangSC-Light"
+            }}>
+              CONTACT
+            </div>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickPortfolio} onMouseOver={this.mouseOverPortfolio} onMouseOut={this.mouseLeavePortfolio}>
           <div style={{
-            marginTop: '35px',
+            marginTop: '32px',
             marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
@@ -224,14 +232,22 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
-              marginTop: '0px'
+              marginTop: '3.5px'
             }} className="portfolioLine" />
-              <img src="/image/button_portfolio_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 5, width: 110, height: 16}}/>
+            <div style={{
+              position: "fixed",
+              marginLeft: 10,
+              width: 94,
+              fontSize: 18,
+              fontFamily: "PingFangSC-Light"
+            }}>
+              PORTFOLIO
+            </div>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickAbout} onMouseOver={this.mouseOverAbout} onMouseOut={this.mouseLeaveAbout}>
           <div style={{
-            marginTop: '35px',
+            marginTop: '32px',
             marginRight: '0px',
             float: 'right',
             transition: "all 0.5s linear",
@@ -243,9 +259,17 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.2s linear",
               position: "fixed",
-              marginTop: '0px',
+              marginTop: '3.5px',
             }} className="aboutLine" />
-              <img src="/image/button_about_desktop@2x.png" style={{position: "fixed", opacity: 0.9, marginLeft: 6, width: 68, height: 16}}/>
+            <div style={{
+              position: "fixed",
+              marginLeft: 10,
+              width: 94,
+              fontSize: 18,
+              fontFamily: "PingFangSC-Light"
+            }}>
+              ABOUT
+            </div>
           </div>
         </div>
       </div>

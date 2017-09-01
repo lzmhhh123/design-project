@@ -74,14 +74,10 @@ export default class extends Component {
   }
 
   render() {
-    let color = this.state.about === 1 && window.location.hash !== '#section2' ? 'black' : 'white'
+    let color = '#f2f2f2';
     return (
       <div style={{backgroundColor: color}}>
         <Header>
-          { this.state.about === 0 || window.location.hash === '#section2' ?
-            <div style={{height: 50, width: '100%', backgroundImage: 'url(/image/banner_mobile@2x.png)'}} /> :
-            <div style={{height: 50, width: '100%', backgroundColor: 'black'}} />
-          }
           <Nav
             clickAbout={this.clickAbout}
             clickPortfolio={this.clickPortfolio}
@@ -93,7 +89,9 @@ export default class extends Component {
             contact={this.state.contact}
           />
         </Header>
-        {this.props.children}
+        <div style={{margin: 'auto', height: '100%'}}>
+          {this.props.children}
+        </div>
       </div>
     )
   }

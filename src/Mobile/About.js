@@ -8,34 +8,25 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{marginTop: '15%', height: '85%'}}>
+      <div style={{marginTop: 70, height: '85%'}}>
         <div style={{
-          marginTop: '25%',
           fontSize: '150%',
           fontFamily: 'Helvetica',
           width: 'fit-content',
           width: '-webkit-fit-content',
           textAlign: 'center',
           marginLeft: 'auto',
-          marginRight: 'auto'
+          marginRight: 'auto',
+          height: '100%',
+          width: '100%'
         }}>
-          <div style={{height: 15, width: 'fit-content', width: '-webkit-fit-content'}}>
-            一家小，而美的品牌策划公司
+          <img src="/image/contactView.jpeg" style={{height: '80%', width: '90%', marginLeft: '3%'}}/>
+          <br />
+          <div style={{textAlign: 'center', fontFamily: 'PingFangSC-Light', fontSize: 16}}>
+            上海市 静安区 威海路696号<br />
+            No.696 Weihai Road, Jing An District ,Shanghai<br />
+            media@xiaodeqihua.com<br />
           </div>
-          <div style={{height: 10, width: '100%', background: '#FEE300'}}></div>
-        </div>
-        <div style={{
-          height: '60%',
-          backgroundImage: 'url(/image/二维码.png)',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: '50% 70%',
-          backgroundSize: '50% 66.67%'
-        }}></div>
-        <div style={{height: '10%'}}/>
-        <div style={{textAlign: 'center', fontFamily: 'Helvetica', fontSize: '70%'}}>
-          media@xiaodeqihua.com<br /><br />
-          上海市 静安区 威海路696号<br /><br />
-          No.696 Weihai Road, Jing An District ,Shanghai
         </div>
       </div>
     )
