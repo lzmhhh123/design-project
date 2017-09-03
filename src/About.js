@@ -13,14 +13,14 @@ class Page1 extends Component {
   handleResize(event) {
     event.preventDefault()
     this.setState({
-      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+      height: window.screen.availHeight * 0.8 * document.body.clientWidth / window.screen.availWidth
     })
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this))
     this.setState({
-      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+      height: window.screen.availHeight * 0.8 * document.body.clientWidth / window.screen.availWidth
     })
   }
 
@@ -31,18 +31,18 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{
+        overflow: 'hidden',
         width: '100%',
         height: this.state.height,
         paddingTop: '10%',
         paddingLeft: '5.469%',
         paddingRight: '6.562%',
-        overflow: 'hidden',
         display: 'table'
       }}>
         <div style={{
           display: 'inline-table',
           width: '45%',
-          height: '67%',
+          height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-19.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
@@ -51,7 +51,7 @@ class Page1 extends Component {
           display: 'inline-table',
           width: '53%',
           marginLeft: '2%',
-          height: '67%',
+          height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-18.png)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'

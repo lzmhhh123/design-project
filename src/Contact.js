@@ -63,13 +63,13 @@ class Page2 extends Component {
   handleResize(event) {
     event.preventDefault()
     this.setState({
-       height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+       height: window.screen.availHeight * 0.9 * document.body.clientWidth / window.screen.availWidth
     })
   }
   componentDidMount() {
     window.addEventListener('resize', this.handleResize.bind(this))
     this.setState({
-      height: window.screen.availHeight * document.body.clientWidth / window.screen.availWidth
+      height: window.screen.availHeight * 0.9 * document.body.clientWidth / window.screen.availWidth
     })
   }
   componentWillUnmount() {
@@ -78,63 +78,63 @@ class Page2 extends Component {
   renderStyle() {
     let {p} = this.state
     let s = {
+      overflow: 'hidden',
       height: this.state.height,
       paddingTop: this.state.height * 0.396604938271605,
-      overflow: 'hidden'
     }
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 50%'
-      s['backgroundPosition'] = '0% 95%'
+      s['backgroundSize'] = '100% 55%'
+      s['backgroundPosition'] = '0% 100%'
     }
     else if(p[2]) {
       s['backgroundImage'] = 'url(/image/image3.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '30% 50%'
-      s['backgroundPosition'] = '10% 60%'
+      s['backgroundSize'] = '30% 55%'
+      s['backgroundPosition'] = '10% 68%'
     }
     else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45% 45%'
-      s['backgroundPosition'] = '50% 85%'
+      s['backgroundSize'] = '45% 50%'
+      s['backgroundPosition'] = '50% 94%'
     }
     else if(p[1]) {
       s['backgroundImage'] = 'url(/image/image2.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '50% 60%'
-      s['backgroundPosition'] = '50% 55%'
+      s['backgroundSize'] = '50% 67%'
+      s['backgroundPosition'] = '50% 60%'
     }
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '20% 32%'
-      s['backgroundPosition'] = '50% 80%'
+      s['backgroundSize'] = '20% 36%'
+      s['backgroundPosition'] = '50% 90%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '60% 60%'
-      s['backgroundPosition'] = '50% 40%'
+      s['backgroundSize'] = '60% 67%'
+      s['backgroundPosition'] = '50% 44%'
     }
     else if(p[3]) {
       s['backgroundImage'] = 'url(/image/image4.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '35% 45%'
+      s['backgroundSize'] = '35% 50%'
       s['backgroundPosition'] = '80% 50%'
     }
     else if(p[5]) {
       s['backgroundImage'] = 'url(/image/image6.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '20% 35%'
-      s['backgroundPosition'] = '50% 85%'
+      s['backgroundSize'] = '20% 40%'
+      s['backgroundPosition'] = '50% 94%'
     }
     else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '40% 50%'
-      s['backgroundPosition'] = '95% 55%'
+      s['backgroundSize'] = '40% 55%'
+      s['backgroundPosition'] = '95% 60%'
     }
     return s
   }
