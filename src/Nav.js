@@ -212,6 +212,7 @@ export default class  extends Component {
               marginLeft: 10,
               width: 94,
               fontSize: 18,
+              cursor: default,
               fontFamily: "PingFangSC-Light"
             }}>
               CONTACT
@@ -239,6 +240,7 @@ export default class  extends Component {
               marginLeft: 10,
               width: 94,
               fontSize: 18,
+              cursor: default,
               fontFamily: "PingFangSC-Light"
             }}>
               PORTFOLIO
@@ -266,6 +268,7 @@ export default class  extends Component {
               marginLeft: 10,
               width: 94,
               fontSize: 18,
+              cursor: default,
               fontFamily: "PingFangSC-Light"
             }}>
               ABOUT

@@ -160,6 +160,7 @@ class Page2 extends Component {
           fontSize: 24,
           color: '#333333',
           fontFamily: 'PingFangSC-Thin, sans-serif',
+          cursor: default,
           height: `${this.state.height * (1 - 0.396604938271605)}px`}}
         >
           <div style={{
