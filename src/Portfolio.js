@@ -147,7 +147,7 @@ class Page5 extends Component {
     return (
       <div style={{height: this.state.height, marginTop: 130}}>
         <div style={{
-          fontSize: 36 * document.body.clientWidth / window.screen.width,
+          fontSize: 44 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
           color: '#333333',
           fontFamily: "PingFangSC-Light",
@@ -222,7 +222,8 @@ export class Page1 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 16,
+                  fontSize: '1.7em',
+                  marginTop:'-120px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '5%',
@@ -241,11 +242,11 @@ export class Page1 extends Component {
           完美解决方案
           <br />
           <br />
-          <div style={{float: 'right', width: 345}}>
+          <div style={{float: 'right', width: 400, marginTop: 30}}>
             <img src="/image/title_SB_cn.png"
-              onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+              onMouseMove={() => {this.setState({ line1: 400, line2: 500})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
+              style={{opacity: 0.9, width: 400}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -256,11 +257,11 @@ export class Page1 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: 425, marginTop: 8}}>
+          <div style={{float: 'right', width: 500, marginTop: 8}}>
             <img src="/image/title_SB_en.png"
-              onMouseMove={() => {this.setState({ line1: 345, line2: 425})}}
+              onMouseMove={() => {this.setState({ line1: 345, line2: 500})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
+              style={{opacity: 0.9, width: 500}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -322,7 +323,8 @@ export class Page2 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 16,
+                  fontSize: '1.7em',
+                  marginTop:'-120px',
                   textAlign: 'left',
                   position: 'relative',
                   marginLeft: '84px',
@@ -350,11 +352,12 @@ export class Page2 extends Component {
             transition: "all 0.5s linear",
             position: 'relative',
             bottom: '-45px',
+            marginTop: 30
           }} />
           <img src="/image/title_CPD_cn.png"
-            onMouseMove={() => {this.setState({ line1: 340, line2: 600})}}
+            onMouseMove={() => {this.setState({ line1: 400, line2: 700})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
+            style={{opacity: 0.9, width:400}}
           />
           <br />
           <div style={{
@@ -366,9 +369,9 @@ export class Page2 extends Component {
             bottom: '-45px',
           }} />
           <img src="/image/title_CPD_en.png"
-            onMouseMove={() => {this.setState({ line1: 345, line2: 600})}}
+            onMouseMove={() => {this.setState({ line1: 400, line2: 700})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
+            style={{opacity: 0.9, width:700}}
           />
         </div>
       </div>
@@ -421,7 +424,8 @@ export class Page3 extends Component {
           ref='gifp3' />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 16,
+                  fontSize: '1.7em',
+                  marginTop:'-560px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '50px',
@@ -446,11 +450,11 @@ export class Page3 extends Component {
           并且共同承担风险收益
           <br />
           <br />
-          <div style={{float: 'right', width: 390}}>
+          <div style={{float: 'right', width: 450, marginTop:30}}>
             <img src="/image/title_SMS_cn.png"
-              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseMove={() => {this.setState({ line1: 450, line2: 700})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
+              style={{opacity: 0.9, width:450}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -461,11 +465,11 @@ export class Page3 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: 600, marginTop: 8}}>
+          <div style={{float: 'right', width: 700, marginTop: 8}}>
             <img src="/image/title_SMS_en.png"
-              onMouseMove={() => {this.setState({ line1: 390, line2: 600})}}
+              onMouseMove={() => {this.setState({ line1: 390, line2: 700})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9}}
+              style={{opacity: 0.9, width:700}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -527,7 +531,8 @@ export class Page4 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 16,
+                  fontSize: '1.7em',
+                  marginTop:'-160px',
                   textAlign: 'left',
                   position: 'relative',
                   left: '84px',
@@ -558,11 +563,12 @@ export class Page4 extends Component {
             transition: "all 0.5s linear",
             position: 'relative',
             bottom: '-45px',
+            marginTop: 30
           }} />
           <img src="/image/title_SM_cn.png"
-            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
+            onMouseMove={() => {this.setState({ line1: 330, line2: 330})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
+            style={{opacity: 0.9,width:330}}
           />
           <br />
           <div style={{
@@ -574,9 +580,9 @@ export class Page4 extends Component {
             bottom: '-45px',
           }} />
           <img src="/image/title_SM_en.png"
-            onMouseMove={() => {this.setState({ line1: 290, line2: 280})}}
+            onMouseMove={() => {this.setState({ line1: 330, line2: 330})}}
             onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-            style={{opacity: 0.9}}
+            style={{opacity: 0.9,width:330}}
           />
         </div>
       </div>

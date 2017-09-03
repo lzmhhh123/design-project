@@ -123,12 +123,12 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: 40, marginLeft: 'auto', marginRight: 'auto'}}>
-        <img style={{width: '90%', height: '65%', marginLeft: '5%'}} src="/image/mobile/mobile_1.gif" />
+      <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto'}}>
+        <img style={{width: '90%', marginLeft: '5%'}} src="/image/mobile/mobile_1.gif" />
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -193,7 +193,7 @@ class Page2 extends Component {
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -254,15 +254,14 @@ class Page3 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: 50, width: '100%'}}>
+      <div style={{height: '85%', marginTop: 65, width: '100%'}}>
         <img style={{width: '90%', height: '65%', marginLeft: '5%'}} src="/image/mobile/mobile_3.gif" />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
-                  position: 'relative',
+                  position: 'relative'
                 }}>
-          <br />
           <br />
           我们坚信有趣就是生产力的一部分
           <br />
@@ -270,7 +269,9 @@ class Page3 extends Component {
           <br />
           我们与客户深入合作
           <br />
-          将一切好的立意，变成实在的效益，并且共同承担风险收益
+          将一切好的立意，变成实在的效益
+          <br />
+          并且共同承担风险收益
           <br />
           <br />
           <div style={{marginLeft: '21%', marginRight: '21%'}}>
@@ -324,19 +325,22 @@ class Page4 extends Component {
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          <br />
           <br />
           “文案日成堆，愁眉展不开……”小编抱怨道
           <br />
           我们却回答：“成堆是谁？”
           <br />
-          有个资历颇深的砖家说过：“抓住年轻人，才能抓住新市场；
+          有个资历颇深的砖家说过：
           <br />
-          懂得骚浪贱，才能抓住年轻人”大概说的，就是我司。
+          “抓住年轻人，才能抓住新市场；
+          <br />
+          懂得骚浪贱，才能抓住年轻人”
+          <br />
+          大概说的，就是我司。
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
@@ -391,7 +395,7 @@ class Page5 extends Component {
       }}>
         <div style={{textAlign: 'center', width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
           <div style={{height: 20, color: '#333333', fontFamily: 'PingFangSC-Light', fontSize: 24, width: 'fit-content', width: '-webkit-fit-content'}}>
-            The brand we've work with
+            The brand we’ve worked with
           </div>
           <div style={{width: '100%', height: 12, backgroundColor: '#FFE300'}} />
         </div>
