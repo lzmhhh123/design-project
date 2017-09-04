@@ -95,8 +95,8 @@ class Page2 extends Component {
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45%  auto'
-      s['backgroundPosition'] = '50% 95%'
+      s['backgroundSize'] = '38%  auto'
+      s['backgroundPosition'] = '50% 100%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'
