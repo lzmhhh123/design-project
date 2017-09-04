@@ -124,11 +124,9 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
-          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{width:'90%'}}>
-            <source src="/image/preview_1.mp4" type="video/mp4" />
+          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'80%',maxWidth:'600px'}}>
+            <source src="/image/preview_12.mp4" type="video/mp4" />
           </video>
-        </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
@@ -197,7 +195,7 @@ class Page2 extends Component {
       <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
         <div style={{overflow:'hidden',marginLeft:'5%', marginRight:'5%',overflow:'hidden',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{width:'90%'}}>
-              <source src="/image/preview_2.mp4" type="video/mp4" />
+              <source src="/image/preview_22.mp4" type="video/mp4" />
           </video>
         </div>
         <br />
@@ -273,7 +271,7 @@ class Page3 extends Component {
       <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
         <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden', maxWidth:'600px'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{width:'90%'}}>
-            <source src="/image/preview_3.mp4" type="video/mp4" />
+            <source src="/image/preview_32.mp4" type="video/mp4" />
           </video>
         </div>
         <div style={{color: '#666666',
@@ -346,7 +344,7 @@ class Page4 extends Component {
       <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
         <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
           <video poster="/image/empty.png" autoPlay muted loop playsInline style={{width:'90%'}}>
-            <source src="/image/preview_4.mp4" type="video/mp4" />
+            <source src="/image/preview_42.mp4" type="video/mp4" />
           </video>
         </div>
         <br />
