@@ -95,7 +95,7 @@ class Page2 extends Component {
       s['backgroundPosition'] = '10% 68%'
     }
     else if(p[6]) {
-      s['backgroundImage'] = 'url(/image/image8.png)'
+      s['backgroundImage'] = 'url(/image/image8.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '45% 50%'
       s['backgroundPosition'] = '50% 94%'

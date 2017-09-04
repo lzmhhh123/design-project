@@ -71,7 +71,7 @@ export default class extends Component {
       anchors:              ['section1'],
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                1000,
+      delay:                500,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
@@ -80,7 +80,7 @@ export default class extends Component {
       verticalAlign:        false
     }
     return (
-      <Animation name="slideInUp" duration="2s">
+      <Animation name="slideInUp" duration="1s">
         <SectionsContainer {...options} >
           <Section style={{height:'100px',overflow:'hidden'}}><Page1 /></Section>
         </SectionsContainer>

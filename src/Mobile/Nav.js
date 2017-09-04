@@ -149,7 +149,7 @@ export default class  extends Component {
         </div>
         <div ref="menuIconDiv" style={{
           float: 'right',
-          marginTop: '22px',
+          marginTop: '17px',
           marginRight: '-150px',
           transition: 'all 0.3s linear',
           transitionDelay: '1.5s',

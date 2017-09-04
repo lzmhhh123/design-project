@@ -504,6 +504,7 @@ export default class extends Component {
     this.state = {
       current: 0,
     }
+    this.update = this.update.bind(this)
   }
   mapAnchors() {
     let r = []
@@ -511,6 +512,29 @@ export default class extends Component {
       r = r.concat(['section' + i])
     }
     return r
+  }
+  componentDidMount(){
+    this.update()
+  }
+  update() {
+    let aboutLogo = document.getElementsByClassName("aboutLogo")
+    let portfolioLogo = document.getElementsByClassName("portfolioLogo")
+    let contactLogo = document.getElementsByClassName("contactLogo")
+    let logoAll = document.getElementsByClassName('logoAll')
+    if(this.state.current == 0) {
+      contactLogo[0].style.marginRight = "-201px"
+      aboutLogo[0].style.marginRight = "81px"
+      portfolioLogo[0].style.marginRight = "-201px"
+      logoAll[0].style.marginLeft = '-7px'
+      this.setState({current: 1})
+    }
+    else {
+      contactLogo[0].style.marginRight = "-200px"
+      aboutLogo[0].style.marginRight = "80px"
+      portfolioLogo[0].style.marginRight = "-200px"
+      logoAll[0].style.marginLeft = "-6px"
+      this.setState({current: 0})
+    }
   }
   render() {
     let options = {
@@ -525,36 +549,7 @@ export default class extends Component {
       sectionPaddingTop:    '0',
       sectionPaddingBottom: '0',
       verticalAlign:        false,
-      scrollCallback: (states) => {
-        // this.refs.section1.refs.video.pause()
-        // process.nextTick(() => this.refs.section1.refs.video.play())
-        //this.refs.section2.refs.video.pause()
-        let aboutLogo = document.getElementsByClassName("aboutLogo")
-        let portfolioLogo = document.getElementsByClassName("portfolioLogo")
-        let contactLogo = document.getElementsByClassName("contactLogo")
-        let logoAll = document.getElementsByClassName('logoAll')
-        if(this.state.current == 0) {
-          contactLogo[0].style.marginRight = "-201px"
-          aboutLogo[0].style.marginRight = "81px"
-          portfolioLogo[0].style.marginRight = "-201px"
-          logoAll[0].style.marginLeft = '-7px'
-          this.setState({current: 1})
-        }
-        else {
-          contactLogo[0].style.marginRight = "-200px"
-          aboutLogo[0].style.marginRight = "80px"
-          portfolioLogo[0].style.marginRight = "-200px"
-          logoAll[0].style.marginLeft = "-6px"
-          this.setState({current: 0})
-        }
-        //process.nextTick(() => this.refs.section2.refs.video.play())
-        // this.refs.section2.refs.video.pause()
-        // this.refs.section2.refs.video.play()
-        // this.refs.section3.refs.video.pause()
-        // this.refs.section3.refs.video.play()
-        // this.refs.section4.refs.video.pause()
-        // this.refs.section4.refs.video.play()
-      }
+      scrollCallback:       this.update
     }
     return (
       <Animation name="slideInUp" duration="0.3s">
