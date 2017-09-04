@@ -124,8 +124,8 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
-          <video autoPlay muted loop playsInline style={{width:'101%'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
           </video>
         </div>
@@ -195,8 +195,8 @@ class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
-        <div style={{overflow:'hidden',marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
-          <video autoPlay muted loop playsInline style={{width:'101%'}}>
+        <div style={{overflow:'hidden',marginLeft:'5%', marginRight:'5%',overflow:'hidden',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
               <source src="/image/preview_2.mp4" type="video/mp4" />
           </video>
         </div>
@@ -271,8 +271,8 @@ class Page3 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
-        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
-          <video autoPlay muted loop playsInline style={{width:'101%'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden', maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
             <source src="/image/preview_3.mp4" type="video/mp4" />
           </video>
         </div>
@@ -344,8 +344,8 @@ class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
-        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
-          <video autoPlay muted loop playsInline style={{width:'101%'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
             <source src="/image/preview_4.mp4" type="video/mp4" />
           </video>
         </div>
