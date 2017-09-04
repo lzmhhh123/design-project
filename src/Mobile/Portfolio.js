@@ -124,9 +124,9 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-        <video autoPlay loop
+        <video autoPlay muted loop playsInline 
             style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
-            <source src="/image/mobile/preview_1.mp4" type="video/mp4" />
+            <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#666666',
@@ -194,9 +194,9 @@ class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
-        <video autoPlay loop
+        <video autoPlay muted loop playsInline
             style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
-            <source src="/image/mobile/preview_2.mp4" type="video/mp4" />
+            <source src="/image/preview_2.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#666666',
@@ -269,9 +269,9 @@ class Page3 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
-        <video autoPlay loop
+        <video autoPlay muted loop playsInline
             style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
-            <source src="/image/mobile/preview_3.mp4" type="video/mp4" />
+            <source src="/image/preview_3.mp4" type="video/mp4" />
         </video>
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
@@ -340,10 +340,10 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '16%', textAlign:'center'}}>
-        <video autoPlay loop
+      <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
+        <video autoPlay muted loop playsInline
             style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
-            <source src="/image/mobile/preview_4.mp4" type="video/mp4" />
+            <source src="/image/preview_4.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#666666',

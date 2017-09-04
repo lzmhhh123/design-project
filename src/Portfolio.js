@@ -168,7 +168,7 @@ class Page5 extends Component {
           marginRight: 'auto',
           marginTop: '5%',
           backgroundImage: 'url(/image/4-021.png)',
-          backgroundSize: '100% 100%',
+          backgroundSize: '100% auto',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center'
         }} />
