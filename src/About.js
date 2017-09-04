@@ -43,7 +43,7 @@ class Page1 extends Component {
           display: 'inline-table',
           width: '45%',
           height: '84%',
-          backgroundImage: 'url(/image/小的企划网站2.2-19.png)',
+          backgroundImage: 'url(/image/小的企划网站2.2-19.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
         }} />
@@ -52,7 +52,7 @@ class Page1 extends Component {
           width: '53%',
           marginLeft: '2%',
           height: '84%',
-          backgroundImage: 'url(/image/小的企划网站2.2-18.png)',
+          backgroundImage: 'url(/image/小的企划网站2.2-18.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
         }} />

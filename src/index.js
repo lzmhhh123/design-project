@@ -20,11 +20,11 @@ for(var i = 0; i < mobileAgent.length; i++) {
 if(isMobile) ReactDOM.render(<Mobile />, document.getElementById('root'));
 else {
   document.body.onresize = () => {
-    if (document.body.clientWidth > 850) {
+    if (document.body.clientWidth > document.body.clientHeight * 1) {
       ReactDOM.render(<Main />, document.getElementById('root'));
     }
     else ReactDOM.render(<Mobile />, document.getElementById('root'))
   }
-  if (document.body.clientWidth > 850) ReactDOM.render(<Main />, document.getElementById('root'))
+  if (document.body.clientWidth > document.body.clientHeight * 1) ReactDOM.render(<Main />, document.getElementById('root'))
   else ReactDOM.render(<Mobile />, document.getElementById('root'))
 }

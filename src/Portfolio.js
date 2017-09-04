@@ -145,7 +145,7 @@ class Page5 extends Component {
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: this.state.height, marginTop: 130}}>
+      <div style={{height: this.state.height, marginTop: 200}}>
         <div style={{
           fontSize: 44 * document.body.clientWidth / window.screen.width,
           textAlign: 'center',
@@ -216,19 +216,20 @@ export class Page1 extends Component {
   render() {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp1' style={{
-          height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
-          ref='gifp1' />
+        <video autoPlay loop
+            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            <source src="/image/preview_1.mp4" type="video/mp4" />
+        </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-120px',
+                  marginTop:'-170px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '5%',
-                  width: '35%',
-                  marginLeft: '60%'
+                  width: '30%',
+                  marginLeft: '65%'
                 }}>
           <br />
           基于广告、战略咨询、金融、创业的复合背景
@@ -317,9 +318,10 @@ export class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp2'
-          style={{height: `${this.state.height}px` , maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
-          ref='gifp2' />
+        <video autoPlay loop
+            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            <source src="/image/preview_2.mp4" type="video/mp4" />
+        </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
@@ -419,13 +421,14 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className='gifp3'
-          style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
-          ref='gifp3' />
+        <video autoPlay loop
+            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            <source src="/image/preview_3.mp4" type="video/mp4" />
+        </video>
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-560px',
+                  marginTop:'-200px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '50px',
@@ -525,14 +528,15 @@ export class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <div className="gifp4"
-          style={{height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}
-          ref='gifp4' />
+        <video autoPlay loop
+            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            <source src="/image/preview_4.mp4" type="video/mp4" />
+        </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-160px',
+                  marginTop:'-130px',
                   textAlign: 'left',
                   position: 'relative',
                   left: '84px',
