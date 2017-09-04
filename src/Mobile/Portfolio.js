@@ -140,7 +140,7 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
+      <div style={{height: '85%', marginTop: 55, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
           </video>
@@ -151,8 +151,6 @@ class Page1 extends Component {
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          <br />
-          <br />
           基于广告、战略、金融、创业的复合背景
           <br />
           <br />
@@ -225,7 +223,7 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
+      <div className="right" style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
             <source src="/image/preview_2.mp4" type="video/mp4" />
           </video>
@@ -236,8 +234,7 @@ class Page2 extends Component {
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          <br />
-          <br />
+
           依靠精心策划的品牌策略
           <br />
           以及对消费市场的洞察
@@ -314,7 +311,7 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
+      <div style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
             <source src="/image/preview_3.mp4" type="video/mp4" />
           </video>
@@ -324,7 +321,6 @@ class Page3 extends Component {
                   textAlign: 'center',
                   position: 'relative'
                 }}>
-          <br />
           我们坚信 有趣就是生产力的一部分
           <br />
           <br />
@@ -401,7 +397,7 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
+      <div className="right" style={{height: '85%', marginTop: '20px', textAlign:'center'}}>
           <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
             <source src="/image/preview_4.mp4" type="video/mp4" />
           </video>
@@ -412,7 +408,6 @@ class Page4 extends Component {
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          <br />
           “文案日成堆，愁眉展不开……”
           <br />
           小编抱怨道，顺便想卖弄一波文才
