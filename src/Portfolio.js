@@ -194,7 +194,7 @@ export class Page1 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -204,7 +204,7 @@ export class Page1 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -218,7 +218,7 @@ export class Page1 extends Component {
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video poster="/image/empty.png"  autoPlay loop
             style={{marginTop:'50px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
-            <source src="/image/preview_12.mp4" type="video/mp4" />
+            <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
 
         <br />
@@ -296,7 +296,7 @@ export class Page2 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -306,7 +306,7 @@ export class Page2 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -321,7 +321,7 @@ export class Page2 extends Component {
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
-            <source src="/image/preview_22.mp4" type="video/mp4" />
+            <source src="/image/preview_2.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
@@ -399,7 +399,7 @@ export class Page3 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -409,7 +409,7 @@ export class Page3 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -424,7 +424,7 @@ export class Page3 extends Component {
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
-            <source src="/image/preview_32.mp4" type="video/mp4" />
+            <source src="/image/preview_3.mp4" type="video/mp4" />
         </video>
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
@@ -506,7 +506,7 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -516,7 +516,7 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -531,7 +531,7 @@ export class Page4 extends Component {
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'100px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
-            <source src="/image/preview_42.mp4" type="video/mp4" />
+            <source src="/image/preview_4.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
