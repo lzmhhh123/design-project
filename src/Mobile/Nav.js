@@ -157,7 +157,7 @@ export default class  extends Component {
         }}>
           <MenuIcon ref="menuIcon" about={this.props.about} onClick={this.menuOnClick}/>
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickContact}>
+        <div style={{float: 'right'}} onClick={(e)=>{this.props.clickContact(e)}}>
           <div style={{
             marginTop: '25px',
             marginRight: '-120px',
@@ -176,7 +176,7 @@ export default class  extends Component {
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickPortfolio}>
+        <div style={{float: 'right'}} onClick={(e)=>{this.props.clickPortfolio(e)}}>
           <div style={{
             marginTop: '25px',
             marginRight: '-100px',
@@ -195,7 +195,7 @@ export default class  extends Component {
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
-        <div style={{float: 'right'}} onClick={this.props.clickAbout}>
+        <div style={{float: 'right'}} onClick={(e)=>{this.props.clickAbout(e);this.menuOnClick(e)}}>
           <div style={{
             marginTop: '25px',
             marginRight: '-100px',

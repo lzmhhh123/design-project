@@ -514,7 +514,7 @@ export default class extends Component {
     return r
   }
   componentDidMount(){
-    this.update()
+    setTimeout(() => {this.update()},100)
   }
   update() {
     let aboutLogo = document.getElementsByClassName("aboutLogo")
