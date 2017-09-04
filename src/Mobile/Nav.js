@@ -82,7 +82,7 @@ export default class  extends Component {
             float: 'left',
             marginLeft: '-6px',
             marginTop: '10px',
-            transition: 'all 0.5s linear',
+            transition: 'all 0.3s linear',
           }}>
           <div style={{
               transition: "all 0.2s linear",
@@ -162,7 +162,7 @@ export default class  extends Component {
             marginTop: '25px',
             marginRight: '-120px',
             float: 'right',
-            transition: "all 0.5s linear",
+            transition: "all 0.3s linear",
           }} className="contactLogo">
             <div style={{
               height: '13px',
@@ -181,7 +181,7 @@ export default class  extends Component {
             marginTop: '25px',
             marginRight: '-100px',
             float: 'right',
-            transition: "all 0.5s linear",
+            transition: "all 0.3s linear",
           }} className="portfolioLogo">
             <div style={{
               height: '13px',
@@ -200,7 +200,7 @@ export default class  extends Component {
             marginTop: '25px',
             marginRight: '-100px',
             float: 'right',
-            transition: "all 0.5s linear",
+            transition: "all 0.3s linear",
           }} className="aboutLogo">
             <div style={{
               height: '13px',

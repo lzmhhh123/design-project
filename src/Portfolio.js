@@ -194,7 +194,7 @@ export class Page1 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -204,7 +204,7 @@ export class Page1 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -296,7 +296,7 @@ export class Page2 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -306,7 +306,7 @@ export class Page2 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -399,7 +399,7 @@ export class Page3 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -409,7 +409,7 @@ export class Page3 extends Component {
     let width = document.body.clientWidth * 0.65;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -506,7 +506,7 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -516,7 +516,7 @@ export class Page4 extends Component {
     let width = document.body.clientWidth * 0.6;
     this.setState({
       maxWidth: 1040 * window.screen.height * 0.6 / 832,
-      height: 100 * parseInt(((width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832)) / 100), 10) + 1,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
       marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
@@ -612,7 +612,7 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                1000,
+      delay:                300,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
@@ -622,7 +622,7 @@ export default class extends Component {
     }
     console.log(window.location);
     return (
-      <Animation name="slideInUp" duration="2s">
+      <Animation name="slideInUp" duration="0.3s">
         <SectionsContainer {...options} >
           <Section><Page1 /></Section>
           <Section><Page2 /></Section>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
-
+import '../css/index.css'
 // class Page1 extends Component {
 //   constructor() {
 //     super()
@@ -141,9 +141,12 @@ class Page1 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 55, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
-            <source src="/image/preview_1.mp4" type="video/mp4" />
-          </video>
+          <div style={{width:'80%', display:'inline-block', position:'relative'}}>
+            <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
+              <source src="/image/preview_1.mp4" type="video/mp4" />
+            </video>
+            <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+          </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
@@ -224,9 +227,12 @@ class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
-          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
-            <source src="/image/preview_2.mp4" type="video/mp4" />
-          </video>
+          <div style={{width:'80%', display:'inline-block', position:'relative'}}>
+            <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%',maxWidth:'600px'}}>
+              <source src="/image/preview_2.mp4" type="video/mp4" />
+            </video>
+            <div ref = "box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+          </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
@@ -312,9 +318,12 @@ class Page3 extends Component {
   render() {
     return (
       <div style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
-          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
-            <source src="/image/preview_3.mp4" type="video/mp4" />
-          </video>
+      <div style={{width:'80%', display:'inline-block', position:'relative'}}>
+        <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
+          <source src="/image/preview_3.mp4" type="video/mp4" />
+        </video>
+        <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+      </div>
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
                   fontSize: '1.3em',
@@ -398,9 +407,12 @@ class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: '20px', textAlign:'center'}}>
-          <video poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:`${this.state.width}px`,maxWidth:'600px'}}>
-            <source src="/image/preview_4.mp4" type="video/mp4" />
-          </video>
+      <div style={{width:'80%', display:'inline-block', position:'relative'}}>
+        <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
+          <source src="/image/preview_4.mp4" type="video/mp4" />
+        </video>
+        <div ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+      </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
@@ -489,6 +501,9 @@ class Page5 extends Component {
 export default class extends Component {
   constructor() {
     super()
+    this.state = {
+      current: 0,
+    }
   }
   mapAnchors() {
     let r = []
@@ -503,21 +518,51 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                1000,
+      delay:                300,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
       sectionPaddingTop:    '0',
       sectionPaddingBottom: '0',
-      verticalAlign:        false
+      verticalAlign:        false,
+      scrollCallback: (states) => {
+        // this.refs.section1.refs.video.pause()
+        // process.nextTick(() => this.refs.section1.refs.video.play())
+        //this.refs.section2.refs.video.pause()
+        let aboutLogo = document.getElementsByClassName("aboutLogo")
+        let portfolioLogo = document.getElementsByClassName("portfolioLogo")
+        let contactLogo = document.getElementsByClassName("contactLogo")
+        let logoAll = document.getElementsByClassName('logoAll')
+        if(this.state.current == 0) {
+          contactLogo[0].style.marginRight = "-201px"
+          aboutLogo[0].style.marginRight = "81px"
+          portfolioLogo[0].style.marginRight = "-201px"
+          logoAll[0].style.marginLeft = '-7px'
+          this.setState({current: 1})
+        }
+        else {
+          contactLogo[0].style.marginRight = "-200px"
+          aboutLogo[0].style.marginRight = "80px"
+          portfolioLogo[0].style.marginRight = "-200px"
+          logoAll[0].style.marginLeft = "-6px"
+          this.setState({current: 0})
+        }
+        //process.nextTick(() => this.refs.section2.refs.video.play())
+        // this.refs.section2.refs.video.pause()
+        // this.refs.section2.refs.video.play()
+        // this.refs.section3.refs.video.pause()
+        // this.refs.section3.refs.video.play()
+        // this.refs.section4.refs.video.pause()
+        // this.refs.section4.refs.video.play()
+      }
     }
     return (
-      <Animation name="slideInUp" duration="2s">
-        <SectionsContainer {...options} >
-          <Section><Page1 /></Section>
-          <Section><Page2 /></Section>
-          <Section><Page3 /></Section>
-          <Section><Page4 /></Section>
+      <Animation name="slideInUp" duration="0.3s">
+        <SectionsContainer {...options}>
+          <Section><Page1  ref = 'section1'/></Section>
+          <Section><Page2  ref = 'section2'/></Section>
+          <Section><Page3  ref = 'section3'/></Section>
+          <Section><Page4  ref = 'section4'/></Section>
           <Section><Page5 /></Section>
         </SectionsContainer>
       </Animation>
