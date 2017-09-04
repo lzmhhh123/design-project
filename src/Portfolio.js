@@ -216,7 +216,7 @@ export class Page1 extends Component {
   render() {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video autoPlay loop
+        <video poster="/image/empty.png"  autoPlay loop
             style={{marginTop:'50px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
@@ -319,7 +319,7 @@ export class Page2 extends Component {
   render() {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video autoPlay loop
+        <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_2.mp4" type="video/mp4" />
         </video>
@@ -422,7 +422,7 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video autoPlay loop
+        <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_3.mp4" type="video/mp4" />
         </video>
@@ -529,7 +529,7 @@ export class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video autoPlay loop
+        <video  poster="/image/empty.png" autoPlay loop
             style={{marginTop:'100px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_4.mp4" type="video/mp4" />
         </video>
