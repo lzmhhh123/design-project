@@ -80,7 +80,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '50% auto'
       s['backgroundPosition'] = '0% 30%'
     }
-    else if(p[7]) {
+    else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '100% auto'
@@ -116,7 +116,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '38%  auto'
       s['backgroundPosition'] = '50% 100%'
     }
-    else if(p[6]) {
+    else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '100%  auto'
