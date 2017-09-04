@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import './css/index.css'
 
 class Page1 extends Component {
   constructor() {
@@ -81,7 +82,7 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
-          <Section><Page1 /></Section>
+          <Section style={{height:'100px',overflow:'hidden'}}><Page1 /></Section>
         </SectionsContainer>
       </Animation>
     )

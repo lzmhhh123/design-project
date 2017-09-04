@@ -38,7 +38,7 @@ export default class extends Component {
       contact: 0,
       home: 0
     })
-    browserHistory.push('/about')
+    browserHistory.push('/about#section1')
   }
 
   clickPortfolio(event) {
@@ -90,7 +90,7 @@ export default class extends Component {
             contact={this.state.contact}
           />
         </Header>
-        <div style={{margin: 'auto', overflowX: 'hidden'}}>
+        <div style={{margin: 'auto', overflow: 'hidden'}}>
           {this.props.children}
         </div>
       </div>
