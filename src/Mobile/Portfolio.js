@@ -421,7 +421,7 @@ class Page5 extends Component {
         paddingTop: 30,
         backgroundImage: 'url(/image/mobile-label.jpg)',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center 60px',
+        backgroundPosition: 'center 100px',
         backgroundSize: '90% auto'
       }}>
         <div style={{textAlign: 'center', width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
