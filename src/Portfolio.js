@@ -220,6 +220,7 @@ export class Page1 extends Component {
             style={{marginTop:'50px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
+
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
