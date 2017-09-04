@@ -50,7 +50,7 @@ import { SectionsContainer, Section } from 'react-fullpage'
 //           <div style={rowStyle}>
 //             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-1.png)', backgroundSize: '55.40% 80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
 //             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-2.png)', backgroundSize: '80% 33.33%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
-//             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/104.png)', backgroundSize: '80% 30.80%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
+//             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/104.png)', backgroundSize: '80% 30.60%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
 //             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-9.png)', backgroundSize: '80% 62.39%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
 //             <div style={{width: '20%', height: '100%', backgroundImage: 'url(/image/1-7.png)', backgroundSize: '80% 36.11%', display: 'inline-block', backgroundRepeat: 'no-repeat', backgroundPosition: '50% 50%'}} />
 //           </div>
@@ -193,9 +193,9 @@ export class Page1 extends Component {
     event.preventDefault();
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -203,9 +203,9 @@ export class Page1 extends Component {
     window.addEventListener('resize', this.handleResize.bind(this));
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -400 : -400 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -217,14 +217,14 @@ export class Page1 extends Component {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video autoPlay loop
-            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            style={{marginTop:'50px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-170px',
+                  marginTop:'80px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '5%',
@@ -260,7 +260,7 @@ export class Page1 extends Component {
           <br />
           <div style={{float: 'right', width: 500, marginTop: 8}}>
             <img src="/image/title_SB_en.png"
-              onMouseMove={() => {this.setState({ line1: 345, line2: 500})}}
+              onMouseMove={() => {this.setState({ line1: 400, line2: 500})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9, width: 500}}
             />
@@ -294,9 +294,9 @@ export class Page2 extends Component {
     event.preventDefault();
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -304,9 +304,9 @@ export class Page2 extends Component {
     window.addEventListener('resize', this.handleResize.bind(this));
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -319,14 +319,14 @@ export class Page2 extends Component {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video autoPlay loop
-            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_2.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-120px',
+                  marginTop:'80px',
                   textAlign: 'left',
                   position: 'relative',
                   marginLeft: '84px',
@@ -397,9 +397,9 @@ export class Page3 extends Component {
     event.preventDefault();
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -407,9 +407,9 @@ export class Page3 extends Component {
     window.addEventListener('resize', this.handleResize.bind(this));
     let width = document.body.clientWidth * 0.65;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -430 : -430 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -422,13 +422,13 @@ export class Page3 extends Component {
     return (
       <div style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video autoPlay loop
-            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            style={{marginTop:'20px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_3.mp4" type="video/mp4" />
         </video>
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-200px',
+                  marginTop:'30px',
                   textAlign: 'right',
                   position: 'relative',
                   right: '50px',
@@ -470,7 +470,7 @@ export class Page3 extends Component {
           <br />
           <div style={{float: 'right', width: 700, marginTop: 8}}>
             <img src="/image/title_SMS_en.png"
-              onMouseMove={() => {this.setState({ line1: 390, line2: 700})}}
+              onMouseMove={() => {this.setState({ line1: 450, line2: 700})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9, width:700}}
             />
@@ -504,9 +504,9 @@ export class Page4 extends Component {
     event.preventDefault();
     let width = document.body.clientWidth * 0.6;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -514,9 +514,9 @@ export class Page4 extends Component {
     window.addEventListener('resize', this.handleResize.bind(this));
     let width = document.body.clientWidth * 0.6;
     this.setState({
-      maxWidth: 1040 * window.screen.height * 0.8 / 832,
-      height: width >= 1040 * window.screen.height * 0.8 / 832 ? window.screen.height * 0.8 : window.screen.height * 0.8 * width / (1040 * window.screen.height * 0.8 / 832),
-      marginBottom: width >= 1040 * window.screen.height * 0.8 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.8 / 832)
+      maxWidth: 1040 * window.screen.height * 0.6 / 832,
+      height: width >= 1040 * window.screen.height * 0.6 / 832 ? window.screen.height * 0.6 : window.screen.height * 0.6 * width / (1040 * window.screen.height * 0.6 / 832),
+      marginBottom: width >= 1040 * window.screen.height * 0.6 / 832 ? -472 : -472 * width / (1040 * window.screen.height * 0.6 / 832)
     })
   }
 
@@ -529,14 +529,14 @@ export class Page4 extends Component {
     return (
       <div className="right" style={{overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video autoPlay loop
-            style={{marginTop:'100px', height: `${this.state.height}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
+            style={{marginTop:'100px',zIndex:-10,height: `${this.state.height-2}px`, maxWidth: `${this.state.maxWidth}px`, marginBottom: `${this.state.marginBottom}px`}}>
             <source src="/image/preview_4.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
                   fontSize: '1.7em',
-                  marginTop:'-130px',
+                  marginTop:'-50px',
                   textAlign: 'left',
                   position: 'relative',
                   left: '84px',

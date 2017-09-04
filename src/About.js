@@ -36,8 +36,7 @@ class Page1 extends Component {
         height: this.state.height,
         paddingTop: '10%',
         paddingLeft: '5.469%',
-        paddingRight: '6.562%',
-        display: 'table'
+        paddingRight: '6.562%'
       }}>
         <div style={{
           display: 'inline-table',

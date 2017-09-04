@@ -90,7 +90,7 @@ export default class extends Component {
             contact={this.state.contact}
           />
         </Header>
-        <div style={{margin: 'auto', overflowX: 'auto'}}>
+        <div style={{margin: 'auto', overflowX: 'hidden'}}>
           {this.props.children}
         </div>
       </div>
