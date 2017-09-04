@@ -20,19 +20,98 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>小的企划</title>
+  <style>
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      margin:0;
+    }
+    .bg p {
+      margin-top:20px;
+      color:rgb(80,80,80);
+      font-size: 1rem;
+    }
+    .bg{
+      height: 100vh;
+      width: 100%;
+      background-color: #F4F4F4;
+      z-index: 1000;
+    }
+    .icon {
+       width: 25px;
+       height: 25px;
+       vertical-align: -4px;
+       fill: currentColor;
+       overflow: hidden;
+    }
+    .bg .box {
+      position: absolute;
+      width: 100%;
+      top:45%;
+      text-align: center;
+      border: none;
+      border-radius: 3px;
+      font-size: 30px;
+      position: relative;
+      margin-bottom: .25em;
+      vertical-align: top;
+      transition: .3s color, .3s border, .3s transform, .3s opacity;
+    }
+    .loader-05 {
+      border: .2em solid rgb(30,30,40);
+      border-top-color: #F4F4F4;
+      border-radius: 50%;
+      animation: 1s loader-05 linear infinite;
+      position: relative;
+      &:before {
+        content: '';
+        display: block;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: -.2em;
+        ;
+        left: -.2em;
+        ;
+        border: .2em solid currentColor;
+        border-radius: 50%;
+        opacity: .5;
+      }
+    }
+    [class*="loader-"] {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      color: inherit;
+      vertical-align: middle;
+      pointer-events: none;
+    }
+
+    @keyframes loader-05 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
   </head>
-  <body leftmargin="0">
 
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <body>
+    <div id="root">
+      <div class="bg">
+        <div class="box">
+          <div class="loader-05">
+          </div>
+          <p>
+            Loading...
+          </p>
+        </div>
+      </div>
+    </div>  
   </body>
 </html>

@@ -125,7 +125,7 @@ class Page1 extends Component {
     return (
       <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
         <video autoPlay muted loop playsInline 
-            style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
+            style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
             <source src="/image/preview_1.mp4" type="video/mp4" />
         </video>
         <br />
@@ -195,7 +195,7 @@ class Page2 extends Component {
     return (
       <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
         <video autoPlay muted loop playsInline
-            style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
+            style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
             <source src="/image/preview_2.mp4" type="video/mp4" />
         </video>
         <br />
@@ -270,7 +270,7 @@ class Page3 extends Component {
     return (
       <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
         <video autoPlay muted loop playsInline
-            style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
+            style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
             <source src="/image/preview_3.mp4" type="video/mp4" />
         </video>
         <div style={{color: '#666666',
@@ -342,7 +342,7 @@ class Page4 extends Component {
     return (
       <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
         <video autoPlay muted loop playsInline
-            style={{marginLeft:'5%', marginRight:'5%', width:'90%', maxWidth:'600px'}}>
+            style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
             <source src="/image/preview_4.mp4" type="video/mp4" />
         </video>
         <br />
