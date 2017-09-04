@@ -53,10 +53,10 @@ export default class extends Component {
             {
               data => {
                 return <div style={{
-                  width: '25px',
-                  marginTop: '3px',
-                  marginBottom: '3px',
-                  height: '3px',
+                  width: '20px',
+                  marginTop: '4px',
+                  marginBottom: '4px',
+                  height: '2px',
                   background: 'black',
                   borderRadius: '1px',
                   opacity: `${data.opacity}`,

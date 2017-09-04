@@ -7,7 +7,8 @@ import './css/filepicker.css'
 import './css/dropzone.min.css'
 import './css/styles.min.css'
 import './css/antd.min.css'
-
+import initReactFastclick from 'react-fastclick';
+initReactFastclick();
 var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
 var browser = navigator.userAgent.toLowerCase();
 var isMobile = false;
@@ -20,11 +21,11 @@ for(var i = 0; i < mobileAgent.length; i++) {
 if(isMobile) ReactDOM.render(<Mobile />, document.getElementById('root'));
 else {
   document.body.onresize = () => {
-    if (document.body.clientWidth > 650) {
+    if (document.body.clientWidth > 700 ) {
       ReactDOM.render(<Main />, document.getElementById('root'));
     }
     else ReactDOM.render(<Mobile />, document.getElementById('root'))
   }
-  if (document.body.clientWidth > 650) ReactDOM.render(<Main />, document.getElementById('root'))
+  if (document.body.clientWidth > 700 ) ReactDOM.render(<Main />, document.getElementById('root'))
   else ReactDOM.render(<Mobile />, document.getElementById('root'))
 }

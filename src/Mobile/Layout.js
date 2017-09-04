@@ -74,7 +74,7 @@ export default class extends Component {
   }
 
   render() {
-    let color = '#f2f2f2';
+    let color = '#f4f4f4';
     return (
       <div style={{backgroundColor: color}}>
         <Header>

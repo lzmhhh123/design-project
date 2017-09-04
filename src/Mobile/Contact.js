@@ -65,61 +65,61 @@ class Page2 extends Component {
   renderStyle() {
     let {p} = this.state
     let s = {
-      marginTop: 70,
-      height: '85%'
+      marginTop: 110,
+      height: '70%'
     }
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 35%'
+      s['backgroundSize'] = '100% auto'
       s['backgroundPosition'] = '0% 90%'
     }
     else if(p[2]) {
       s['backgroundImage'] = 'url(/image/image3.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '50% 70%'
+      s['backgroundSize'] = '50% auto'
       s['backgroundPosition'] = '0% 30%'
     }
-    else if(p[7]) {
+    else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 50%'
+      s['backgroundSize'] = '100% auto'
       s['backgroundPosition'] = '50% 85%'
     }
     else if(p[1]) {
       s['backgroundImage'] = 'url(/image/image2.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 60%'
+      s['backgroundSize'] = '100% auto'
       s['backgroundPosition'] = '50% 60%'
     }
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '38% 35%'
-      s['backgroundPosition'] = '50% 90%'
+      s['backgroundSize'] = '45%  auto'
+      s['backgroundPosition'] = '50% 95%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '120% 55%'
+      s['backgroundSize'] = '120%  auto'
       s['backgroundPosition'] = '50% 95%'
     }
     else if(p[3]) {
       s['backgroundImage'] = 'url(/image/image4.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 50%'
+      s['backgroundSize'] = '100%  auto'
       s['backgroundPosition'] = '50% 80%'
     }
     else if(p[5]) {
       s['backgroundImage'] = 'url(/image/image6.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '38% 35%'
-      s['backgroundPosition'] = '50% 90%'
+      s['backgroundSize'] = '38%  auto'
+      s['backgroundPosition'] = '50% 100%'
     }
-    else if(p[6]) {
+    else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 50%'
+      s['backgroundSize'] = '100%  auto'
       s['backgroundPosition'] = '50% 80%'
     }
     return s;
@@ -141,7 +141,7 @@ class Page2 extends Component {
     if(!this.state.labels) return <div />
     return (
       <div style={containStyle}>
-        <div style={{textAlign: 'center', fontSize: 16, fontFamily: 'PingFangSC-Light', height: '85%', color: '#333333'}}>
+        <div style={{marginTop:20, textAlign: 'center', fontSize: 16, fontFamily: 'PingFangSC-Light', height: '95%', color: '#333333'}}>
           <div style={{margin: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
@@ -211,8 +211,8 @@ class Page2 extends Component {
           this.state.index === -1 ? null :
           <div style={{
             margin: 'auto',
-            height: 23,
-            width: 100,
+            height: 27.6,
+            width: 120,
             marginTop: 30,
             backgroundImage: 'url(/image/viewProject.jpg)',
             backgroundSize: '100% 100%'

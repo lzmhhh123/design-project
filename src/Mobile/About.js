@@ -20,9 +20,9 @@ class Page1 extends Component {
           height: '100%',
           width: '100%'
         }}>
-          <img src="/image/contactView.jpeg" style={{height: '80%', width: '90%', marginLeft: '3%'}}/>
+          <img src="/image/contactView.jpeg" style={{height: '80%', width: '90%'}}/>
           <br />
-          <div style={{textAlign: 'center', fontFamily: 'PingFangSC-Light', fontSize: 16}}>
+          <div style={{marginTop:30, textAlign: 'center', fontFamily: 'PingFangSC-Light', fontSize: 16}}>
             上海市 静安区 威海路696号<br />
             No.696 Weihai Road, Jing An District ,Shanghai<br />
             media@xiaodeqihua.com<br />

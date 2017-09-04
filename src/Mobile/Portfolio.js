@@ -123,12 +123,16 @@ class Page1 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: 40, marginLeft: 'auto', marginRight: 'auto'}}>
-        <img style={{width: '90%', height: '65%', marginLeft: '5%'}} src="/image/mobile/mobile_1.gif" />
+      <div style={{height: '85%', marginTop: 65, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
+            <source src="/image/preview_1.mp4" type="video/mp4" />
+          </video>
+        </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -136,7 +140,9 @@ class Page1 extends Component {
           <br />
           基于广告、战略、金融、创业的复合背景
           <br />
+          <br />
           我们为品牌创立、品牌转型、品牌升级
+          <br />
           <br />
           提供既科学又有创造力的
           <br />
@@ -145,7 +151,7 @@ class Page1 extends Component {
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
             <img src="/image/title_SB_cn.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -160,7 +166,7 @@ class Page1 extends Component {
           <br />
           <div style={{marginLeft: '20%', marginRight: '20%'}}>
             <img src="/image/title_SB_en.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -188,12 +194,16 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: 65, width: '100%'}}>
-        <img style={{width: '90%', height: '60%', marginRight: '5%'}} src="/image/mobile/mobile_2.gif" />
+      <div className="right" style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
+        <div style={{overflow:'hidden',marginLeft:'5%', marginRight:'5%',overflow:'hidden',marginTop:'-30px',marginBottom:'-30px',width:'90%', maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
+              <source src="/image/preview_2.mp4" type="video/mp4" />
+          </video>
+        </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -203,14 +213,20 @@ class Page2 extends Component {
           <br />
           以及对消费市场的洞察
           <br />
-          我们致力于创造既让人惊叹、又逼人买单的杰出作品
           <br />
-          我们擅长的不多，也就全案、活动、视频、平面等等
+          我们致力于创造既让人惊叹、
+          <br />
+          又逼人买单的杰出作品
+          <br />
+          <br />
+          我们擅长的不多，
+          <br />
+          也就全案、活动、视频、平面等等
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
             <img src="/image/title_CPD_cn.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -225,7 +241,7 @@ class Page2 extends Component {
           <br />
           <div style={{marginLeft: '10%', marginRight: '10%'}}>
             <img src="/image/title_CPD_en.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -254,28 +270,36 @@ class Page3 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: 50, width: '100%'}}>
-        <img style={{width: '90%', height: '65%', marginLeft: '5%'}} src="/image/mobile/mobile_3.gif" />
+      <div style={{height: '85%', marginTop: 65, width: '100%', textAlign:'center'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden', maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
+            <source src="/image/preview_3.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
-                  position: 'relative',
+                  position: 'relative'
                 }}>
           <br />
+          我们坚信 有趣就是生产力的一部分
           <br />
-          我们坚信有趣就是生产力的一部分
           <br />
-          另一部分是不可描述的精耕细作
+          另一部分 是不可描述的精耕细作
+          <br />
           <br />
           我们与客户深入合作
           <br />
-          将一切好的立意，变成实在的效益，并且共同承担风险收益
+          将一切好的立意变成实在的效益
+          <br />
+          <br />
+          并且共同承担风险收益
           <br />
           <br />
           <div style={{marginLeft: '21%', marginRight: '21%'}}>
             <img src="/image/title_SMS_cn.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -290,7 +314,7 @@ class Page3 extends Component {
           <br />
           <div style={{marginLeft: '5%', marginRight: '5%'}}>
             <img src="/image/title_SMS_en.png"
-              style={{opacity: 0.9, width: '100%', height: '8%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -319,29 +343,40 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '16%'}}>
-        <img src="/image/mobile/mobile_4.gif" style={{width: '90%', height: '60%', marginRight: '5%'}}/>
+      <div className="right" style={{height: '85%', marginTop: '65px', textAlign:'center'}}>
+        <div style={{marginLeft:'5%', marginRight:'5%',marginTop:'-30px',marginBottom:'-30px',overflow:'hidden',maxWidth:'600px'}}>
+          <video autoPlay muted loop playsInline style={{width:'90%'}}>
+            <source src="/image/preview_4.mp4" type="video/mp4" />
+          </video>
+        </div>
         <br />
         <div style={{color: '#666666',
                   fontFamily: "PingFangSC-Light",
-                  fontSize: '100%',
+                  fontSize: '1.3em',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
           <br />
+          “文案日成堆，愁眉展不开……”
           <br />
-          “文案日成堆，愁眉展不开……”小编抱怨道
+          小编抱怨道，顺便想卖弄一波文才
           <br />
           我们却回答：“成堆是谁？”
           <br />
-          有个资历颇深的砖家说过：“抓住年轻人，才能抓住新市场；
           <br />
-          懂得骚浪贱，才能抓住年轻人”大概说的，就是我司。
+          有个资历颇深的砖家说过：
+          <br />
+          “抓住年轻人，才能抓住新市场；
+          <br />
+          懂得骚浪贱，才能抓住年轻人”
+          <br />
+          <br />
+          大概说的，就是我司。
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
             <img src="/image/title_SM_cn.png"
-              style={{opacity: 0.9, width: '100%', height: '6%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -356,7 +391,7 @@ class Page4 extends Component {
           <br />
           <div style={{marginLeft: '26%', marginRight: '26%'}}>
             <img src="/image/title_SM_en.png"
-              style={{opacity: 0.9, width: '100%', height: '6%'}}
+              style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -382,16 +417,16 @@ class Page5 extends Component {
     return (
       <div style={{
         height: '85%',
-        marginTop: 40,
+        marginTop: 50,
         paddingTop: 30,
         backgroundImage: 'url(/image/mobile-label.jpg)',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '50% 90%',
-        backgroundSize: '90% 80%'
+        backgroundPosition: 'center 100px',
+        backgroundSize: '90% auto'
       }}>
         <div style={{textAlign: 'center', width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
           <div style={{height: 20, color: '#333333', fontFamily: 'PingFangSC-Light', fontSize: 24, width: 'fit-content', width: '-webkit-fit-content'}}>
-            The brand we've work with
+            The brand we’ve worked with
           </div>
           <div style={{width: '100%', height: 12, backgroundColor: '#FFE300'}} />
         </div>

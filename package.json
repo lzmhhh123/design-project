@@ -22,6 +22,7 @@
     "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-dropzone-component": "^2.0.0",
+    "react-fastclick": "^3.0.2",
     "react-fileupload": "^2.4.0",
     "react-fullpage": "^0.1.18",
     "react-move": "^1.5.4",

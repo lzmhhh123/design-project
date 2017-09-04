@@ -94,7 +94,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '30% 55%'
       s['backgroundPosition'] = '10% 68%'
     }
-    else if(p[7]) {
+    else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '45% 50%'
@@ -130,7 +130,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '20% 40%'
       s['backgroundPosition'] = '50% 94%'
     }
-    else if(p[6]) {
+    else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '40% 55%'
@@ -160,6 +160,7 @@ class Page2 extends Component {
           fontSize: 24,
           color: '#333333',
           fontFamily: 'PingFangSC-Thin, sans-serif',
+          cursor: 'default',
           height: `${this.state.height * (1 - 0.396604938271605)}px`}}
         >
           <div style={{

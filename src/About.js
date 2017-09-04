@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import './css/index.css'
 
 class Page1 extends Component {
   constructor() {
@@ -36,14 +37,13 @@ class Page1 extends Component {
         height: this.state.height,
         paddingTop: '10%',
         paddingLeft: '5.469%',
-        paddingRight: '6.562%',
-        display: 'table'
+        paddingRight: '6.562%'
       }}>
         <div style={{
           display: 'inline-table',
           width: '45%',
           height: '84%',
-          backgroundImage: 'url(/image/小的企划网站2.2-19.png)',
+          backgroundImage: 'url(/image/小的企划网站2.2-19.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
         }} />
@@ -52,7 +52,7 @@ class Page1 extends Component {
           width: '53%',
           marginLeft: '2%',
           height: '84%',
-          backgroundImage: 'url(/image/小的企划网站2.2-18.png)',
+          backgroundImage: 'url(/image/小的企划网站2.2-18.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%'
         }} />
@@ -82,7 +82,7 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="2s">
         <SectionsContainer {...options} >
-          <Section><Page1 /></Section>
+          <Section style={{height:'100px',overflow:'hidden'}}><Page1 /></Section>
         </SectionsContainer>
       </Animation>
     )

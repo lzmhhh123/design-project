@@ -38,7 +38,7 @@ export default class extends Component {
       contact: 0,
       home: 0
     })
-    browserHistory.push('/about')
+    browserHistory.push('/about#section1')
   }
 
   clickPortfolio(event) {
@@ -77,7 +77,7 @@ export default class extends Component {
   render() {
     let color = this.state.about === 1 && window.location.hash !== '#section2' ? 'black' : 'white'
     return (
-      <div style={{height: '100%', backgroundColor: '#F2F2F2'}}>
+      <div style={{height: '100%', backgroundColor: '#F4F4F4'}}>
         <Header>
           <Nav
             clickAbout={this.clickAbout}
@@ -90,7 +90,7 @@ export default class extends Component {
             contact={this.state.contact}
           />
         </Header>
-        <div style={{margin: 'auto', overflowX: 'auto'}}>
+        <div style={{margin: 'auto', overflow: 'hidden'}}>
           {this.props.children}
         </div>
       </div>

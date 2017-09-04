@@ -7,3 +7,6 @@
 .right {
   text-align: right;
 }
+.Section{
+	overflow-x: hidden !important;
+}
