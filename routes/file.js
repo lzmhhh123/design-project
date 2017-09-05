@@ -9,7 +9,7 @@ const storage = multer.diskStorage({
   }
 })
 
-const upload = multer({dest: 'build/pdf/'});
+const upload = multer({storage: storage});
 
 Router.post('/uploadHandler', upload.single('file'), function (req, res, next) {
   console.log(req.file);
@@ -23,11 +23,11 @@ const storage1 = multer.diskStorage({
   }
 })
 
-const upload1 = multer({dest: 'build/image/'});
+const upload1 = multer({storage: storage1});
 
 Router.post('/uploadHandler1', upload.single('file'), function (req, res, next) {
   console.log(req.file);
   res.send({});
 })
 
-module.exports = router
+module.exports = Router
