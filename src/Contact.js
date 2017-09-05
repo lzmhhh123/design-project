@@ -50,6 +50,10 @@ class Page2 extends Component {
     axios
       .post('/api/asklabel')
       .then(res => {
+        if (parseInt === undefined)
+            parseInt = Number.parseInt;
+        if (parseInt === undefined)
+            parseInt = window.parseInt;
         console.log(res.data.labels);
         res.data.labels.sort((a, b) => parseInt(a.id, 10) > parseInt(b.id, 10))
         this.setState({
@@ -85,55 +89,55 @@ class Page2 extends Component {
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '100% 55%'
+      s['backgroundSize'] = '100% auto'
       s['backgroundPosition'] = '0% 100%'
     }
     else if(p[2]) {
       s['backgroundImage'] = 'url(/image/image3.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '30% 55%'
+      s['backgroundSize'] = '30% auto'
       s['backgroundPosition'] = '10% 68%'
     }
     else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image8.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45% 50%'
+      s['backgroundSize'] = '45% auto'
       s['backgroundPosition'] = '50% 94%'
     }
     else if(p[1]) {
       s['backgroundImage'] = 'url(/image/image2.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '50% 67%'
+      s['backgroundSize'] = '50% auto'
       s['backgroundPosition'] = '50% 60%'
     }
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '20% 36%'
+      s['backgroundSize'] = '20% auto'
       s['backgroundPosition'] = '50% 90%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '60% 67%'
+      s['backgroundSize'] = '60% auto'
       s['backgroundPosition'] = '50% 44%'
     }
     else if(p[3]) {
       s['backgroundImage'] = 'url(/image/image4.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '35% 50%'
+      s['backgroundSize'] = '35% auto'
       s['backgroundPosition'] = '80% 50%'
     }
     else if(p[5]) {
       s['backgroundImage'] = 'url(/image/image6.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '20% 40%'
+      s['backgroundSize'] = '20% auto'
       s['backgroundPosition'] = '50% 94%'
     }
     else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '40% 55%'
+      s['backgroundSize'] = '40% auto'
       s['backgroundPosition'] = '95% 60%'
     }
     return s
