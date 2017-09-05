@@ -87,6 +87,8 @@ export default class  extends Component {
             marginLeft: '-6px',
             marginTop: '10px',
             transition: 'all 0.3s linear',
+            width: '180px',
+            height: '50px'
           }}>
           <div style={{
               transition: "all 0.5s linear",
