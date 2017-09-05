@@ -140,25 +140,24 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: 55, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-          <div style={{width:'80%', display:'inline-block', position:'relative'}}>
-            <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
-              <source src="/image/preview_1.mp4" type="video/mp4" />
+      <div style={{height: '85%', marginTop: 40, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
+          <div style={{width:'90vw', display:'inline-block', position:'relative'}}>
+            <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'60vh'}}>
+              <source src="/image/final_1.mp4" type="video/mp4" />
             </video>
-            <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+            <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
           </div>
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "PingFangSC-Light",
-                  fontSize: '1.3em',
+        <div style={{color: '#000000',
+                  fontFamily: "PingFangSC-Ultralight",
+                  fontSize: '3.5vw',
+                  marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          基于广告、战略、金融、创业的复合背景
-          <br />
+          基于广告、战略咨询、金融、创业的复合背景
           <br />
           我们为品牌创立、品牌转型、品牌升级
-          <br />
           <br />
           提供既科学又有创造力的
           <br />
@@ -182,7 +181,7 @@ class Page1 extends Component {
           <br />
           <div style={{marginLeft: '20%', marginRight: '20%'}}>
             <img src="/image/title_SB_en.png"
-              style={{opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -226,17 +225,18 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
-          <div style={{width:'80%', display:'inline-block', position:'relative'}}>
-            <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%',maxWidth:'600px'}}>
-              <source src="/image/preview_2.mp4" type="video/mp4" />
+      <div className="right" style={{height: '85%', marginTop: 55, width: '100%', textAlign:'center'}}>
+          <div style={{width:'82vw', display:'inline-block', position:'relative'}}>
+            <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%',maxWidth:'60vh'}}>
+              <source src="/image/final_2.mp4" type="video/mp4" />
             </video>
-            <div ref = "box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+            <div ref = "box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
           </div>
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "PingFangSC-Light",
-                  fontSize: '1.3em',
+        <div style={{color: '#000000',
+                  fontFamily: "PingFangSC-Ultralight",
+                  fontSize: '3.3vw',
+                  marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -245,15 +245,9 @@ class Page2 extends Component {
           <br />
           以及对消费市场的洞察
           <br />
+          我们致力于创造既让人惊叹、又逼人买单的杰出作品
           <br />
-          我们致力于创造既让人惊叹、
-          <br />
-          又逼人买单的杰出作品
-          <br />
-          <br />
-          我们擅长的不多，
-          <br />
-          也就全案、活动、视频、平面等等
+          我们擅长的不多，也就全案、活动、视频、平面等等
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
@@ -273,7 +267,7 @@ class Page2 extends Component {
           <br />
           <div style={{marginLeft: '10%', marginRight: '10%'}}>
             <img src="/image/title_CPD_en.png"
-              style={{opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -317,31 +311,27 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: 35, width: '100%', textAlign:'center'}}>
-      <div style={{width:'80%', display:'inline-block', position:'relative'}}>
-        <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
-          <source src="/image/preview_3.mp4" type="video/mp4" />
+      <div style={{height: '85%', marginTop: 45, width: '100%', textAlign:'center'}}>
+      <div style={{width:'85vw', display:'inline-block', position:'relative'}}>
+        <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'50vh'}}>
+          <source src="/image/final_3.mp4" type="video/mp4" />
         </video>
-        <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+        <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
       </div>
-        <div style={{color: '#666666',
-                  fontFamily: "PingFangSC-Light",
-                  fontSize: '1.3em',
+        <div style={{color: '#000000',
+                  fontFamily: "PingFangSC-Ultralight",
+                  fontSize: '3.3vw',
                   textAlign: 'center',
+                  marginTop: '3vh',
                   position: 'relative'
                 }}>
-          我们坚信 有趣就是生产力的一部分
+          我们坚信有趣就是生产力的一部分
           <br />
-          <br />
-          另一部分 是不可描述的精耕细作
-          <br />
+          另一部分是不可描述的精耕细作
           <br />
           我们与客户深入合作
           <br />
-          将一切好的立意变成实在的效益
-          <br />
-          <br />
-          并且共同承担风险收益
+          将一切好的立意变成实在的效益,并且共同承担风险收益
           <br />
           <br />
           <div style={{marginLeft: '21%', marginRight: '21%'}}>
@@ -361,7 +351,7 @@ class Page3 extends Component {
           <br />
           <div style={{marginLeft: '5%', marginRight: '5%'}}>
             <img src="/image/title_SMS_en.png"
-              style={{opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -407,34 +397,27 @@ class Page4 extends Component {
   render() {
     return (
       <div className="right" style={{height: '85%', marginTop: '20px', textAlign:'center'}}>
-      <div style={{width:'80%', display:'inline-block', position:'relative'}}>
-        <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'600px'}}>
-          <source src="/image/preview_4.mp4" type="video/mp4" />
+      <div style={{width:'82vw', display:'inline-block', position:'relative'}}>
+        <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'50vh'}}>
+          <source src="/image/final_4.mp4" type="video/mp4" />
         </video>
-        <div ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'20px solid #F2F2F2',left:'-4px',top:'-4px', width:'102%',height:'102%'}}></div>
+        <div ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-1px',top:'-1px', width:'102%',height:'102%'}}></div>
       </div>
         <br />
-        <div style={{color: '#666666',
-                  fontFamily: "PingFangSC-Light",
-                  fontSize: '1.3em',
+        <div style={{color: '#000000',
+                  fontFamily: "PingFangSC-Ultralight",
+                  fontSize: '3.3vw',
+                  marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
-          “文案日成堆，愁眉展不开……”
-          <br />
-          小编抱怨道，顺便想卖弄一波文才
+          “文案日成堆，愁眉展不开……”小编抱怨道，
           <br />
           我们却回答：“成堆是谁？”
           <br />
+          有个资历颇深的砖家说过：“抓住年轻人，才能抓住新市场
           <br />
-          有个资历颇深的砖家说过：
-          <br />
-          “抓住年轻人，才能抓住新市场；
-          <br />
-          懂得骚浪贱，才能抓住年轻人”
-          <br />
-          <br />
-          大概说的，就是我司。
+          懂得骚浪贱，才能抓住年轻人”大概说的，就是我司。
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
@@ -454,7 +437,7 @@ class Page4 extends Component {
           <br />
           <div style={{marginLeft: '26%', marginRight: '26%'}}>
             <img src="/image/title_SM_en.png"
-              style={{opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -479,20 +462,13 @@ class Page5 extends Component {
   render() {
     return (
       <div style={{
-        height: '85%',
-        marginTop: 50,
-        paddingTop: 30,
+        height: '100%',
+        marginTop: '-5vh',
         backgroundImage: 'url(/image/mobile-label.jpg)',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center 100px',
         backgroundSize: '90% auto'
       }}>
-        <div style={{textAlign: 'center', width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
-          <div style={{height: 20, color: '#333333', fontFamily: 'PingFangSC-Light', fontSize: 24, width: 'fit-content', width: '-webkit-fit-content'}}>
-            The brand we’ve worked with
-          </div>
-          <div style={{width: '100%', height: 12, backgroundColor: '#FFE300'}} />
-        </div>
       </div>
     )
   }
@@ -517,22 +493,26 @@ export default class extends Component {
     setTimeout(() => {this.update()},100)
   }
   update() {
-    let aboutLogo = document.getElementsByClassName("aboutLogo")
-    let portfolioLogo = document.getElementsByClassName("portfolioLogo")
-    let contactLogo = document.getElementsByClassName("contactLogo")
-    let logoAll = document.getElementsByClassName('logoAll')
+    if (!this.aboutLogo)
+      this.aboutLogo = document.getElementsByClassName("aboutLogo")
+    if (!this.portfolioLogo)
+      this.portfolioLogo = document.getElementsByClassName("portfolioLogo")
+    if (!this.contactLogo)
+      this.contactLogo = document.getElementsByClassName("contactLogo")
+    if (!this.logoAll)
+      this.logoAll = document.getElementsByClassName("logoAll")
     if(this.state.current == 0) {
-      contactLogo[0].style.marginRight = "-201px"
-      aboutLogo[0].style.marginRight = "81px"
-      portfolioLogo[0].style.marginRight = "-201px"
-      logoAll[0].style.marginLeft = '-7px'
+      this.contactLogo[0].style.marginRight = "-201px"
+      this.aboutLogo[0].style.marginRight = "81px"
+      this.portfolioLogo[0].style.marginRight = "-201px"
+      this.logoAll[0].style.marginLeft = '-7px'
       this.setState({current: 1})
     }
     else {
-      contactLogo[0].style.marginRight = "-200px"
-      aboutLogo[0].style.marginRight = "80px"
-      portfolioLogo[0].style.marginRight = "-200px"
-      logoAll[0].style.marginLeft = "-6px"
+      this.contactLogo[0].style.marginRight = "-200px"
+      this.aboutLogo[0].style.marginRight = "80px"
+      this.portfolioLogo[0].style.marginRight = "-200px"
+      this.logoAll[0].style.marginLeft = "-6px"
       this.setState({current: 0})
     }
   }

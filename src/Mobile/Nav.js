@@ -25,21 +25,25 @@ export default class  extends Component {
 
   menuOnClick(event) {
     event.preventDefault()
-    let aboutLogo = document.getElementsByClassName("aboutLogo")
-    let portfolioLogo = document.getElementsByClassName("portfolioLogo")
-    let contactLogo = document.getElementsByClassName("contactLogo")
-    let logoAll = document.getElementsByClassName('logoAll')
+    if (!this.aboutLogo)
+      this.aboutLogo = document.getElementsByClassName("aboutLogo")
+    if (!this.portfolioLogo)
+      this.portfolioLogo = document.getElementsByClassName("portfolioLogo")
+    if (!this.contactLogo)
+      this.contactLogo = document.getElementsByClassName("contactLogo")
+    if (!this.logoAll)
+      this.logoAll = document.getElementsByClassName("logoAll")
     if(this.refs.menuIcon.state.s === 0) {
-      contactLogo[0].style.marginRight = "110px"
-      aboutLogo[0].style.marginRight = "90px"
-      portfolioLogo[0].style.marginRight = "120px"
-      logoAll[0].style.marginLeft = '-200px'
+      this.contactLogo[0].style.marginRight = "110px"
+      this.aboutLogo[0].style.marginRight = "90px"
+      this.portfolioLogo[0].style.marginRight = "120px"
+      this.logoAll[0].style.marginLeft = '-200px'
     }
     else {
-      contactLogo[0].style.marginRight = this.props.contact ? "100px" : "-200px"
-      aboutLogo[0].style.marginRight = this.props.about ? "80px" : "-200px"
-      portfolioLogo[0].style.marginRight = this.props.portfolio ? "120px" : "-200px"
-      logoAll[0].style.marginLeft = "-6px"
+      this.contactLogo[0].style.marginRight = this.props.contact ? "100px" : "-200px"
+      this.aboutLogo[0].style.marginRight = this.props.about ? "80px" : "-200px"
+      this.portfolioLogo[0].style.marginRight = this.props.portfolio ? "120px" : "-200px"
+      this.logoAll[0].style.marginLeft = "-6px"
     }
     this.refs.menuIcon.setState({s: this.refs.menuIcon.state.s ^ 1})
   }
@@ -85,10 +89,10 @@ export default class  extends Component {
             transition: 'all 0.3s linear',
           }}>
           <div style={{
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               transitionDelay: "1.3s",
               backgroundColor: '#FFE300',
-              marginTop: '20px',
+              marginTop: '17px',
               width: '0px',
               height: "13px",
               marginLeft: "21px",
@@ -101,17 +105,15 @@ export default class  extends Component {
               transform: "rotate(90deg)",
               marginLeft: "11px",
               opacity: "0.9",
-              width: 28,
               height: 27,
               position: "fixed"
             }}/>
             <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-              transitionDelay: "0.2s",
+              transitionDelay: "0.5s",
               marginTop: "-35px",
               marginLeft: "46.5px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -121,7 +123,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "74px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -131,7 +132,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "101px",
               opacity: "0.9",
-              width: 21,
               height: 27,
               position: "fixed"
             }}/>
@@ -141,7 +141,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "127.6px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -168,7 +167,7 @@ export default class  extends Component {
               height: '13px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px'
             }} className="contactLine" />
@@ -187,7 +186,7 @@ export default class  extends Component {
               height: '13px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px'
             }} className="portfolioLine" />
@@ -206,7 +205,7 @@ export default class  extends Component {
               height: '13px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px',
             }} className="aboutLine" />

@@ -130,10 +130,10 @@ export default class  extends Component {
         <div style={{float: 'left'}} onClick={this.props.clickHome} onMouseOver={this.mouseOverLogo} onMouseOut={this.mouseLeaveLogo}>
           <div style={
               {
-                transition: "all 0.2s linear",
+                transition: "all 0.5s linear",
                 transitionDelay: "1.3s",
                 backgroundColor: '#FFE300',
-                marginTop: '34px',
+                marginTop: '36px',
                 width: '0px',
                 height: "16px",
                 marginLeft: "60px",
@@ -146,17 +146,15 @@ export default class  extends Component {
               transform: "rotate(90deg)",
               marginLeft: "66px",
               opacity: "0.9",
-              width: 28,
               height: 27,
               position: "fixed"
             }}/>
             <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-              transitionDelay: "0.2s",
+              transitionDelay: "0.5s",
               marginTop: "-35px",
               marginLeft: "101.5px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -166,7 +164,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "129px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -176,7 +173,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "156px",
               opacity: "0.9",
-              width: 21,
               height: 27,
               position: "fixed"
             }}/>
@@ -186,7 +182,6 @@ export default class  extends Component {
               marginTop: "-35px",
               marginLeft: "182.6px",
               opacity: "0.9",
-              width: 19,
               height: 27,
               position: "fixed"
             }}/>
@@ -203,7 +198,7 @@ export default class  extends Component {
               height: '16px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '3.5px'
             }} className="contactLine" />
@@ -231,7 +226,7 @@ export default class  extends Component {
               height: '16px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '3.5px'
             }} className="portfolioLine" />
@@ -259,7 +254,7 @@ export default class  extends Component {
               height: '16px',
               width: '0px',
               backgroundColor: '#FFE300',
-              transition: "all 0.2s linear",
+              transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '3.5px',
             }} className="aboutLine" />

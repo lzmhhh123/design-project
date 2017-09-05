@@ -41,6 +41,7 @@ class Page1 extends Component {
       }}>
         <div style={{
           display: 'inline-table',
+          marginLeft:'3%',
           width: '45%',
           height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-19.jpg)',
@@ -49,8 +50,8 @@ class Page1 extends Component {
         }} />
         <div style={{
           display: 'inline-table',
-          width: '53%',
-          marginLeft: '2%',
+          width: '45%',
+          marginLeft: '5%',
           height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-18.jpg)',
           backgroundRepeat: 'no-repeat',
