@@ -40,6 +40,7 @@ class Page2 extends Component {
       p: [false, false, false, false, false, false, false, false, false],
       index: -1
     }
+    this.view = this.view.bind(this)
   }
   view(event) {
     event.preventDefault()
