@@ -131,7 +131,7 @@ export default class extends Component {
       (
         <div>
           <Card>
-            <strong><h2 style={{color: 'red'}}>这里可以修改admin的口令</h2></strong>
+            <strong><h2 style={{color: 'black'}}>这里可以修改admin的口令</h2></strong>
             <Form onSubmit={this.changePassword}>
               {
                 this.state.errorMessage && this.state.errorMessage !== 'change successful!'
@@ -170,13 +170,13 @@ export default class extends Component {
               </Menu>
             </Layout.Sider>
             <Layout.Content>
-              <strong><h2 style={{color: 'red'}}>{`请上传文件名为page${this.state.selectLable}.pdf的文件：`}</h2></strong>
+              <strong><h2 style={{color: 'black'}}>{`请上传文件名为page${this.state.selectLable}.pdf的文件：`}</h2></strong>
               <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
               <div style={{height: 30}} />
-              <strong><h2 style={{color: 'red'}}>{`请上传文件名为image${this.state.selectLable}.${this.check() ? 'png' : 'jpg'}的文件：`}</h2></strong>
+              <strong><h2 style={{color: 'black'}}>{`请上传文件名为image${this.state.selectLable}.${this.check() ? 'png' : 'jpg'}的文件：`}</h2></strong>
               <DropzoneComponent config={configImage} eventHandlers={eventHandlers} djsConfig={djsConfigImage} />
               <div style={{height: 30}} />
-              <strong><h2 style={{color: 'red'}}>{`这里可以修改标签${this.state.selectLable}：`}</h2></strong>
+              <strong><h2 style={{color: 'black'}}>{`这里可以修改标签${this.state.selectLable}：`}</h2></strong>
               <Form onSubmit={this.changeLabel}>
                 {
                   this.state.labelMessage && this.state.labelMessage !== 'change label successful!'
@@ -191,7 +191,7 @@ export default class extends Component {
                 <FormField label={`标签${this.state.selectLable}的新内容`} htmlFor="form-input-label">
                   <FormInput type="string" placeholder={`label${this.state.selectLable}`} name="label" ref="label" />
                 </FormField>
-                <Button submit>submit</Button>
+                <Button submit>点击修改标签名</Button>
               </Form>
             </Layout.Content>
           </Layout>
