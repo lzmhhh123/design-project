@@ -56,7 +56,7 @@ class Page2 extends Component {
     axios
       .post('/api/asklabel')
       .then(res => {
-        res.data.labels.sort((a, b) => parseInt(a.id, 10) > parseInt(b.id, 10))
+        res.data.labels.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10))
         this.setState({
           labels: res.data.labels
         })
