@@ -10,3 +10,9 @@
 .Section{
 	overflow-x: hidden !important;
 }
+video{
+	-webkit-transform-style: preserve-3d !important;
+}
+.SectionsContainer{
+	-webkit-overflow-scrolling: touch;
+}

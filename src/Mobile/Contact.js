@@ -40,10 +40,11 @@ class Page2 extends Component {
       p: [false, false, false, false, false, false, false, false, false],
       index: -1
     }
+    this.view = this.view.bind(this)
   }
   view(event) {
     event.preventDefault()
-    window.location.pathname = `/pdf/page${this.state.index}.pdf`
+    window.location.pathname = `/pdf/page${this.state.index+1}.pdf`
   }
   changeImage(index) {
     let { p } = this.state
@@ -56,7 +57,7 @@ class Page2 extends Component {
     axios
       .post('/api/asklabel')
       .then(res => {
-        res.data.labels.sort((a, b) => parseInt(a.id, 10) > parseInt(b.id, 10))
+        res.data.labels.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10))
         this.setState({
           labels: res.data.labels
         })
@@ -81,7 +82,7 @@ class Page2 extends Component {
       s['backgroundPosition'] = '0% 30%'
     }
     else if(p[6]) {
-      s['backgroundImage'] = 'url(/image/image8.png)'
+      s['backgroundImage'] = 'url(/image/image8.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '100% auto'
       s['backgroundPosition'] = '50% 85%'
@@ -95,8 +96,8 @@ class Page2 extends Component {
     else if(p[4]) {
       s['backgroundImage'] = 'url(/image/image5.png)'
       s['backgroundRepeat'] = 'no-repeat'
-      s['backgroundSize'] = '45%  auto'
-      s['backgroundPosition'] = '50% 95%'
+      s['backgroundSize'] = '38%  auto'
+      s['backgroundPosition'] = '50% 100%'
     }
     else if(p[8]) {
       s['backgroundImage'] = 'url(/image/image9.jpg)'

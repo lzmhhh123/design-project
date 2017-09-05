@@ -41,20 +41,21 @@ class Page1 extends Component {
       }}>
         <div style={{
           display: 'inline-table',
+          marginLeft:'3%',
           width: '45%',
           height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-19.jpg)',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% 100%'
+          backgroundSize: '100% auto'
         }} />
         <div style={{
           display: 'inline-table',
-          width: '53%',
-          marginLeft: '2%',
+          width: '45%',
+          marginLeft: '5%',
           height: '84%',
           backgroundImage: 'url(/image/小的企划网站2.2-18.jpg)',
           backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% 100%'
+          backgroundSize: '100% auto'
         }} />
       </div>
     )
@@ -71,7 +72,7 @@ export default class extends Component {
       anchors:              ['section1'],
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                1000,
+      delay:                500,
       navigation:           false,
       scrollBar:            false,
       sectionClassName:     'Section',
@@ -80,7 +81,7 @@ export default class extends Component {
       verticalAlign:        false
     }
     return (
-      <Animation name="slideInUp" duration="2s">
+      <Animation name="slideInUp" duration="1s">
         <SectionsContainer {...options} >
           <Section style={{height:'100px',overflow:'hidden'}}><Page1 /></Section>
         </SectionsContainer>
