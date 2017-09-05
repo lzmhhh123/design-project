@@ -54,10 +54,10 @@ class Page2 extends Component {
             parseInt = Number.parseInt;
         if (parseInt === undefined)
             parseInt = window.parseInt;
-        console.log(res.data.labels);
-        res.data.labels.sort((a, b) => parseInt(a.id, 10) > parseInt(b.id, 10))
+        res.data.labels.sort((a, b) => parseInt(a.id, 10) - parseInt(b.id, 10))
+        //res.data.labels.sort((a, b) => {return a.id - b.id})
         this.setState({
-          labels: res.data.labels
+          labels: res.data.labels.slice()
         })
       })
   }
