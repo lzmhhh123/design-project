@@ -152,7 +152,7 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: '10vh', marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
+      <div style={{height: '85%', marginTop: '8vh', marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
           <div style={{width:'92vw',maxWidth:'60vh',display:'inline-block', position:'relative'}}>
             <video ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
               <source src="/image/final_1.mp4" type="video/mp4" />
@@ -162,8 +162,8 @@ class Page1 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.5vw',
-                  marginTop: '5vh',
+                  fontSize: '2.3vh',
+                  marginTop: '4vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -186,14 +186,14 @@ class Page1 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '5s',
-              marginTop: '-15px',
+              marginTop: '-5px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
           <div style={{marginLeft: '20%', marginRight: '20%'}}>
             <img src={i12}
-              style={{marginTop:'-2.5vh',opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -201,7 +201,7 @@ class Page1 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '5s',
-              marginTop: '-15px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -237,7 +237,7 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '12vh', width: '100%', textAlign:'center'}}>
+      <div className="right" style={{height: '85%', marginTop: '10vh', width: '100%', textAlign:'center'}}>
           <div style={{width:'85vw',maxWidth:'54vh', display:'inline-block', position:'relative'}}>
             <video  ref="video" poster={empty}  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%'}}>
               <source src="/image/final_2.mp4" type="video/mp4" />
@@ -247,8 +247,8 @@ class Page2 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
-                  marginTop: '6vh',
+                  fontSize: '2.3vh',
+                  marginTop: '5vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -279,7 +279,7 @@ class Page2 extends Component {
           <br />
           <div style={{marginLeft: '5%', marginRight: '5%'}}>
             <img src={i22}
-              style={{marginTop:'-2vh',opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -287,7 +287,7 @@ class Page2 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -323,7 +323,7 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: '10vh', width: '100%', textAlign:'center'}}>
+      <div style={{height: '85%', marginTop: '6vh', width: '100%', textAlign:'center'}}>
       <div style={{width:'85vw',maxWidth:'50vh',display:'inline-block', position:'relative'}}>
         <video  ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
           <source src="/image/final_3.mp4" type="video/mp4" />
@@ -332,9 +332,9 @@ class Page3 extends Component {
       </div>
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
+                  fontSize: '2.3vh',
                   textAlign: 'center',
-                  marginTop: '5vh',
+                  marginTop: '3vh',
                   position: 'relative'
                 }}>
           我们坚信有趣就是生产力的一部分
@@ -356,14 +356,14 @@ class Page3 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-10px',
+              marginTop: '-7px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
           <div style={{marginLeft: '5%', marginRight: '5%'}}>
             <img src={i32}
-              style={{marginTop:'-2vh',opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -371,7 +371,7 @@ class Page3 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-20px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -408,7 +408,7 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '20px', textAlign:'center'}}>
+      <div className="right" style={{height: '85%', marginTop: '4vh', textAlign:'center'}}>
       <div style={{width:'84vw',maxWidth:'55vh',display:'inline-block', position:'relative'}}>
         <video ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
           <source src="/image/final_4.mp4" type="video/mp4" />
@@ -418,8 +418,8 @@ class Page4 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
-                  marginTop: '5vh',
+                  fontSize: '2.3vh',
+                  marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -432,7 +432,7 @@ class Page4 extends Component {
           懂得骚浪贱，才能抓住年轻人”大概说的，就是我司。
           <br />
           <br />
-          <div style={{marginLeft: '26%', marginRight: '26%'}}>
+          <div style={{marginLeft: '27%', marginRight: '27%'}}>
             <img src={i41}
               style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
@@ -442,14 +442,14 @@ class Page4 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-10px',
+              marginTop: '-5px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
-          <div style={{marginLeft: '26%', marginRight: '26%'}}>
+          <div style={{marginLeft: '27%', marginRight: '27%'}}>
             <img src={i42}
-              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -457,7 +457,7 @@ class Page4 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-5px',
+              marginTop: '-2vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -477,7 +477,7 @@ class Page5 extends Component {
         <img src={ii} style={{
           width:'100vw',
           maxWidth: '65vh',
-          marginTop: '7vh'
+          marginTop: '5vh'
         }}/>
       </div>
     )
