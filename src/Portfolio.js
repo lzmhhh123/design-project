@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
 import {browserHistory} from 'react-router'
-
 //
 // class Page1 extends Component {
 //   constructor() {
@@ -126,30 +125,12 @@ class Page5 extends Component {
     }
   }
 
-  handleResize(event) {
-    event.preventDefault();
-    this.setState({
-      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this));
-    this.setState({
-      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this));
-  }
-
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: this.state.height, marginTop: 200}}>
+      <div style={{marginTop: '20vh',height:'100%',textAlign:'center'}}>
         <div style={{
-          fontSize: 44 * document.body.clientWidth / window.screen.width,
+          fontSize: '3vw',
           textAlign: 'center',
           color: '#333333',
           fontFamily: "PingFangSC-Light",
@@ -158,22 +139,17 @@ class Page5 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto'
         }}>
-          <div style={{height: 30 * document.body.clientWidth / window.screen.width, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
-            The brand we’ve worked along with
+          <div style={{width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
+              The brand we’ve worked along with
           </div>
-          <div style={{height: 16 * document.body.clientWidth / window.screen.width, width: '102%', backgroundColor: '#FFE300', marginTop:10, marginLeft: '-1%', marginRight: 'auto'}} />
+          <div style={{height:'1vw', width: '102%', backgroundColor: '#FFE300', marginTop:'-1.5vw', marginLeft: '-1%', marginRight: 'auto'}} />
         </div>
-        <div style={{
-          width: '70%',
-          height: '70%',
+        <img src='image/4-021.png' style={{          
+          width: '70vw',
+          maxWidth: '150vh',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '5%',
-          backgroundImage: 'url(/image/4-021.png)',
-          backgroundSize: '100% auto',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center'
-        }} />
+          marginTop: '5vh'}}/>
       </div>
     )
   }
@@ -512,6 +488,10 @@ export default class extends Component {
     this.state = {
       current: 0,
     }
+    if(window.location.hash !== '#section1') {
+      browserHistory.push('/about#section1')
+      window.location.reload()
+    }
   }
   mapAnchors() {
     let r = []
@@ -522,8 +502,6 @@ export default class extends Component {
   }
   componentDidMount() {
     this.state.current = 0
-    browserHistory.push('/about#section1')
-    console.log(browserHistory)
   }
   render() {
     let options = {

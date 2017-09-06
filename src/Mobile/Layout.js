@@ -37,7 +37,7 @@ export default class extends Component {
       contact: 0,
       home: 0
     })
-    setTimeout(() => {browserHistory.push('/about')}, 300)
+    setTimeout(() => {browserHistory.push('/about#section1')}, 300)
   }
 
   clickPortfolio(event) {
