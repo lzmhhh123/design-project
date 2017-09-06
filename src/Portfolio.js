@@ -171,7 +171,7 @@ export class Page1 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
             style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}>
             <source src="/image/final_1.mp4" type="video/mp4" />
         </video>
@@ -248,7 +248,7 @@ export class Page2 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
             style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_2.mp4" type="video/mp4" />
         </video>
@@ -327,7 +327,7 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-         <video poster="/image/empty.png"  autoPlay loop
+         <video poster="/image/empty.png"  autoPlay loop muted playsInline
              style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}>
              <source src="/image/final_3.mp4" type="video/mp4" />
          </video>
@@ -411,7 +411,7 @@ export class Page4 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
             style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_4.mp4" type="video/mp4" />
         </video>
