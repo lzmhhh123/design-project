@@ -162,7 +162,7 @@ class Page1 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '2.3vh',
+                  fontSize: '2vh',
                   marginTop: '4vh',
                   textAlign: 'center',
                   position: 'relative',
@@ -247,7 +247,7 @@ class Page2 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '2.3vh',
+                  fontSize: '2vh',
                   marginTop: '5vh',
                   textAlign: 'center',
                   position: 'relative',
@@ -332,7 +332,7 @@ class Page3 extends Component {
       </div>
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '2.3vh',
+                  fontSize: '2vh',
                   textAlign: 'center',
                   marginTop: '3vh',
                   position: 'relative'
@@ -418,7 +418,7 @@ class Page4 extends Component {
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '2.3vh',
+                  fontSize: '2vh',
                   marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
