@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
 import './css/index.css'
-
+import ii from './image/小的企划网站2.2-01.jpg'
 class Page1 extends Component {
   constructor() {
     super()
@@ -13,36 +13,15 @@ class Page1 extends Component {
 
   render() {
     return (
-        <table style={{
-          width: '90%',
-          position: 'relative',
+          <img src={ii} style={{
+            width:'90%',
+            maxWidth:'180vh',
+          position: 'absolute',
           left: 0,
           right: 0,
           margin: 'auto',
-          marginTop: '100px'
-        }}>
-        <tr>
-        <td style={{
-          textAlign:'center',
-          padding: '10px'
-        }}>
-          <img src='/image/小的企划网站2.2-19.jpg' style={{
-            width: '45vw',
-            maxWidth: '70vh'
-          }} />
-        </td>
-        <td style={{
-          textAlign:'center',
-          padding: '10px'
-        }}
-          >
-        <img src='/image/小的企划网站2.2-18.jpg' style={{
-          width: '45vw',
-          maxWidth: '70vh'
-        }} />
-        </td>
-        </tr>
-        </table>
+          marginTop: '150px'
+          }}/>
     )
   }
 }

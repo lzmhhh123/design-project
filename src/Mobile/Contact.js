@@ -66,7 +66,7 @@ class Page2 extends Component {
   renderStyle() {
     let {p} = this.state
     let s = {
-      marginTop: 110,
+      marginTop: 120,
       height: '70%'
     }
     if(p[0]) {
@@ -142,7 +142,7 @@ class Page2 extends Component {
     if(!this.state.labels) return <div />
     return (
       <div style={containStyle}>
-        <div style={{marginTop:20, textAlign: 'center', fontSize: 16, fontFamily: 'PingFangSC-Light', height: '95%', color: '#333333'}}>
+        <div style={{marginTop:20, textAlign: 'center', fontSize: 18, fontFamily: 'PingFangSC-Light', height: '95%', color: '#333333'}}>
           <div style={{margin: 'auto', width: 'fit-content', width: '-webkit-fit-content'}}>
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>

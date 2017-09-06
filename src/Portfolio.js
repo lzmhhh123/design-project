@@ -128,9 +128,9 @@ class Page5 extends Component {
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{marginTop: '20vh',textAlign:'center'}}>
+      <div style={{marginTop: '23vh',textAlign:'center'}}>
         <div style={{
-          fontSize: '3vw',
+          fontSize: '2.5vw',
           textAlign: 'center',
           color: '#333333',
           fontFamily: "PingFangSC-Light",
@@ -145,7 +145,7 @@ class Page5 extends Component {
           <div style={{height:'1vw', width: '102%', backgroundColor: '#FFE300', marginTop:'-1.5vw', marginLeft: '-1%', marginRight: 'auto'}} />
         </div>
         <img src='image/4-021.png' style={{          
-          width: '70vw',
+          width: '67vw',
           maxWidth: '150vh',
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -172,18 +172,18 @@ export class Page1 extends Component {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',left:'5.04vw',top:'10vh',zIndex:-10,width: '50.6vw', maxWidth:'80vh'}}>
+            style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}>
             <source src="/image/final_1.mp4" type="video/mp4" />
         </video>
 
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 'calc(0.7vh + 1vw)',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'right',
                   position: 'absolute',
-                  right: '5.16vw',
-                  top: '30vh'
+                  right: '8vw',
+                  top: '42vh'
                 }}>
           <br />
           基于广告、战略咨询、金融、创业的复合背景
@@ -196,11 +196,11 @@ export class Page1 extends Component {
           <br />
           完美解决方案
           <br />
-          <div style={{float: 'right', width: '29vw', marginTop:'5vh'}}>
+          <div style={{float: 'right', width: '24vw', marginTop:'8vh'}}>
             <img src="/image/title_SB_cn.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '37vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '29vw'}}
+              style={{opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -212,11 +212,11 @@ export class Page1 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: '35vw', marginTop: 10}}>
+          <div style={{float: 'right', width: '32vw', marginTop: 10}}>
             <img src="/image/title_SB_en.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '37vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '35vw'}}
+              style={{opacity: 0.9, width: '32vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -249,17 +249,17 @@ export class Page2 extends Component {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',right:'3.63vw',top:'10vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
+            style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_2.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 'calc(0.7vh + 1vw)',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
                   left: '6.16vw',
-                  top: '30vh'
+                  top: '35vh'
                 }}>
           依靠精心策划的品牌策略
           <br />
@@ -275,11 +275,11 @@ export class Page2 extends Component {
           <br />
           也就全案、活动、视频、平面等等
           <br />
-          <div style={{float: 'left', width: '29vw', marginTop:'5vh'}}>
+          <div style={{float: 'left', width: '24vw', marginTop:'8vh'}}>
             <img src="/image/title_CPD_cn.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '29vw'}}
+              style={{opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -293,7 +293,7 @@ export class Page2 extends Component {
           <br />
           <div style={{float: 'left', width: '45vw', marginTop: 20}}>
             <img src="/image/title_CPD_en.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9, width: '45vw'}}
             />
@@ -334,11 +334,11 @@ export class Page3 extends Component {
          <br />
          <div style={{color: '#333333',
                    fontFamily: "PingFangSC-Ultralight",
-                   fontSize: 'calc(0.7vh + 1vw)',
+                   fontSize: 'calc(0.7vh + 0.9vw)',
                    textAlign: 'right',
                    position: 'absolute',
-                   right: '6.16vw',
-                   top: '20vh'
+                   right: '7.16vw',
+                   top: '30vh'
                  }}>
           我们坚信
           <br />
@@ -359,11 +359,11 @@ export class Page3 extends Component {
           <br />
           并且共同承担风险收益
           <br />
-          <div style={{float: 'right', width: '32vw', marginTop:'5vh'}}>
+          <div style={{float: 'right', width: '29vw', marginTop:'5vh'}}>
             <img src="/image/title_SMS_cn.png"
-              onMouseMove={() => {this.setState({ line1: '34vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '32vw'}}
+              style={{opacity: 0.9, width: '29vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -375,11 +375,11 @@ export class Page3 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: '45vw', marginTop: 20}}>
+          <div style={{float: 'right', width: '46vw', marginTop: 15}}>
             <img src="/image/title_SMS_en.png"
-              onMouseMove={() => {this.setState({ line1: '34vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '45vw'}}
+              style={{opacity: 0.9, width: '46vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -412,17 +412,17 @@ export class Page4 extends Component {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
         <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',right:'8.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
+            style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_4.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: 'calc(0.7vh + 1vw)',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
                   left: '6.16vw',
-                  top: '20vh'
+                  top: '23vh'
                 }}>
           “文案日成堆
           <br />
@@ -445,11 +445,11 @@ export class Page4 extends Component {
           <br />
           大概说的，就是我司。
           <br />
-          <div style={{float: 'left', width: 'calc(15vh + 13vw)', marginTop:'5vh'}}>
+          <div style={{float: 'left', width: 'calc(16vh + 13vw)', marginTop:'5vh'}}>
             <img src="/image/title_SM_cn.png"
-              onMouseMove={() => {this.setState({ line1: 'calc(15vh + 15vw)', line2: 'calc(15vh + 15vw)'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: 'calc(15vh + 13vw)'}}
+              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -461,11 +461,11 @@ export class Page4 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'left', width: 'calc(15vh + 13vw)', marginTop: 20}}>
+          <div style={{float: 'left', width: 'calc(16vh + 13vw)', marginTop: 20}}>
             <img src="/image/title_SM_en.png"
-              onMouseMove={() => {this.setState({ line1: 'calc(15vh + 15vw)', line2: 'calc(15vh + 15vw)'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: 'calc(15vh + 13vw)'}}
+              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
