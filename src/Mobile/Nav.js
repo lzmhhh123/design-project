@@ -206,7 +206,11 @@ export default class  extends Component {
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
-        <div style={{float: 'right'}} onClick={(e)=>{this.props.clickAbout(e);this.menuOnClick(e)}}>
+        <div style={{float: 'right'}} onClick={(e)=>{
+              let aboutLine = document.getElementsByClassName("aboutLine")
+              aboutLine[0].style.width = '72px'
+              this.props.clickAbout(e);
+              setTimeout(() => {this.menuOnClick(e)}, 300)}}>
           <div style={{
             marginTop: '25px',
             marginRight: '-100px',
