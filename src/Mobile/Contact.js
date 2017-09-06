@@ -212,8 +212,8 @@ class Page2 extends Component {
           this.state.index === -1 ? null :
           <div style={{
             margin: 'auto',
-            height: 27.6,
-            width: 120,
+            height: 30,
+            width: 130,
             marginTop: 30,
             backgroundImage: 'url(/image/viewProject.jpg)',
             backgroundSize: '100% 100%'

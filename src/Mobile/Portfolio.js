@@ -548,6 +548,9 @@ export default class extends Component {
     return (
       <Animation name="slideInUp" duration="0.5s">
         <SectionsContainer {...options}>
+          <Section><Page1 /></Section>
+          <Section><Page2 /></Section>
+          <Section><Page3 /></Section>
           <Section><Page4 /></Section>
           <Section><Page5 /></Section>
         </SectionsContainer>
