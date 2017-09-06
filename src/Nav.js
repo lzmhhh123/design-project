@@ -190,7 +190,7 @@ export default class  extends Component {
           <div style={{
             marginTop: '33px',
             marginRight:'-200px',
-            paddingRight: '60px',
+            paddingRight: '4vw',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'

@@ -32,7 +32,7 @@ export default class extends Component {
     ] : [
       {
         rotate: -45,
-        translate: -8.522,
+        translate: -9.522,
         opacity: 1
       },
       {
@@ -42,7 +42,7 @@ export default class extends Component {
       },
       {
         rotate: 45,
-        translate: -8.522,
+        translate: -9.522,
         opacity: 1
       }
     ]
@@ -53,9 +53,9 @@ export default class extends Component {
             {
               data => {
                 return <div style={{
-                  width: '20px',
-                  marginTop: '4px',
-                  marginBottom: '4px',
+                  width: '27px',
+                  marginTop: '5px',
+                  marginBottom: '5px',
                   height: '2px',
                   background: 'black',
                   borderRadius: '1px',

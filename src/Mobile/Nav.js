@@ -28,7 +28,7 @@ export default class  extends Component {
         logo[i].style.marginTop = "10px"
       }
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = "145px"
+      logoLine[0].style.width = "135px"
       this.refs.menuIconDiv.style.marginRight = '16px'
     }, 0)
   }
@@ -73,7 +73,7 @@ export default class  extends Component {
       for(let i = 0; i < logo.length; ++i) {
         logo[i].style.marginTop = "10px"
       }
-      logoLine[0].style.width = (nextProps.home === 1 ? '145px' : '0px')
+      logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
       aboutLine[0].style.width = (nextProps.about === 1 ? '72px' : '0px')
       portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '108px' : '0px')
       contactLine[0].style.width = (nextProps.contact === 1 ? '92px' : '0px')
@@ -107,7 +107,7 @@ export default class  extends Component {
               marginTop: '17px',
               width: '0px',
               height: "13px",
-              marginLeft: "21px",
+              marginLeft: "37px",
               position: "fixed"
             }} className="logoLine"/>
           <div style={{marginLeft: 13}}>
@@ -115,7 +115,7 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "10px",
               transform: "rotate(90deg)",
-              marginLeft: "11px",
+              marginLeft: "28px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
@@ -124,7 +124,7 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.2s",
               marginTop: "-35px",
-              marginLeft: "46.5px",
+              marginLeft: "63px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
@@ -133,7 +133,7 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.4s",
               marginTop: "-35px",
-              marginLeft: "74px",
+              marginLeft: "87px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
@@ -142,7 +142,7 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.6s",
               marginTop: "-35px",
-              marginLeft: "101px",
+              marginLeft: "110px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
@@ -151,7 +151,7 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.8s",
               marginTop: "-35px",
-              marginLeft: "127.6px",
+              marginLeft: "136px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
@@ -160,8 +160,9 @@ export default class  extends Component {
         </div>
         <div ref="menuIconDiv" style={{
           float: 'right',
-          marginTop: '17px',
+          marginTop: '15px',
           marginRight: '-150px',
+          paddingRight: '10px',
           transition: 'all 0.3s linear',
           transitionDelay: '1.5s',
           width: 'fit-content', width: '-webkit-fit-content'
@@ -170,7 +171,7 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={(e)=>{this.props.clickContact(e)}}>
           <div style={{
-            marginTop: '25px',
+            marginTop: '26px',
             marginRight: '-120px',
             float: 'right',
             transition: "all 0.3s linear",
@@ -189,7 +190,7 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={(e)=>{this.props.clickPortfolio(e)}}>
           <div style={{
-            marginTop: '25px',
+            marginTop: '26px',
             marginRight: '-100px',
             float: 'right',
             transition: "all 0.3s linear",
@@ -212,7 +213,7 @@ export default class  extends Component {
               this.props.clickAbout(e);
               setTimeout(() => {this.menuOnClick(e)}, 300)}}>
           <div style={{
-            marginTop: '25px',
+            marginTop: '26px',
             marginRight: '-100px',
             float: 'right',
             transition: "all 0.3s linear",
