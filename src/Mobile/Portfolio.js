@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import {browserHistory} from 'react-router'
 import '../css/index.css'
 import empty from '../image/empty.png'
 import i11 from '../image/title_SB_cn.png'
@@ -11,6 +12,8 @@ import i31 from '../image/title_SMS_cn.png'
 import i32 from '../image/title_SMS_en.png'
 import i41 from '../image/title_SM_cn.png'
 import i42 from '../image/title_SM_en.png'
+
+import ii from '../image/mobile-label.jpg'
 // class Page1 extends Component {
 //   constructor() {
 //     super()
@@ -470,14 +473,12 @@ class Page5 extends Component {
   }
   render() {
     return (
-      <div style={{
-        height: '100%',
-        marginTop: '-5vh',
-        backgroundImage: 'url(/image/mobile-label.jpg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center 100px',
-        backgroundSize: '90% auto'
-      }}>
+      <div style={{textAlign:'center'}}>
+        <img src={ii} style={{
+          width:'100vw',
+          maxWidth: '65vh',
+          marginTop: '5vh'
+        }}/>
       </div>
     )
   }
@@ -490,6 +491,10 @@ export default class extends Component {
       current: 0,
     }
     this.update = this.update.bind(this)
+    if(window.location.hash !== '#section1') {
+      browserHistory.push('/about#section1')
+      window.location.reload()
+    }
   }
   mapAnchors() {
     let r = []

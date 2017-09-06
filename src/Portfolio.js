@@ -128,7 +128,7 @@ class Page5 extends Component {
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{marginTop: '20vh',height:'100%',textAlign:'center'}}>
+      <div style={{marginTop: '20vh',textAlign:'center'}}>
         <div style={{
           fontSize: '3vw',
           textAlign: 'center',
@@ -179,7 +179,7 @@ export class Page1 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 1vw)',
                   textAlign: 'right',
                   position: 'absolute',
                   right: '5.16vw',
@@ -255,7 +255,7 @@ export class Page2 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 1vw)',
                   textAlign: 'left',
                   position: 'absolute',
                   left: '6.16vw',
@@ -334,7 +334,7 @@ export class Page3 extends Component {
          <br />
          <div style={{color: '#333333',
                    fontFamily: "PingFangSC-Ultralight",
-                   fontSize: '1.4vw',
+                   fontSize: 'calc(0.7vh + 1vw)',
                    textAlign: 'right',
                    position: 'absolute',
                    right: '6.16vw',
@@ -418,7 +418,7 @@ export class Page4 extends Component {
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 1vw)',
                   textAlign: 'left',
                   position: 'absolute',
                   left: '6.16vw',
@@ -445,11 +445,11 @@ export class Page4 extends Component {
           <br />
           大概说的，就是我司。
           <br />
-          <div style={{float: 'left', width: '24vw', marginTop:'5vh'}}>
+          <div style={{float: 'left', width: 'calc(15vh + 13vw)', marginTop:'5vh'}}>
             <img src="/image/title_SM_cn.png"
-              onMouseMove={() => {this.setState({ line1: '26vw', line2: '26vw'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(15vh + 15vw)', line2: 'calc(15vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '24vw'}}
+              style={{opacity: 0.9, width: 'calc(15vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -461,11 +461,11 @@ export class Page4 extends Component {
             }} />
           </div>
           <br />
-          <div style={{float: 'left', width: '24vw', marginTop: 20}}>
+          <div style={{float: 'left', width: 'calc(15vh + 13vw)', marginTop: 20}}>
             <img src="/image/title_SM_en.png"
-              onMouseMove={() => {this.setState({ line1: '26vw', line2: '26vw'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(15vh + 15vw)', line2: 'calc(15vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '24vw'}}
+              style={{opacity: 0.9, width: 'calc(15vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
