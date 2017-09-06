@@ -208,7 +208,7 @@ export class Page1 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
@@ -287,7 +287,7 @@ export class Page2 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
@@ -371,7 +371,7 @@ export class Page3 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
@@ -457,7 +457,7 @@ export class Page4 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
@@ -473,7 +473,7 @@ export class Page4 extends Component {
               marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.5vw'
             }} />
           </div>
         </div>
