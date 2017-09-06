@@ -2,6 +2,16 @@ import React, { Component } from 'react'
 import MenuIcon from './MenuIcon'
 import {fadeIn} from 'react-animations'
 import { Animation } from 'styled-animation'
+import logo1 from '../image/logo1.png'
+import logo2 from '../image/logo2.pic'
+import logo3 from '../image/logo3.pic'
+import logo4 from '../image/logo4.png'
+import logo5 from '../image/logo5.png'
+import iabout from '../image/button_about_mobile@2x.png'
+import icontact from '../image/button_contact_mobile@2x.png'
+import iportfolio from '../image/button_portfolio_mobile@2x.png'
+
+
 
 export default class  extends Component {
   constructor() {
@@ -101,7 +111,7 @@ export default class  extends Component {
               position: "fixed"
             }} className="logoLine"/>
           <div style={{marginLeft: 13}}>
-            <img src="/image/logo1.png" className="logoImage" style={{
+            <img src={logo1} className="logoImage" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "10px",
               transform: "rotate(90deg)",
@@ -110,16 +120,16 @@ export default class  extends Component {
               height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo2.pic" className="logo" style={{
+            <img src={logo2} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-              transitionDelay: "0.5s",
+              transitionDelay: "0.2s",
               marginTop: "-35px",
               marginLeft: "46.5px",
               opacity: "0.9",
               height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo3.pic" className="logo" style={{
+            <img src={logo3} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.4s",
               marginTop: "-35px",
@@ -128,7 +138,7 @@ export default class  extends Component {
               height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo4.png" className="logo" style={{
+            <img src={logo4} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.6s",
               marginTop: "-35px",
@@ -137,7 +147,7 @@ export default class  extends Component {
               height: 27,
               position: "fixed"
             }}/>
-            <img src="/image/logo5.png" className="logo" style={{
+            <img src={logo5} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.8s",
               marginTop: "-35px",
@@ -173,7 +183,7 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '1px'
             }} className="contactLine" />
-              <img src="/image/button_contact_mobile@2x.png"
+              <img src={icontact}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
@@ -192,7 +202,7 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '1px'
             }} className="portfolioLine" />
-              <img src="/image/button_portfolio_mobile@2x.png"
+              <img src={iportfolio}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
@@ -211,7 +221,7 @@ export default class  extends Component {
               position: "fixed",
               marginTop: '1px',
             }} className="aboutLine" />
-              <img src="/image/button_about_mobile@2x.png"
+              <img src={iabout}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 6,marginTop: 1,height: '14px'}}/>
           </div>
         </div>

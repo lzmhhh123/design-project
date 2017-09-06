@@ -38,7 +38,7 @@ export default class extends Component {
       contact: 0,
       home: 0
     })
-    browserHistory.push('/about#section1')
+    browserHistory.push('/about')
   }
 
   clickPortfolio(event) {

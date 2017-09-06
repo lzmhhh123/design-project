@@ -151,7 +151,7 @@ export default class  extends Component {
             }}/>
             <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-              transitionDelay: "0.5s",
+              transitionDelay: "0.2s",
               marginTop: "-35px",
               marginLeft: "101.5px",
               opacity: "0.9",
