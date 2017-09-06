@@ -258,7 +258,7 @@ export class Page2 extends Component {
                   fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
-                  left: '6.16vw',
+                  left: '83px',
                   top: '35vh'
                 }}>
           依靠精心策划的品牌策略
@@ -421,7 +421,7 @@ export class Page4 extends Component {
                   fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
-                  left: '6.16vw',
+                  left: '83px',
                   top: '23vh'
                 }}>
           “文案日成堆
