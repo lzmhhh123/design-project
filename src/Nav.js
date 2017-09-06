@@ -200,7 +200,7 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
               position: "fixed",
-              marginTop: '3.5px'
+              marginTop: '4.4px'
             }} className="contactLine" />
             <div style={{
               position: "fixed",
@@ -228,7 +228,7 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
               position: "fixed",
-              marginTop: '3.5px'
+              marginTop: '4.4px'
             }} className="portfolioLine" />
             <div style={{
               position: "fixed",
@@ -256,7 +256,7 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
               position: "fixed",
-              marginTop: '3.5px',
+              marginTop: '4.4px',
             }} className="aboutLine" />
             <div style={{
               position: "fixed",

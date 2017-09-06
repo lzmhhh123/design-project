@@ -11,55 +11,38 @@ class Page1 extends Component {
     }
   }
 
-  handleResize(event) {
-    event.preventDefault()
-    this.setState({
-      height: window.screen.availHeight * 0.8 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this))
-    this.setState({
-      height: window.screen.availHeight * 0.8 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this))
-  }
-
   render() {
     return (
-      <div style={{
-        overflow: 'hidden',
-        width: '100%',
-        height: this.state.height,
-        paddingTop: '10%',
-        paddingLeft: '5.469%',
-        paddingRight: '6.562%'
-      }}>
-        <div style={{
-          display: 'inline-table',
-          marginLeft:'3%',
-          width: '45%',
-          maxWidth: '70vh',
-          height: '100%',
-          backgroundImage: 'url(/image/小的企划网站2.2-19.jpg)',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% auto'
+        <table style={{
+          width: '90%',
+          position: 'relative',
+          left: 0,
+          right: 0,
+          margin: 'auto',
+          marginTop: '100px'
+        }}>
+        <tr>
+        <td style={{
+          textAlign:'center',
+          padding: '10px'
+        }}>
+          <img src='/image/小的企划网站2.2-19.jpg' style={{
+            width: '45vw',
+            maxWidth: '70vh'
+          }} />
+        </td>
+        <td style={{
+          textAlign:'center',
+          padding: '10px'
+        }}
+          >
+        <img src='/image/小的企划网站2.2-18.jpg' style={{
+          width: '45vw',
+          maxWidth: '70vh'
         }} />
-        <div style={{
-          display: 'inline-table',
-          width: '45%',
-          marginLeft: '5%',
-          maxWidth: '70vh',
-          height: '100%',
-          backgroundImage: 'url(/image/小的企划网站2.2-18.jpg)',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% auto'
-        }} />
-      </div>
+        </td>
+        </tr>
+        </table>
     )
   }
 }

@@ -106,7 +106,7 @@ export default class  extends Component {
               backgroundColor: '#FFE300',
               marginTop: '17px',
               width: '0px',
-              height: "13px",
+              height: "14px",
               marginLeft: "21px",
               position: "fixed"
             }} className="logoLine"/>
@@ -176,7 +176,7 @@ export default class  extends Component {
             transition: "all 0.3s linear",
           }} className="contactLogo">
             <div style={{
-              height: '13px',
+              height: '14px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
@@ -195,7 +195,7 @@ export default class  extends Component {
             transition: "all 0.3s linear",
           }} className="portfolioLogo">
             <div style={{
-              height: '13px',
+              height: '14px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
@@ -218,7 +218,7 @@ export default class  extends Component {
             transition: "all 0.3s linear",
           }} className="aboutLogo">
             <div style={{
-              height: '13px',
+              height: '14px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
