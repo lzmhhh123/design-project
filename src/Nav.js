@@ -188,7 +188,8 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
           <div style={{
-            marginTop: '30px',
+            marginTop: '33px',
+            marginRight:'-200px',
             paddingRight: '60px',
             float: 'right',
             transition: "all 0.5s linear",
@@ -217,8 +218,8 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickPortfolio} onMouseOver={this.mouseOverPortfolio} onMouseOut={this.mouseLeavePortfolio}>
           <div style={{
-            marginTop: '30px',
-            marginRight: '0px',
+            marginTop: '33px',
+            marginRight:'-200px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
@@ -246,8 +247,8 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickAbout} onMouseOver={this.mouseOverAbout} onMouseOut={this.mouseLeaveAbout}>
           <div style={{
-            marginTop: '30px',
-            marginRight: '0px',
+            marginTop: '33px',
+            marginRight:'-200px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'

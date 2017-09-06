@@ -200,12 +200,11 @@ export class Page1 extends Component {
             <img src="/image/title_SB_cn.png"
               onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '24vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
               marginTop: '-0.8vw'
@@ -216,12 +215,11 @@ export class Page1 extends Component {
             <img src="/image/title_SB_en.png"
               onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '32vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '32vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
               marginTop: '-1vw'
@@ -279,12 +277,11 @@ export class Page2 extends Component {
             <img src="/image/title_CPD_cn.png"
               onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '24vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
               marginTop: '-0.8vw'
@@ -295,12 +292,11 @@ export class Page2 extends Component {
             <img src="/image/title_CPD_en.png"
               onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '45vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '45vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
               marginTop: '-1vw'
@@ -363,12 +359,11 @@ export class Page3 extends Component {
             <img src="/image/title_SMS_cn.png"
               onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '29vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '29vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
               marginTop: '-0.8vw'
@@ -379,12 +374,11 @@ export class Page3 extends Component {
             <img src="/image/title_SMS_en.png"
               onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '46vw'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: '46vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
               marginTop: '-1vw'
@@ -449,12 +443,11 @@ export class Page4 extends Component {
             <img src="/image/title_SM_cn.png"
               onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
               marginTop: '-0.8vw'
@@ -465,12 +458,11 @@ export class Page4 extends Component {
             <img src="/image/title_SM_en.png"
               onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
+              style={{marginLeft:'1vw', opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
               height: '1vw',
-              marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
               marginTop: '-0.5vw'
