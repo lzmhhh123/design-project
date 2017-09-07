@@ -1,7 +1,19 @@
 import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
+import {browserHistory} from 'react-router'
 import '../css/index.css'
+import empty from '../image/empty.png'
+import i11 from '../image/title_SB_cn.png'
+import i12 from '../image/title_SB_en.png'
+import i21 from '../image/title_CPD_cn.png'
+import i22 from '../image/title_CPD_en.png'
+import i31 from '../image/title_SMS_cn.png'
+import i32 from '../image/title_SMS_en.png'
+import i41 from '../image/title_SM_cn.png'
+import i42 from '../image/title_SM_en.png'
+
+import ii from '../image/mobile-label.jpg'
 // class Page1 extends Component {
 //   constructor() {
 //     super()
@@ -140,18 +152,18 @@ class Page1 extends Component {
 
   render() {
     return (
-      <div style={{height: '85%', marginTop: 40, marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
-          <div style={{width:'90vw', display:'inline-block', position:'relative'}}>
-            <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'60vh'}}>
+      <div style={{height: '85%', marginTop: '8vh', marginLeft: 'auto', marginRight: 'auto', textAlign:'center'}}>
+          <div style={{width:'92vw',maxWidth:'60vh',display:'inline-block', position:'relative'}}>
+            <video ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
               <source src="/image/final_1.mp4" type="video/mp4" />
             </video>
-            <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
+            <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'2px solid #F2F2F2',left:'-1px',top:'-1px', width:'calc(100% + 2px)',height:'calc(100% - 2px)'}}></div>
           </div>
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.5vw',
-                  marginTop: '3vh',
+                  fontSize: '2vh',
+                  marginTop: '4vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -165,7 +177,7 @@ class Page1 extends Component {
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
-            <img src="/image/title_SB_cn.png"
+            <img src={i11}
               style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
@@ -174,14 +186,14 @@ class Page1 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '5s',
-              marginTop: '-15px',
+              marginTop: '-5px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
           <div style={{marginLeft: '20%', marginRight: '20%'}}>
-            <img src="/image/title_SB_en.png"
-              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
+            <img src={i12}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -189,7 +201,7 @@ class Page1 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '5s',
-              marginTop: '-15px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -225,18 +237,18 @@ class Page2 extends Component {
   }
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: 55, width: '100%', textAlign:'center'}}>
-          <div style={{width:'82vw', display:'inline-block', position:'relative'}}>
-            <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%',maxWidth:'60vh'}}>
+      <div className="right" style={{height: '85%', marginTop: '10vh', width: '100%', textAlign:'center'}}>
+          <div style={{width:'85vw',maxWidth:'54vh', display:'inline-block', position:'relative'}}>
+            <video  ref="video" poster={empty}  autoPlay muted loop playsInline style={{WebkitTransformStyle: 'preserve-3d',transformStyle:'preserve-3d',margin:'-1px',width:'100%'}}>
               <source src="/image/final_2.mp4" type="video/mp4" />
             </video>
-            <div ref = "box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
+            <div ref = "box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'2px solid #F2F2F2',left:'-1px',top:'-1px', width:'calc(100% + 2px)',height:'calc(100% - 2px)'}}></div>
           </div>
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
-                  marginTop: '3vh',
+                  fontSize: '2vh',
+                  marginTop: '5vh',
                   textAlign: 'center',
                   position: 'relative',
                 }}>
@@ -251,7 +263,7 @@ class Page2 extends Component {
           <br />
           <br />
           <div style={{marginLeft: '25%', marginRight: '25%'}}>
-            <img src="/image/title_CPD_cn.png"
+            <img src={i21}
               style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
@@ -260,14 +272,14 @@ class Page2 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-5px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
-          <div style={{marginLeft: '10%', marginRight: '10%'}}>
-            <img src="/image/title_CPD_en.png"
-              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
+          <div style={{marginLeft: '5%', marginRight: '5%'}}>
+            <img src={i22}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -275,7 +287,7 @@ class Page2 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -311,16 +323,16 @@ class Page3 extends Component {
   }
   render() {
     return (
-      <div style={{height: '85%', marginTop: 45, width: '100%', textAlign:'center'}}>
-      <div style={{width:'85vw', display:'inline-block', position:'relative'}}>
-        <video  ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'50vh'}}>
+      <div style={{height: '85%', marginTop: '6vh', width: '100%', textAlign:'center'}}>
+      <div style={{width:'85vw',maxWidth:'50vh',display:'inline-block', position:'relative'}}>
+        <video  ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
           <source src="/image/final_3.mp4" type="video/mp4" />
         </video>
-        <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-5px',top:'-5px', width:'102%',height:'102%'}}></div>
+        <div  ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'2px solid #F2F2F2',left:'-1px',top:'-1px', width:'calc(100% + 2px)',height:'calc(100% - 2px)'}}></div>
       </div>
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
+                  fontSize: '2vh',
                   textAlign: 'center',
                   marginTop: '3vh',
                   position: 'relative'
@@ -335,7 +347,7 @@ class Page3 extends Component {
           <br />
           <br />
           <div style={{marginLeft: '21%', marginRight: '21%'}}>
-            <img src="/image/title_SMS_cn.png"
+            <img src={i31}
               style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
@@ -344,14 +356,14 @@ class Page3 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-7px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
           <div style={{marginLeft: '5%', marginRight: '5%'}}>
-            <img src="/image/title_SMS_en.png"
-              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
+            <img src={i32}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -359,7 +371,7 @@ class Page3 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-2.5vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -396,17 +408,17 @@ class Page4 extends Component {
 
   render() {
     return (
-      <div className="right" style={{height: '85%', marginTop: '20px', textAlign:'center'}}>
-      <div style={{width:'82vw', display:'inline-block', position:'relative'}}>
-        <video ref="video" poster="/image/empty.png"  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%',maxWidth:'50vh'}}>
+      <div className="right" style={{height: '85%', marginTop: '4vh', textAlign:'center'}}>
+      <div style={{width:'84vw',maxWidth:'55vh',display:'inline-block', position:'relative'}}>
+        <video ref="video" poster={empty}  autoPlay muted loop playsInline style={{margin:'-1px',width:'100%'}}>
           <source src="/image/final_4.mp4" type="video/mp4" />
         </video>
-        <div ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'10px solid #F2F2F2',left:'-1px',top:'-1px', width:'102%',height:'102%'}}></div>
+        <div ref="box" style={{zIndex:100,position:'absolute', boxSizing:'border-box', border:'2px solid #F2F2F2',left:'-1px',top:'-1px', width:'calc(100% + 2px)',height:'calc(100% - 2px)'}}></div>
       </div>
         <br />
         <div style={{color: '#000000',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '3.3vw',
+                  fontSize: '2vh',
                   marginTop: '3vh',
                   textAlign: 'center',
                   position: 'relative',
@@ -420,8 +432,8 @@ class Page4 extends Component {
           懂得骚浪贱，才能抓住年轻人”大概说的，就是我司。
           <br />
           <br />
-          <div style={{marginLeft: '25%', marginRight: '25%'}}>
-            <img src="/image/title_SM_cn.png"
+          <div style={{marginLeft: '27%', marginRight: '27%'}}>
+            <img src={i41}
               style={{opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
@@ -430,14 +442,14 @@ class Page4 extends Component {
               width: this.state.line1,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-5px',
               marginLeft: '-3%'
             }} />
           </div>
           <br />
-          <div style={{marginLeft: '26%', marginRight: '26%'}}>
-            <img src="/image/title_SM_en.png"
-              style={{marginTop:'-1vh',opacity: 0.9, width:'100%', height: 'auto'}}
+          <div style={{marginLeft: '27%', marginRight: '27%'}}>
+            <img src={i42}
+              style={{marginTop:'-4vh',opacity: 0.9, width:'100%', height: 'auto'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -445,7 +457,7 @@ class Page4 extends Component {
               width: this.state.line2,
               transition: "all 0.5s linear",
               transitionDelay: '2s',
-              marginTop: '-15px',
+              marginTop: '-2vh',
               marginLeft: '-3%'
             }} />
           </div>
@@ -461,14 +473,12 @@ class Page5 extends Component {
   }
   render() {
     return (
-      <div style={{
-        height: '100%',
-        marginTop: '-5vh',
-        backgroundImage: 'url(/image/mobile-label.jpg)',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center 100px',
-        backgroundSize: '90% auto'
-      }}>
+      <div style={{textAlign:'center'}}>
+        <img src={ii} style={{
+          width:'100vw',
+          maxWidth: '65vh',
+          marginTop: '5vh'
+        }}/>
       </div>
     )
   }
@@ -481,6 +491,10 @@ export default class extends Component {
       current: 0,
     }
     this.update = this.update.bind(this)
+    if(window.location.hash !== '#section1') {
+      browserHistory.push('/about#section1')
+      window.location.reload()
+    }
   }
   mapAnchors() {
     let r = []
@@ -532,12 +546,12 @@ export default class extends Component {
       scrollCallback:       this.update
     }
     return (
-      <Animation name="slideInUp" duration="0.3s">
+      <Animation name="slideInUp" duration="0.5s">
         <SectionsContainer {...options}>
-          <Section><Page1  ref = 'section1'/></Section>
-          <Section><Page2  ref = 'section2'/></Section>
-          <Section><Page3  ref = 'section3'/></Section>
-          <Section><Page4  ref = 'section4'/></Section>
+          <Section><Page1 /></Section>
+          <Section><Page2 /></Section>
+          <Section><Page3 /></Section>
+          <Section><Page4 /></Section>
           <Section><Page5 /></Section>
         </SectionsContainer>
       </Animation>

@@ -84,7 +84,7 @@ class Page2 extends Component {
     let s = {
       overflow: 'hidden',
       height: this.state.height,
-      paddingTop: this.state.height * 0.396604938271605,
+      paddingTop: this.state.height * 0.356604938271605,
     }
     if(p[0]) {
       s['backgroundImage'] = 'url(/image/image1.png)'

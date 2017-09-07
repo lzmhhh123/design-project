@@ -20,11 +20,11 @@ class Page1 extends Component {
           height: '100%',
           width: '100%'
         }}>
-          <img src="/image/contactView.jpeg" style={{height: '80%', width: '90%'}}/>
+          <img src="/image/contactView.jpeg" style={{width: '90vw', maxWidth: '53vh'}}/>
           <br />
-          <div style={{marginTop:30, textAlign: 'center', fontFamily: 'PingFangSC-Ultralight', color:'black',fontSize: '3.5vw'}}>
+          <div style={{marginTop:40, textAlign: 'center', fontFamily: 'PingFangSC-Ultralight', color:'black',fontSize: '3.5vw'}}>
             上海市 静安区 威海路696号<br />
-            No.696 Weihai Road, Jing An District ,Shanghai<br />
+            No.696 Weihai Road,  Jing An District ,  Shanghai<br />
             media@xiaodeqihua.com<br />
           </div>
         </div>

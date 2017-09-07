@@ -20,7 +20,7 @@ export default class  extends Component {
         logo[i].style.marginTop = "30px"
       }
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = '147px'
+      logoLine[0].style.width = '166px'
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.marginRight = "136px"
       let portfolioLogo = document.getElementsByClassName("portfolioLogo")
@@ -45,10 +45,10 @@ export default class  extends Component {
       for(let i = 0; i < logo.length; ++i) {
         logo[i].style.marginTop = "30px"
       }
-      logoLine[0].style.width = (nextProps.home === 1 ? '147px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '78px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '118px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '110px' : '0px')
+      logoLine[0].style.width = (nextProps.home === 1 ? '166px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '79px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '124px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '108px' : '0px')
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.transition = "all 0s ease"
       aboutLogo[0].style.transitionDelay = '0s'
@@ -67,7 +67,7 @@ export default class  extends Component {
   mouseOverLogo() {
     setTimeout(() => {
       let logoLine = document.getElementsByClassName("logoLine")
-      logoLine[0].style.width = '147px'
+      logoLine[0].style.width = '166px'
     })
   }
 
@@ -82,7 +82,7 @@ export default class  extends Component {
   mouseOverAbout() {
     setTimeout(() => {
       let aboutLine = document.getElementsByClassName("aboutLine")
-      aboutLine[0].style.width = '78px'
+      aboutLine[0].style.width = '79px'
     })
   }
 
@@ -97,7 +97,7 @@ export default class  extends Component {
   mouseOverPortfolio() {
     setTimeout(() => {
       let portfolioLine = document.getElementsByClassName("portfolioLine")
-      portfolioLine[0].style.width = '118px'
+      portfolioLine[0].style.width = '124px'
     })
   }
 
@@ -112,7 +112,7 @@ export default class  extends Component {
   mouseOverContact() {
     setTimeout(() => {
       let contactLine = document.getElementsByClassName("contactLine")
-      contactLine[0].style.width = '110px'
+      contactLine[0].style.width = '108px'
     })
   }
 
@@ -133,10 +133,10 @@ export default class  extends Component {
                 transition: "all 0.5s linear",
                 transitionDelay: "1.3s",
                 backgroundColor: '#FFE300',
-                marginTop: '36px',
+                marginTop: '39px',
                 width: '0px',
                 height: "16px",
-                marginLeft: "60px",
+                marginLeft: "77px",
                 position: "fixed"
               }} className="logoLine"/>
 
@@ -144,69 +144,71 @@ export default class  extends Component {
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               marginTop: "30px",
               transform: "rotate(90deg)",
-              marginLeft: "66px",
+              marginLeft: "83px",
               opacity: "0.9",
-              height: 27,
+              height: 32,
               position: "fixed"
             }}/>
             <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
-              transitionDelay: "0.5s",
+              transitionDelay: "0.2s",
               marginTop: "-35px",
-              marginLeft: "101.5px",
+              marginLeft: "123px",
               opacity: "0.9",
-              height: 27,
+              height: 32,
               position: "fixed"
             }}/>
             <img src="/image/logo3.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.4s",
               marginTop: "-35px",
-              marginLeft: "129px",
+              marginLeft: "155px",
               opacity: "0.9",
-              height: 27,
+              height: 32,
               position: "fixed"
             }}/>
             <img src="/image/logo4.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.6s",
               marginTop: "-35px",
-              marginLeft: "156px",
+              marginLeft: "184px",
               opacity: "0.9",
-              height: 27,
+              height: 32,
               position: "fixed"
             }}/>
             <img src="/image/logo5.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
               transitionDelay: "0.8s",
               marginTop: "-35px",
-              marginLeft: "182.6px",
+              marginLeft: "216px",
               opacity: "0.9",
-              height: 27,
+              height: 32,
               position: "fixed"
             }}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
           <div style={{
-            marginTop: '32px',
-            marginRight: '0px',
+            marginTop: '33px',
+            marginRight:'-200px',
+            paddingRight: '4vw',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="contactLogo">
             <div style={{
-              height: '16px',
+              height: '15px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
-              marginTop: '3.5px'
+              position: "absolute",
+              marginTop: '7px',
+              marginLeft: 13
             }} className="contactLine" />
             <div style={{
-              position: "fixed",
-              marginLeft: 10,
+              position: "absolute",
+              marginLeft: 20,
               width: 94,
-              fontSize: 18,
+              fontSize: 20,
               cursor: 'default',
               fontFamily: "PingFangSC-Light"
             }}>
@@ -216,25 +218,26 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickPortfolio} onMouseOver={this.mouseOverPortfolio} onMouseOut={this.mouseLeavePortfolio}>
           <div style={{
-            marginTop: '32px',
-            marginRight: '0px',
+            marginTop: '33px',
+            marginRight:'-200px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="portfolioLogo">
             <div style={{
-              height: '16px',
+              height: '15px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
-              marginTop: '3.5px'
+              position: "absolute",
+              marginTop: '7px',
+              marginLeft: 13
             }} className="portfolioLine" />
             <div style={{
-              position: "fixed",
-              marginLeft: 10,
+              position: "absolute",
+              marginLeft: 20,
               width: 94,
-              fontSize: 18,
+              fontSize: 20,
               cursor: 'default',
               fontFamily: "PingFangSC-Light"
             }}>
@@ -244,25 +247,26 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickAbout} onMouseOver={this.mouseOverAbout} onMouseOut={this.mouseLeaveAbout}>
           <div style={{
-            marginTop: '32px',
-            marginRight: '0px',
+            marginTop: '33px',
+            marginRight:'-200px',
             float: 'right',
             transition: "all 0.5s linear",
             transitionDelay: '1.5s'
           }} className="aboutLogo">
             <div style={{
-              height: '16px',
+              height: '15px',
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
-              marginTop: '3.5px',
+              position: "absolute",
+              marginTop: '7px',
+              marginLeft: 13
             }} className="aboutLine" />
             <div style={{
-              position: "fixed",
-              marginLeft: 10,
+              position: "absolute",
+              marginLeft: 20,
               width: 94,
-              fontSize: 18,
+              fontSize: 20,
               cursor: 'default',
               fontFamily: "PingFangSC-Light"
             }}>

@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import {Animation} from 'styled-animation'
 import { SectionsContainer, Section } from 'react-fullpage'
 import {browserHistory} from 'react-router'
-
 //
 // class Page1 extends Component {
 //   constructor() {
@@ -126,30 +125,12 @@ class Page5 extends Component {
     }
   }
 
-  handleResize(event) {
-    event.preventDefault();
-    this.setState({
-      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this));
-    this.setState({
-      height: window.screen.availHeight * 0.7 * document.body.clientWidth / window.screen.availWidth
-    })
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize.bind(this));
-  }
-
   render() {
     const rowStyle= {width: '100%', display: 'table', height: '33.3%'}
     return (
-      <div style={{height: this.state.height, marginTop: 200}}>
+      <div style={{marginTop: '23vh',textAlign:'center'}}>
         <div style={{
-          fontSize: 44 * document.body.clientWidth / window.screen.width,
+          fontSize: '2.5vw',
           textAlign: 'center',
           color: '#333333',
           fontFamily: "PingFangSC-Light",
@@ -158,22 +139,17 @@ class Page5 extends Component {
           marginLeft: 'auto',
           marginRight: 'auto'
         }}>
-          <div style={{height: 30 * document.body.clientWidth / window.screen.width, width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
-            The brand we’ve worked along with
+          <div style={{width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
+              The brands we’ve worked along with
           </div>
-          <div style={{height: 16 * document.body.clientWidth / window.screen.width, width: '102%', backgroundColor: '#FFE300', marginTop:10, marginLeft: '-1%', marginRight: 'auto'}} />
+          <div style={{height:'1vw', width: '102%', backgroundColor: '#FFE300', marginTop:'-1.5vw', marginLeft: '-1%', marginRight: 'auto'}} />
         </div>
-        <div style={{
-          width: '70%',
-          height: '70%',
+        <img src='image/4-021.png' style={{          
+          width: '67vw',
+          maxWidth: '150vh',
           marginLeft: 'auto',
           marginRight: 'auto',
-          marginTop: '5%',
-          backgroundImage: 'url(/image/4-021.png)',
-          backgroundSize: '100% auto',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center'
-        }} />
+          marginTop: '5vh'}}/>
       </div>
     )
   }
@@ -195,19 +171,19 @@ export class Page1 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',left:'5.04vw',top:'7.5vw',zIndex:-10,width: '50.6vw'}}>
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
+            style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}>
             <source src="/image/final_1.mp4" type="video/mp4" />
         </video>
 
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'right',
                   position: 'absolute',
-                  right: '5.16vw',
-                  top: '23vw'
+                  right: '8vw',
+                  top: '42vh'
                 }}>
           <br />
           基于广告、战略咨询、金融、创业的复合背景
@@ -220,12 +196,11 @@ export class Page1 extends Component {
           <br />
           完美解决方案
           <br />
-          <br />
-          <div style={{float: 'right', width: '29vw', marginTop:20}}>
+          <div style={{float: 'right', width: '24vw', marginTop:'8vh'}}>
             <img src="/image/title_SB_cn.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '37vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '29vw'}}
+              style={{opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -233,15 +208,15 @@ export class Page1 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: '35vw', marginTop: 10}}>
+          <div style={{float: 'right', width: '32vw', marginTop: 10}}>
             <img src="/image/title_SB_en.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '37vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '34vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '35vw'}}
+              style={{opacity: 0.9, width: '32vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -273,18 +248,18 @@ export class Page2 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',right:'3.63vw',top:'6.95vw',zIndex:-10,width: '45.32vw'}}>
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
+            style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_2.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
-                  left: '5.16vw',
-                  top: '20vw'
+                  left: '83px',
+                  top: '35vh'
                 }}>
           依靠精心策划的品牌策略
           <br />
@@ -300,12 +275,11 @@ export class Page2 extends Component {
           <br />
           也就全案、活动、视频、平面等等
           <br />
-          <br />
-          <div style={{float: 'left', width: '29vw', marginTop:40}}>
+          <div style={{float: 'left', width: '24vw', marginTop:'8vh'}}>
             <img src="/image/title_CPD_cn.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '29vw'}}
+              style={{opacity: 0.9, width: '24vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -313,13 +287,13 @@ export class Page2 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
           <div style={{float: 'left', width: '45vw', marginTop: 20}}>
             <img src="/image/title_CPD_en.png"
-              onMouseMove={() => {this.setState({ line1: '31vw', line2: '47vw'})}}
+              onMouseMove={() => {this.setState({ line1: '26vw', line2: '47vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
               style={{opacity: 0.9, width: '45vw'}}
             />
@@ -353,18 +327,18 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-         <video poster="/image/empty.png"  autoPlay loop
-             style={{position:'absolute',left:'6.51vw',top:'4.3vw',zIndex:-10,width: '44.32vw'}}>
+         <video poster="/image/empty.png"  autoPlay loop muted playsInline
+             style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}>
              <source src="/image/final_3.mp4" type="video/mp4" />
          </video>
          <br />
          <div style={{color: '#333333',
                    fontFamily: "PingFangSC-Ultralight",
-                   fontSize: '1.4vw',
+                   fontSize: 'calc(0.7vh + 0.9vw)',
                    textAlign: 'right',
                    position: 'absolute',
-                   right: '5.16vw',
-                   top: '13vw'
+                   right: '7.16vw',
+                   top: '30vh'
                  }}>
           我们坚信
           <br />
@@ -385,12 +359,11 @@ export class Page3 extends Component {
           <br />
           并且共同承担风险收益
           <br />
-          <br />
-          <div style={{float: 'right', width: '35vw', marginTop:20}}>
+          <div style={{float: 'right', width: '29vw', marginTop:'5vh'}}>
             <img src="/image/title_SMS_cn.png"
-              onMouseMove={() => {this.setState({ line1: '37vw', line2: '51vw'})}}
+              onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '35vw'}}
+              style={{opacity: 0.9, width: '29vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -398,15 +371,15 @@ export class Page3 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
-          <div style={{float: 'right', width: '49vw', marginTop: 20}}>
+          <div style={{float: 'right', width: '46vw', marginTop: 15}}>
             <img src="/image/title_SMS_en.png"
-              onMouseMove={() => {this.setState({ line1: '37vw', line2: '51vw'})}}
+              onMouseMove={() => {this.setState({ line1: '31vw', line2: '48vw'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '49vw'}}
+              style={{opacity: 0.9, width: '46vw'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -438,18 +411,18 @@ export class Page4 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop
-            style={{position:'absolute',right:'8.63vw',top:'7.95vw',zIndex:-10,width: '48.32vw'}}>
+        <video poster="/image/empty.png"  autoPlay loop muted playsInline
+            style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
             <source src="/image/final_4.mp4" type="video/mp4" />
         </video>
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
-                  fontSize: '1.4vw',
+                  fontSize: 'calc(0.7vh + 0.9vw)',
                   textAlign: 'left',
                   position: 'absolute',
-                  left: '5.16vw',
-                  top: '20vw'
+                  left: '83px',
+                  top: '23vh'
                 }}>
           “文案日成堆
           <br />
@@ -472,12 +445,11 @@ export class Page4 extends Component {
           <br />
           大概说的，就是我司。
           <br />
-          <br />
-          <div style={{float: 'left', width: '25vw', marginTop:30}}>
+          <div style={{float: 'left', width: 'calc(16vh + 13vw)', marginTop:'5vh'}}>
             <img src="/image/title_SM_cn.png"
-              onMouseMove={() => {this.setState({ line1: '27vw', line2: '27vw'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '25vw'}}
+              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -485,15 +457,15 @@ export class Page4 extends Component {
               marginLeft: '-1vw',
               width: this.state.line1,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.8vw'
             }} />
           </div>
           <br />
-          <div style={{float: 'left', width: '25vw', marginTop: 20}}>
+          <div style={{float: 'left', width: 'calc(16vh + 13vw)', marginTop: 20}}>
             <img src="/image/title_SM_en.png"
-              onMouseMove={() => {this.setState({ line1: '27vw', line2: '27vw'})}}
+              onMouseMove={() => {this.setState({ line1: 'calc(16vh + 15vw)', line2: 'calc(16vh + 15vw)'})}}
               onMouseOut={() => {this.setState({ line1: 0, line2: 0})}}
-              style={{opacity: 0.9, width: '25vw'}}
+              style={{opacity: 0.9, width: 'calc(16vh + 13vw)'}}
             />
             <div style={{
               backgroundColor: '#FFE300',
@@ -501,7 +473,7 @@ export class Page4 extends Component {
               marginLeft: '-1vw',
               width: this.state.line2,
               transition: "all 0.5s linear",
-              marginTop: '-1vw'
+              marginTop: '-0.5vw'
             }} />
           </div>
         </div>
@@ -516,6 +488,10 @@ export default class extends Component {
     this.state = {
       current: 0,
     }
+    if(window.location.hash !== '#section1') {
+      browserHistory.push('/about#section1')
+      window.location.reload()
+    }
   }
   mapAnchors() {
     let r = []
@@ -526,8 +502,6 @@ export default class extends Component {
   }
   componentDidMount() {
     this.state.current = 0
-    browserHistory.push('/about#section1')
-    console.log(browserHistory)
   }
   render() {
     let options = {
@@ -535,9 +509,9 @@ export default class extends Component {
       anchors:              this.mapAnchors(),
       arrowNavigation:      true,
       className:            'SectionContainer',
-      delay:                300,
+      delay:                1500,
       navigation:           false,
-      scrollBar:            true,
+      scrollBar:            false,
       sectionClassName:     'Section',
       sectionPaddingTop:    '0',
       sectionPaddingBottom: '0',
@@ -547,7 +521,7 @@ export default class extends Component {
     const {current} = this.state
 
     return (
-      <Animation name="slideInUp" duration="0.3s">
+      <Animation name="slideInUp" duration="1.5s">
         <SectionsContainer {...options} activeSection={current}>
           <Section><Page1 /></Section>
           <Section><Page2 /></Section>
