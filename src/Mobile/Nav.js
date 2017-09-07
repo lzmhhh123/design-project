@@ -203,7 +203,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px',
-              marginLeft: '-3px'
+              marginLeft: '-4px'
             }} className="portfolioLine" />
               <img src={iportfolio}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>

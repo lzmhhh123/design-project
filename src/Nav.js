@@ -47,7 +47,7 @@ export default class  extends Component {
       }
       logoLine[0].style.width = (nextProps.home === 1 ? '166px' : '0px')
       aboutLine[0].style.width = (nextProps.about === 1 ? '79px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '124px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '130px' : '0px')
       contactLine[0].style.width = (nextProps.contact === 1 ? '108px' : '0px')
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.transition = "all 0s ease"
@@ -97,7 +97,7 @@ export default class  extends Component {
   mouseOverPortfolio() {
     setTimeout(() => {
       let portfolioLine = document.getElementsByClassName("portfolioLine")
-      portfolioLine[0].style.width = '124px'
+      portfolioLine[0].style.width = '130px'
     })
   }
 
@@ -231,7 +231,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "absolute",
               marginTop: '7px',
-              marginLeft: 13
+              marginLeft: 10
             }} className="portfolioLine" />
             <div style={{
               position: "absolute",
