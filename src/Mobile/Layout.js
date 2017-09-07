@@ -74,7 +74,7 @@ export default class extends Component {
   }
 
   render() {
-    let color = '#f2f2f2';
+    let color = (navigator.userAgent.toLowerCase().indexOf('macintosh') !== -1 ? '#F4F4F4' : '#F2F2F2')
     return (
       <div style={{backgroundColor: color}}>
         <Header>

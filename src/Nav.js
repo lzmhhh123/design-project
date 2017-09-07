@@ -46,9 +46,9 @@ export default class  extends Component {
         logo[i].style.marginTop = "30px"
       }
       logoLine[0].style.width = (nextProps.home === 1 ? '166px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '78px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '118px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '110px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '79px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '124px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '108px' : '0px')
       let aboutLogo = document.getElementsByClassName("aboutLogo")
       aboutLogo[0].style.transition = "all 0s ease"
       aboutLogo[0].style.transitionDelay = '0s'
@@ -82,7 +82,7 @@ export default class  extends Component {
   mouseOverAbout() {
     setTimeout(() => {
       let aboutLine = document.getElementsByClassName("aboutLine")
-      aboutLine[0].style.width = '78px'
+      aboutLine[0].style.width = '79px'
     })
   }
 
@@ -97,7 +97,7 @@ export default class  extends Component {
   mouseOverPortfolio() {
     setTimeout(() => {
       let portfolioLine = document.getElementsByClassName("portfolioLine")
-      portfolioLine[0].style.width = '118px'
+      portfolioLine[0].style.width = '124px'
     })
   }
 
@@ -112,7 +112,7 @@ export default class  extends Component {
   mouseOverContact() {
     setTimeout(() => {
       let contactLine = document.getElementsByClassName("contactLine")
-      contactLine[0].style.width = '110px'
+      contactLine[0].style.width = '108px'
     })
   }
 
@@ -202,7 +202,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "absolute",
               marginTop: '7px',
-              marginLeft: 12
+              marginLeft: 13
             }} className="contactLine" />
             <div style={{
               position: "absolute",
@@ -231,7 +231,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "absolute",
               marginTop: '7px',
-              marginLeft: 16
+              marginLeft: 13
             }} className="portfolioLine" />
             <div style={{
               position: "absolute",
