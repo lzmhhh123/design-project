@@ -81,7 +81,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '50% auto'
       s['backgroundPosition'] = '0% 30%'
     }
-    else if(p[6]) {
+    else if(p[7]) {
       s['backgroundImage'] = 'url(/image/image8.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '100% auto'
@@ -117,7 +117,7 @@ class Page2 extends Component {
       s['backgroundSize'] = '38%  auto'
       s['backgroundPosition'] = '50% 100%'
     }
-    else if(p[7]) {
+    else if(p[6]) {
       s['backgroundImage'] = 'url(/image/image7.jpg)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '100%  auto'
@@ -148,63 +148,63 @@ class Page2 extends Component {
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(0)}>
                 {this.state.labels[0].string}
               </div>
-              {this.state.p[0] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[0] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(1)}>
                 {this.state.labels[1].string}
               </div>
-              {this.state.p[1] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[1] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(2)}>
                 {this.state.labels[2].string}
               </div>
-              {this.state.p[2] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[2] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(3)}>
                 {this.state.labels[3].string}
               </div>
-              {this.state.p[3] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[3] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(4)}>
                 {this.state.labels[4].string}
               </div>
-              {this.state.p[4] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[4] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(5)}>
                 {this.state.labels[5].string}
               </div>
-              {this.state.p[5] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[5] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(6)}>
                 {this.state.labels[6].string}
               </div>
-              {this.state.p[6] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[6] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(7)}>
                 {this.state.labels[7].string}
               </div>
-              {this.state.p[7] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[7] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
             <div style={{height: 15}} />
             <div style={{height: 20, width: 'fit-content', width: '-webkit-fit-content', margin: 'auto'}}>
               <div style={{height: 12, width: 'fit-content', width: '-webkit-fit-content'}} onClick={() => this.changeImage(8)}>
                 {this.state.labels[8].string}
               </div>
-              {this.state.p[8] ? <div style={{height: 12, width: 'calc(100% + 12px)', marginTop:4, marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
+              {this.state.p[8] ? <div style={{height: 16, width: 'calc(100% + 12px)', marginTop:'0px', marginLeft: '-7px',backgroundColor: '#FFE300'}} /> : null}
             </div>
           </div>
         </div>

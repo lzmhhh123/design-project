@@ -74,9 +74,9 @@ export default class  extends Component {
         logo[i].style.marginTop = "10px"
       }
       logoLine[0].style.width = (nextProps.home === 1 ? '135px' : '0px')
-      aboutLine[0].style.width = (nextProps.about === 1 ? '76px' : '0px')
-      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '114px' : '0px')
-      contactLine[0].style.width = (nextProps.contact === 1 ? '98px' : '0px')
+      aboutLine[0].style.width = (nextProps.about === 1 ? '70px' : '0px')
+      portfolioLine[0].style.width = (nextProps.portfolio === 1 ? '108px' : '0px')
+      contactLine[0].style.width = (nextProps.contact === 1 ? '93px' : '0px')
       if (nextProps.home) {
         let aboutLogo = document.getElementsByClassName("aboutLogo")
         let portfolioLogo = document.getElementsByClassName("portfolioLogo")
@@ -183,7 +183,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px',
-              marginLeft: '-2px'
+              marginLeft: '1px'
             }} className="contactLine" />
               <img src={icontact}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
@@ -203,7 +203,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px',
-              marginLeft: '-3px'
+              marginLeft: '1px'
             }} className="portfolioLine" />
               <img src={iportfolio}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
@@ -211,7 +211,7 @@ export default class  extends Component {
         </div>
         <div style={{float: 'right'}} onClick={(e)=>{
               let aboutLine = document.getElementsByClassName("aboutLine")
-              aboutLine[0].style.width = '76px'
+              aboutLine[0].style.width = '70px'
               this.props.clickAbout(e);
               setTimeout(() => {this.menuOnClick(e)}, 300)}}>
           <div style={{
@@ -227,7 +227,7 @@ export default class  extends Component {
               transition: "all 0.5s linear",
               position: "fixed",
               marginTop: '1px',
-              marginLeft: '-1px'
+              marginLeft: '2px'
             }} className="aboutLine" />
               <img src={iabout}
                 style={{position: "fixed", opacity: 0.9, marginLeft: 6,marginTop: 1,height: '14px'}}/>

@@ -140,7 +140,7 @@ class Page5 extends Component {
           marginRight: 'auto'
         }}>
           <div style={{width: 'fit-content', width: '-webkit-fit-content', marginLeft: 'auto', marginRight: 'auto'}}>
-              The brands we’ve worked along with
+            Brands we've worked with
           </div>
           <div style={{height:'1vw', width: '102%', backgroundColor: '#FFE300', marginTop:'-1.5vw', marginLeft: '-1%', marginRight: 'auto'}} />
         </div>
