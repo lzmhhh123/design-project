@@ -92,10 +92,10 @@ export default class extends Component {
     console.log(this.state.selectLable);
     this.djsConfig = {
         addRemoveLinks: true,
-        acceptedFiles: "application/pdf"
+        acceptedFiles: "image/png"
     };
     this.componentConfig = {
-        iconFiletypes: ['.pdf'],
+        iconFiletypes: ['.png'],
         showFiletypeIcon: true,
         postUrl: '/api/uploadHandler'
     };
@@ -170,7 +170,7 @@ export default class extends Component {
               </Menu>
             </Layout.Sider>
             <Layout.Content>
-              <strong><h2 style={{color: 'black'}}>{`请上传文件名为page${this.state.selectLable}.pdf的文件：`}</h2></strong>
+              <strong><h2 style={{color: 'black'}}>{`请上传文件名为page${this.state.selectLable}.png的文件：`}</h2></strong>
               <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
               <div style={{height: 30}} />
               <strong><h2 style={{color: 'black'}}>{`请上传文件名为image${this.state.selectLable}.${this.check() ? 'png' : 'jpg'}的文件：`}</h2></strong>

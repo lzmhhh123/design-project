@@ -13,6 +13,15 @@ import Layout from './Layout'
 import Homepage from './Homepage'
 import Admin from './Admin'
 
+class page1 extends Component {
+  constructor() {
+    super()
+  }
+  render() {
+    return <img src="/pdf/page1.png" />
+  }
+}
+
 export default class extends Component {
   constructor() {
     super()
@@ -28,6 +37,7 @@ export default class extends Component {
           <Route path="/portfolio" component={Contact} />
           <Route path="/contact" component={About} />
           <Route path="/admin" component={Admin} />
+          <Route path="/page1.png" component={page1} />
         </Route>
         <Redirect path="*" to="/" />
       </Router>
