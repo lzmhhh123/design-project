@@ -190,6 +190,13 @@ export default class extends Component {
               showIcon
               style={{marginBottom:20}}
             />
+            <Alert
+              message=""
+              description="为了更好的展示效果，请将长图裁剪至图片上边缘与第一行文字上边缘平齐，不留空白。"
+              type="info"
+              showIcon
+              style={{marginBottom:20}}
+            />
             <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
 
           </TabPane>
