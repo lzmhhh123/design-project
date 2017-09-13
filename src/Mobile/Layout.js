@@ -16,6 +16,9 @@ export default class extends Component {
     this.clickPortfolio = this.clickPortfolio.bind(this)
     this.clickContact = this.clickContact.bind(this)
     this.clickHome = this.clickHome.bind(this)
+    browserHistory.listen( location =>  {
+      this.forceUpdate()
+    });
   }
 
   componentDidMount() {
@@ -25,6 +28,7 @@ export default class extends Component {
       if (window.location.pathname === '/about') about = 1;
       if (window.location.pathname === '/contact') contact = 1;
       if (window.location.pathname === '/portfolio') portfolio = 1;
+      if (window.location.pathname === '/page') portfolio = 1;
       this.setState({about, home, portfolio, contact});
     }, 0)
   }
@@ -74,10 +78,11 @@ export default class extends Component {
   }
 
   render() {
-    let color = (navigator.userAgent.toLowerCase().indexOf('macintosh') !== -1 ? '#F4F4F4' : '#F2F2F2')
+    let color = (window.location.pathname === '/page' ||
+      navigator.userAgent.toLowerCase().indexOf('macintosh') === -1 ? '#F2F2F2' : '#F4F4F4')
     return (
-      <div style={{backgroundColor: color}}>
-        <Header>
+      <div style={{height:'100vh', backgroundColor: color}}>
+        <div style={{zIndex: 1, width:'100%', position:'absolute'}}>
           <Nav
             clickAbout={this.clickAbout}
             clickPortfolio={this.clickPortfolio}
@@ -88,7 +93,7 @@ export default class extends Component {
             portfolio={this.state.portfolio}
             contact={this.state.contact}
           />
-        </Header>
+        </div>
         <div style={{margin: 'auto', height: '100%'}}>
           {this.props.children}
         </div>

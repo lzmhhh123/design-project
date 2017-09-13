@@ -62,7 +62,7 @@ class Page2 extends Component {
       })
   }
   viewProject(index) {
-    window.location.pathname = `/pdf/page${index}.pdf`
+    browserHistory.push(`/page#${index}`)
   }
   handleResize(event) {
     event.preventDefault()

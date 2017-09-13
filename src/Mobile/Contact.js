@@ -44,7 +44,7 @@ class Page2 extends Component {
   }
   view(event) {
     event.preventDefault()
-    window.location.pathname = `/pdf/page${this.state.index+1}.pdf`
+    browserHistory.push(`/page#${this.state.index+1}`)
   }
   changeImage(index) {
     let { p } = this.state

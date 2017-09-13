@@ -10,13 +10,19 @@ import logo5 from '../image/logo5.png'
 import iabout from '../image/button_about_mobile@2x.png'
 import icontact from '../image/button_contact_mobile@2x.png'
 import iportfolio from '../image/button_portfolio_mobile@2x.png'
-
+import { browserHistory } from 'react-router'
 
 
 export default class  extends Component {
   constructor() {
     super()
     this.menuOnClick = this.menuOnClick.bind(this)
+
+    browserHistory.listen( location =>  {
+      this.forceUpdate()
+     //Do your stuff here
+    });
+    
   }
 
   componentDidMount() {
@@ -89,6 +95,8 @@ export default class  extends Component {
   }
 
   render() {
+    this.fixorabsolute = (window.location.pathname === '/page' ? 'absolute' : 'fixed')
+
     return (
       <div>
         <div className="logoAll" onClick={this.props.clickHome}
@@ -108,7 +116,7 @@ export default class  extends Component {
               width: '0px',
               height: "13px",
               marginLeft: "37px",
-              position: "fixed"
+              position: this.fixorabsolute
             }} className="logoLine"/>
           <div style={{marginLeft: 13}}>
             <img src={logo1} className="logoImage" style={{
@@ -118,7 +126,7 @@ export default class  extends Component {
               marginLeft: "28px",
               opacity: "0.9",
               height: 27,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src={logo2} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -127,7 +135,7 @@ export default class  extends Component {
               marginLeft: "63px",
               opacity: "0.9",
               height: 27,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src={logo3} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -136,7 +144,7 @@ export default class  extends Component {
               marginLeft: "87px",
               opacity: "0.9",
               height: 27,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src={logo4} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -145,7 +153,7 @@ export default class  extends Component {
               marginLeft: "110px",
               opacity: "0.9",
               height: 27,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src={logo5} className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -154,7 +162,7 @@ export default class  extends Component {
               marginLeft: "136px",
               opacity: "0.9",
               height: 27,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
           </div>
         </div>
@@ -181,12 +189,12 @@ export default class  extends Component {
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
+              position: this.fixorabsolute,
               marginTop: '1px',
               marginLeft: '1px'
             }} className="contactLine" />
               <img src={icontact}
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
+                style={{position: this.fixorabsolute, opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={(e)=>{this.props.clickPortfolio(e)}}>
@@ -201,12 +209,12 @@ export default class  extends Component {
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
+              position: this.fixorabsolute,
               marginTop: '1px',
               marginLeft: '1px'
             }} className="portfolioLine" />
               <img src={iportfolio}
-                style={{position: "fixed", opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
+                style={{position: this.fixorabsolute, opacity: 0.9, marginLeft: 5,marginTop: 1, height: '14px'}}/>
           </div>
         </div>
         <div style={{float: 'right'}} onClick={(e)=>{
@@ -225,12 +233,12 @@ export default class  extends Component {
               width: '0px',
               backgroundColor: '#FFE300',
               transition: "all 0.5s linear",
-              position: "fixed",
+              position: this.fixorabsolute,
               marginTop: '1px',
               marginLeft: '2px'
             }} className="aboutLine" />
               <img src={iabout}
-                style={{position: "fixed", opacity: 0.9, marginLeft: 6,marginTop: 1,height: '14px'}}/>
+                style={{position: this.fixorabsolute, opacity: 0.9, marginLeft: 6,marginTop: 1,height: '14px'}}/>
           </div>
         </div>
       </div>

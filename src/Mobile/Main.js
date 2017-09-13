@@ -11,6 +11,21 @@ import Contact from './Contact'
 import Layout from './Layout'
 import Homepage from './Homepage'
 
+class page extends Component {
+  constructor() {
+    super()
+  }
+  render() {
+    return <img style={{
+      position:'absolute',
+      top: '65px',
+      width: '100%'
+    }} src={`/pdf/page${window.location.hash.slice(1)}.jpg`} />
+  }
+}
+
+
+
 export default class extends Component {
   constructor() {
     super()
@@ -24,6 +39,7 @@ export default class extends Component {
           <Route path="/about" component={Portfolio} />
           <Route path="/portfolio" component={Contact} />
           <Route path="/contact" component={About} />
+          <Route path="/page" component={page} />
         </Route>
       </Router>
     )

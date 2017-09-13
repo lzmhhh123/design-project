@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {fadeIn} from 'react-animations'
 import { Animation } from 'styled-animation'
+import { browserHistory } from 'react-router'
 
 export default class  extends Component {
   constructor() {
@@ -9,6 +10,10 @@ export default class  extends Component {
     this.mouseLeaveAbout = this.mouseLeaveAbout.bind(this)
     this.mouseLeaveContact = this.mouseLeaveContact.bind(this)
     this.mouseLeavePortfolio = this.mouseLeavePortfolio.bind(this)
+
+    browserHistory.listen( location =>  {
+      this.forceUpdate()
+    });
   }
 
   componentDidMount() {
@@ -125,6 +130,7 @@ export default class  extends Component {
   }
 
   render() {
+    this.fixorabsolute = (window.location.pathname === '/page' ? 'absolute' : 'fixed')
     return (
       <div>
         <div style={{float: 'left'}} onClick={this.props.clickHome} onMouseOver={this.mouseOverLogo} onMouseOut={this.mouseLeaveLogo}>
@@ -137,7 +143,7 @@ export default class  extends Component {
                 width: '0px',
                 height: "16px",
                 marginLeft: "77px",
-                position: "fixed"
+                position: this.fixorabsolute
               }} className="logoLine"/>
 
             <img src="/image/logo1.png" className="logoImage" style={{
@@ -147,7 +153,7 @@ export default class  extends Component {
               marginLeft: "83px",
               opacity: "0.9",
               height: 32,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src="/image/logo2.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -156,7 +162,7 @@ export default class  extends Component {
               marginLeft: "123px",
               opacity: "0.9",
               height: 32,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src="/image/logo3.pic" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -165,7 +171,7 @@ export default class  extends Component {
               marginLeft: "155px",
               opacity: "0.9",
               height: 32,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src="/image/logo4.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -174,7 +180,7 @@ export default class  extends Component {
               marginLeft: "184px",
               opacity: "0.9",
               height: 32,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
             <img src="/image/logo5.png" className="logo" style={{
               transition: "all 0.5s cubic-bezier(0.4, 0.5, 0.6, 1.7)",
@@ -183,7 +189,7 @@ export default class  extends Component {
               marginLeft: "216px",
               opacity: "0.9",
               height: 32,
-              position: "fixed"
+              position: this.fixorabsolute
             }}/>
         </div>
         <div style={{float: 'right'}} onClick={this.props.clickContact} onMouseOver={this.mouseOverContact} onMouseOut={this.mouseLeaveContact}>
