@@ -169,12 +169,18 @@ export class Page1 extends Component {
 
 
   render() {
+    console.log()
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop muted playsInline
-            style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}>
-            <source src="/image/final_1.mp4" type="video/mp4" />
-        </video>
+        {
+          navigator.userAgent.toLowerCase().indexOf('chrome') !== -1 ? 
+          <video poster="/image/empty.png"  autoPlay loop muted playsInline
+              style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}>
+              <source src="/image/final_1.mp4" type="video/mp4" />
+          </video>
+          :
+          <img src="/image/preview_1.gif" style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}/>
+        }
 
         <br />
         <div style={{color: '#333333',
@@ -248,10 +254,18 @@ export class Page2 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop muted playsInline
-            style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
-            <source src="/image/final_2.mp4" type="video/mp4" />
-        </video>
+        
+        {
+          navigator.userAgent.toLowerCase().indexOf('chrome') !== -1 ? 
+          <video poster="/image/empty.png"  autoPlay loop muted playsInline
+              style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}>
+              <source src="/image/final_2.mp4" type="video/mp4" />
+          </video>
+          :
+          <img src="/image/preview_2.gif" style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}/>
+        }
+
+
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",
@@ -327,10 +341,18 @@ export class Page3 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-         <video poster="/image/empty.png"  autoPlay loop muted playsInline
-             style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}>
-             <source src="/image/final_3.mp4" type="video/mp4" />
-         </video>
+
+
+         {
+           navigator.userAgent.toLowerCase().indexOf('chrome') !== -1 ? 
+           <video poster="/image/empty.png"  autoPlay loop muted playsInline
+               style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}>
+               <source src="/image/final_3.mp4" type="video/mp4" />
+           </video>
+           :
+           <img src="/image/preview_3.gif" style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}/>
+         }
+
          <br />
          <div style={{color: '#333333',
                    fontFamily: "PingFangSC-Ultralight",
@@ -411,10 +433,16 @@ export class Page4 extends Component {
   render() {
     return (
       <div style={{position:'relative', overflow: 'hidden', height: '100%', minWidth: 'fit-content', minWidth: '-webkit-fit-content', width: '100%'}}>
-        <video poster="/image/empty.png"  autoPlay loop muted playsInline
-            style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
-            <source src="/image/final_4.mp4" type="video/mp4" />
-        </video>
+
+        {
+          navigator.userAgent.toLowerCase().indexOf('chrome') !== -1 ? 
+          <video poster="/image/empty.png"  autoPlay loop muted playsInline
+              style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}>
+              <source src="/image/final_4.mp4" type="video/mp4" />
+          </video>
+          :
+          <img src="/image/preview_4.gif" style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}/>
+        }
         <br />
         <div style={{color: '#333333',
                   fontFamily: "PingFangSC-Ultralight",

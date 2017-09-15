@@ -83,7 +83,7 @@ export default class extends Component {
     let backgroundColor = (window.location.pathname === '/page' ||
       navigator.userAgent.toLowerCase().indexOf('macintosh') === -1 ? '#F2F2F2' : '#F4F4F4')
     return (
-      <div style={{height: '100vh', backgroundColor: backgroundColor}}>
+      <div style={{height: '100%', backgroundColor: backgroundColor}}>
         <div style={{zIndex: 1, width:'100%', position:'absolute'}}>
           <Nav
             clickAbout={this.clickAbout}
