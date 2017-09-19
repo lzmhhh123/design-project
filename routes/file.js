@@ -3,7 +3,7 @@ const multer = require('multer')
 const Router = express.Router()
 
 const storage = multer.diskStorage({
-  destination: './build/pdf/',
+  destination: './build/image/',
   filename: function (req, file, cb) {
     cb(null, file.originalname)
   }
@@ -25,7 +25,7 @@ const storage1 = multer.diskStorage({
 
 const upload1 = multer({storage: storage1});
 
-Router.post('/uploadHandler1', upload.single('file'), function (req, res, next) {
+Router.post('/uploadHandlerimage', upload.single('file'), function (req, res, next) {
   console.log(req.file);
   res.send({});
 })

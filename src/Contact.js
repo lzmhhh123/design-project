@@ -99,13 +99,13 @@ class Page2 extends Component {
       s['backgroundPosition'] = '10% 68%'
     }
     else if(p[7]) {
-      s['backgroundImage'] = 'url(/image/image8.jpg)'
+      s['backgroundImage'] = 'url(/image/image8.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '45% auto'
       s['backgroundPosition'] = '50% 94%'
     }
     else if(p[1]) {
-      s['backgroundImage'] = 'url(/image/image2.jpg)'
+      s['backgroundImage'] = 'url(/image/image2.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '50% auto'
       s['backgroundPosition'] = '50% 60%'
@@ -117,13 +117,13 @@ class Page2 extends Component {
       s['backgroundPosition'] = '50% 90%'
     }
     else if(p[8]) {
-      s['backgroundImage'] = 'url(/image/image9.jpg)'
+      s['backgroundImage'] = 'url(/image/image9.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '60% auto'
       s['backgroundPosition'] = '50% 44%'
     }
     else if(p[3]) {
-      s['backgroundImage'] = 'url(/image/image4.jpg)'
+      s['backgroundImage'] = 'url(/image/image4.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '35% auto'
       s['backgroundPosition'] = '80% 50%'
@@ -135,7 +135,7 @@ class Page2 extends Component {
       s['backgroundPosition'] = '50% 94%'
     }
     else if(p[6]) {
-      s['backgroundImage'] = 'url(/image/image7.jpg)'
+      s['backgroundImage'] = 'url(/image/image7.png)'
       s['backgroundRepeat'] = 'no-repeat'
       s['backgroundSize'] = '40% auto'
       s['backgroundPosition'] = '95% 60%'

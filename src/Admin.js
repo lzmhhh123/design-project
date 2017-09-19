@@ -127,12 +127,12 @@ export default class extends Component {
     };
     this.djsConfigImage = {
         addRemoveLinks: true,
-        acceptedFiles: "image/png,image/jpeg"
+        acceptedFiles: "image/png"
     };
     this.componentConfigImage = {
-        iconFiletypes: ['.png', '.jpg'],
+        iconFiletypes: ['.png'],
         showFiletypeIcon: true,
-        postUrl: '/api/uploadHandler1'
+        postUrl: '/api/uploadHandlerimage'
     };
     this.callbackArray = [() => console.log('Hi!'), () => console.log('Ho!')];
     this.callback = () => console.log('Hello!');
@@ -190,20 +190,13 @@ export default class extends Component {
               showIcon
               style={{marginBottom:20}}
             />
-            <Alert
-              message=""
-              description="为了更好的展示效果，请将长图裁剪至图片上边缘与第一行文字上边缘平齐，不留空白。"
-              type="info"
-              showIcon
-              style={{marginBottom:20}}
-            />
             <DropzoneComponent config={config} eventHandlers={eventHandlers} djsConfig={djsConfig} />
 
           </TabPane>
           <TabPane tab={<span><Icon type="picture" />Portfolio预览图修改</span>} key="3">
             <Alert
               message=""
-              description="请先修改文件名为imagex.jpg/png，再上传。（如修改第1个标签对应的长图，则修改为image1.jpg/png，第4个标签的则为image4.jpg/png）"
+              description="请先修改文件名为imagex.png，再上传。（如修改第1个标签对应的长图，则修改为image1.png，第4个标签的则为image4.png）"
               type="info"
               showIcon
               style={{marginBottom:20}}
@@ -211,6 +204,13 @@ export default class extends Component {
             <Alert
               message=""
               description="上传同一文件名的文件，会替换原来上传的文件。"
+              type="info"
+              showIcon
+              style={{marginBottom:20}}
+            />
+            <Alert
+              message=""
+              description="为了展示透明效果，请上传png格式的图片。"
               type="info"
               showIcon
               style={{marginBottom:20}}

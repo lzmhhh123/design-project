@@ -20,7 +20,7 @@ class page extends Component {
       position:'absolute',
       top: '65px',
       width: '100%'
-    }} src={`/pdf/page${window.location.hash.slice(1)}.jpg`} />
+    }} src={`/image/page${window.location.hash.slice(1)}.jpg`} />
   }
 }
 
