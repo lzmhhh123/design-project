@@ -179,7 +179,7 @@ export class Page1 extends Component {
               <source src="/image/final_1.mp4" type="video/mp4" />
           </video>
           :
-          <img src="/image/preview_1.gif" style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}/>
+          <img src="/image/preview1.png" style={{position:'absolute',left:'6vw',top:'10vh',zIndex:-10,width: '55.6vw', maxWidth:'100vh'}}/>
         }
 
         <br />
@@ -262,7 +262,7 @@ export class Page2 extends Component {
               <source src="/image/final_2.mp4" type="video/mp4" />
           </video>
           :
-          <img src="/image/preview_2.gif" style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}/>
+          <img src="/image/preview2.png" style={{position:'absolute',right:'5.63vw',top:'17vh',zIndex:-10,width: '45.32vw', maxWidth:'80vh'}}/>
         }
 
 
@@ -350,7 +350,7 @@ export class Page3 extends Component {
                <source src="/image/final_3.mp4" type="video/mp4" />
            </video>
            :
-           <img src="/image/preview_3.gif" style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}/>
+           <img src="/image/preview3.png" style={{position:'absolute',left:'6.51vw',top:'10vh',zIndex:-10,width: '44.32vw', maxWidth:'80vh'}}/>
          }
 
          <br />
@@ -441,7 +441,7 @@ export class Page4 extends Component {
               <source src="/image/final_4.mp4" type="video/mp4" />
           </video>
           :
-          <img src="/image/preview_4.gif" style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}/>
+          <img src="/image/preview4.png" style={{position:'absolute',right:'10.63vw',top:'5vh',zIndex:-10,width: '48.32vw', maxWidth:'80vh'}}/>
         }
         <br />
         <div style={{color: '#333333',
