@@ -16,7 +16,3 @@
 - `npm install` or `yarn install`
 - `mongod --dbpath $(dbpath)`
 - To visit it at http://localhost:8080 with `yarn webstart`
-
-### Under Development
-- to resolve ip to domain.
-- to deploy CDN(because the static resource is too much!!!).
